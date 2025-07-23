@@ -1,5 +1,6 @@
 import React from "react";
-import heroImage from "../assets/hero-image.jpg"; // Replace with your actual image path
+import { Link } from "react-router-dom"; // ✅ React Router link
+import heroImage from "../assets/hero-image.jpg";
 
 function Hero() {
   return (
@@ -7,7 +8,7 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>
-            Welcome to <span className="highlight">Sanvi’s Academy</span>
+            Welcome The <span className="highlight">Sanvi’s Academy</span>
           </h1>
           <h2>Ace Your Exams & Learn Languages</h2>
           <p>
@@ -15,9 +16,11 @@ function Hero() {
             GRE, GMAT, SAT, Duolingo & more. Our experienced tutors conduct
             regular live classes to guide you towards success.
           </p>
-          <a href="/contact" className="cta-button">
+          <Link to="/courses" className="cta-button">
+            {" "}
+            {/* ✅ Link for internal navigation */}
             Get Started
-          </a>
+          </Link>
         </div>
 
         <div className="hero-image">

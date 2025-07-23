@@ -1,9 +1,14 @@
-import React from "react";
-import toeflImage from "../assets/toefl-banner.jpg"; // Ensure you have a relevant image
+import React, { useEffect } from "react";
+import toeflImage from "../assets/toefl-banner.jpg";
+import { Link } from "react-router-dom";
 
 function TOEFL() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="toefl-container">
+    <div className="page-container toefl-container">
       <h1>TOEFL Online Coaching</h1>
 
       <div className="toefl-intro">
@@ -20,7 +25,7 @@ function TOEFL() {
       </div>
 
       <div className="toefl-details">
-        <h2>📘 What is TOEFL?</h2>
+        <h2>📘TOEFL</h2>
         <ul>
           <li>
             <strong>Total Score:</strong> 0–120 (each section scored out of 30)
@@ -54,74 +59,49 @@ function TOEFL() {
 
         <h2>🌍 TOEFL is Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://www.ets.org/toefl/test-takers.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
-              <p>USA</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.educanada.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-              <p>Canada</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.studyinaustralia.gov.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
-              <p>Australia</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.studywithnewzealand.govt.nz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img
-                src="https://flagcdn.com/w320/nz.png"
-                alt="New Zealand Flag"
-              />
-              <p>New Zealand</p>
-            </div>
-          </a>
-
-          <a
-            href="https://study-uk.britishcouncil.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-              <p>United Kingdom</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.study-in-germany.de/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" />
-              <p>Germany</p>
-            </div>
-          </a>
+          {[
+            {
+              url: "https://www.ets.org/toefl/test-takers.html",
+              flag: "us",
+              name: "USA",
+            },
+            { url: "https://www.educanada.ca/", flag: "ca", name: "Canada" },
+            {
+              url: "https://www.studyinaustralia.gov.au/",
+              flag: "au",
+              name: "Australia",
+            },
+            {
+              url: "https://www.studywithnewzealand.govt.nz/",
+              flag: "nz",
+              name: "New Zealand",
+            },
+            {
+              url: "https://study-uk.britishcouncil.org/",
+              flag: "gb",
+              name: "United Kingdom",
+            },
+            {
+              url: "https://www.study-in-germany.de/",
+              flag: "de",
+              name: "Germany",
+            },
+          ].map((country, idx) => (
+            <a
+              key={idx}
+              href={country.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img
+                  src={`https://flagcdn.com/w320/${country.flag}.png`}
+                  alt={`${country.name} Flag`}
+                />
+                <p>{country.name}</p>
+              </div>
+            </a>
+          ))}
         </div>
 
         <h2>💰 Course Plans & Pricing</h2>
@@ -155,8 +135,17 @@ function TOEFL() {
         <p style={{ marginTop: "20px" }}>
           <strong>Ready to boost your TOEFL score?</strong> Get started with our
           expert trainers now!
-          <a href="/contact"> Contact us</a> for demo sessions and guidance.
+          <Link to="/contact"> Contact us</Link> for demo sessions and guidance.
         </p>
+
+        <div className="course-navigation">
+          <Link to="/ielts" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/pte" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

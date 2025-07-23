@@ -1,9 +1,14 @@
-import React from "react";
-import duolingoImage from "../assets/duolingo-banner.jpg"; // Add a relevant banner image
+import React, { useEffect } from "react";
+import duolingoImage from "../assets/duolingo-banner.jpg";
+import { Link } from "react-router-dom";
 
 function Duolingo() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="duolingo-container">
+    <div className="duolingo-container page-container">
       <h1>Duolingo English Test Online Coaching</h1>
 
       <div className="duolingo-intro">
@@ -22,7 +27,7 @@ function Duolingo() {
       </div>
 
       <div className="duolingo-details">
-        <h2>📘 What is the Duolingo English Test?</h2>
+        <h2>📘 Duolingo</h2>
         <ul>
           <li>
             <strong>Total Score:</strong> 10–160
@@ -58,7 +63,6 @@ function Duolingo() {
               <p>United States</p>
             </div>
           </a>
-
           <a
             href="https://www.gov.uk/student-visa"
             target="_blank"
@@ -69,7 +73,6 @@ function Duolingo() {
               <p>United Kingdom</p>
             </div>
           </a>
-
           <a
             href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
             target="_blank"
@@ -80,7 +83,6 @@ function Duolingo() {
               <p>Canada</p>
             </div>
           </a>
-
           <a
             href="https://www.daad.de/en/study-and-research-in-germany/"
             target="_blank"
@@ -91,7 +93,6 @@ function Duolingo() {
               <p>Germany</p>
             </div>
           </a>
-
           <a
             href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder/study"
             target="_blank"
@@ -145,8 +146,17 @@ function Duolingo() {
           <strong>Score 120+ on your DET with our expert guidance!</strong>{" "}
           Schedule your free trial today and boost your global admission
           chances.
-          <a href="/contact"> Contact us</a> to begin your journey.
+          <Link to="/contact"> Contact us</Link> to begin your journey.
         </p>
+
+        <div className="course-navigation">
+          <Link to="/sat" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/french" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

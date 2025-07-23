@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import founder1 from "../assets/founder1.jpg";
 import founder2 from "../assets/founder2.jpg";
 import infrastructure from "../assets/infrastructure.jpg";
+import { Link } from "react-router-dom";
 
 function About() {
+  // Scroll to top when the page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="about-page">
       <div className="about-container">
-        <h2>About Sanvi’s Academy</h2>
+        <h2>About The Sanvi’s Academy</h2>
         <p>
-          At Sanvi’s Academy, we specialize in coaching for international exams
-          such as IELTS, TOEFL, GRE, GMAT, PTE, French, and German. Our goal is
-          to empower students to achieve their dream of studying abroad through
-          expert guidance and dedicated support.
+          At The Sanvi’s Academy, we specialize in coaching for international
+          exams such as IELTS, TOEFL, GRE, GMAT, PTE, French, and German. Our
+          goal is to empower students to achieve their dream of studying abroad
+          through expert guidance and dedicated support.
         </p>
         <p>
           Our academy is led by experienced mentors who are passionate about
@@ -33,9 +39,20 @@ function About() {
             />
             <h4>Mrs. V. Sangeetha</h4>
             <p>
-              A serial entrepreneur who founded Sanvi’s Academy. She has over 10
-              years of experience in counselling and administration, gained in
-              both India and Singapore.
+              A Serial Entrepreneur who founded Sanvi’s Academy. She has over 10
+              years of Experience in Counselling and Administration, Gained in
+              both India and Singapore.Sangeetha Specializes in Guiding students
+              through Global Education Pathways, Offering tailored advice on
+              Test Preparation, University Selection, Visa Processes, and Career
+              Alignment. Her Empathetic Approach and Strategic Insights have
+              helped Hundreds of Students Secure Placements in Top Universities
+              Across the UK, Europe, USA, Japan, Singapore, and Australia. Under
+              her leadership, Sanvi’s Academy has grown into a Trusted
+              Institution known for its Integrity, Personalized Mentorship, and
+              Consistent Success Rates. With a Passion for Empowering Youth
+              through Education, Sangeetha Continues to Innovate in the
+              Education Space, Building Strong Global Partnerships and Mentoring
+              a Growing Team of Expert Faculty and Counsellors.
             </p>
           </div>
           <div className="founder-card">
@@ -44,46 +61,37 @@ function About() {
               alt="Mr. R.V. Rajan"
               style={{ width: "200px", borderRadius: "12px" }}
             />
-            <h4>Mr. R.V. Rajan</h4>
+            <h4>Mr.Vijayarajan</h4>
             <p>
-              Brings over 26 years of industry experience, having executed
-              domestic and international projects. He is an expert in career
-              counselling and guides students to pursue their educational and
-              career goals through strategic mentoring.
+              Brings over 26 years of extensive Industry Rich Experience, having
+              successfully executed a wide range of Domestic and International
+              Projects Across Diverse Sectors. He Possesses Deep Insights Into
+              Global Education Systems, Student Mobility Trends, and Emerging
+              Career Landscapes. As a Highly Respected Career Counselor and
+              Education Consultant, He has Mentored Thousands of Students,
+              Helping them Identify the right Academic Pathways and Align their
+              Goals with Evolving Global Opportunities. His Strategic Guidance
+              Covers Everything From Course Selection, University Admissions,
+              and Study-Abroad Counseling to Scholarship Planning and Career
+              Roadmap Development. His Holistic Mentoring Approach Empowers
+              Students To make Well-Informed, Confident Decisions about their
+              Academic and Professional Futures. With a Passion for Education
+              and a Commitment to Student Success, He Continues to Transform
+              Aspirations into Achievements.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="infra-section">
-        <h3>Our Client Infrastructure</h3>
-        <img
-          src={infrastructure}
-          alt="Sanvi's Infrastructure"
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            borderRadius: "16px",
-            maxWidth: "800px",
-            margin: "0 auto",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-            marginBottom: "20px",
-            border: "2px solid #ccc",
-            objectFit: "cover",
-            height: "auto",
-            maxHeight: "400px",
-            transition: "transform 0.3s ease",
-            cursor: "pointer",
-            ":hover": {
-              transform: "scale(1.05)",
-            },
-          }}
-        />
-        <p className="infra-caption">
-          Spacious classrooms, smart boards, language labs, and online learning
-          support to provide an engaging and effective learning environment.
-        </p>
+      <div className="course-pagination">
+        <div className="course-navigation">
+          <Link to="/home" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/home" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

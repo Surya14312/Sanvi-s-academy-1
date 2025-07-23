@@ -1,17 +1,18 @@
 import React from "react";
 import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-container">
-        {/* Brand Text */}
-        <p className="footer-brand">
-          &copy; {new Date().getFullYear()} <strong>Sanvi’s Academy</strong>.
-          Empowering Success Globally.
-        </p>
+        {/* Brand Section */}
+        <div className="footer-brand">
+          <h2 className="logo-text">The Sanvi’s Academy</h2>
+          <p>Empowering Success Globally.</p>
+        </div>
 
-        {/* Contact Info Section */}
+        {/* Contact Info */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
           <div className="contact-item">
@@ -34,20 +35,24 @@ function Footer() {
             <FaMapMarkerAlt className="icon" />
             <span>
               A23, Basement Floor, Gemini Parsn Commercial Complex,
+              <br />
               Nungambakkam, Chennai, India - 600034
             </span>
           </div>
         </div>
 
-        {/* Navigation Links */}
+        {/* Quick Links */}
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <a href="/">🏠 Home</a>
-          <a href="/about">📘 About Us</a>
-          <a href="/contact">📩 Contact</a>
+          <Link to="/">🏠 Home</Link>
+          <Link to="/about">📘 About Us</Link>
+          <Link to="/contact">📩 Contact</Link>
+          <Link to="/testimonials">💬 Testimonials</Link>
+          <Link to="/gallery">🖼️ Gallery</Link>
+          <Link to="/blog">📝 Blog</Link>
         </div>
 
-        {/* Embedded Google Map */}
+        {/* Google Map */}
         <div className="footer-map">
           <h4>Our Location</h4>
           <iframe
@@ -61,6 +66,11 @@ function Footer() {
           ></iframe>
         </div>
       </div>
+
+      <p className="footer-brand">
+        &copy; {new Date().getFullYear()} <strong>The Sanvi’s Academy</strong>.
+        All rights reserved.
+      </p>
     </footer>
   );
 }

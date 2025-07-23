@@ -1,8 +1,13 @@
-import React from "react";
-import frenchBanner from "../assets/french-banner.jpg"; // Add a banner image
-import frenchInfra from "../assets/french-infra.jpg"; // Add an image showing infrastructure/equipment
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import frenchBanner from "../assets/french-banner.jpg";
+import frenchInfra from "../assets/french-infra.jpg";
 
 function French() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="french-container">
       <h1>French Language Coaching</h1>
@@ -63,7 +68,6 @@ function French() {
               <p>France</p>
             </div>
           </a>
-
           <a
             href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/language-testing.html"
             target="_blank"
@@ -74,7 +78,6 @@ function French() {
               <p>Canada (TEF/TCF for PR)</p>
             </div>
           </a>
-
           <a
             href="https://www.swissuniversities.ch/en"
             target="_blank"
@@ -85,7 +88,6 @@ function French() {
               <p>Switzerland</p>
             </div>
           </a>
-
           <a
             href="https://www.studyinbelgium.be/en"
             target="_blank"
@@ -96,7 +98,6 @@ function French() {
               <p>Belgium</p>
             </div>
           </a>
-
           <a
             href="https://www.ifcameroun.com/"
             target="_blank"
@@ -154,6 +155,15 @@ function French() {
           personalized learning roadmap.
           <a href="/contact"> Contact us</a> to begin.
         </p>
+
+        <div className="course-navigation">
+          <Link to="/duolingo" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/german" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

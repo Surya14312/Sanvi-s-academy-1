@@ -1,10 +1,16 @@
-import React from "react";
-import pteImage from "../assets/pte-banner.jpg"; // Add a relevant banner image
+import React, { useEffect } from "react";
+import pteImage from "../assets/pte-banner.jpg";
+import { Link } from "react-router-dom";
 
 function PTA() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="pte-container">
       <h1>PTE Academic Online Coaching</h1>
+      <div className="page-container">{/* all your page content */}</div>
 
       <div className="pte-intro">
         <img src={pteImage} alt="PTE Coaching" className="pte-img" />
@@ -19,7 +25,7 @@ function PTA() {
       </div>
 
       <div className="pte-details">
-        <h2>📘 What is PTE Academic?</h2>
+        <h2>📘 PTE </h2>
         <ul>
           <li>
             <strong>Total Score:</strong> 10–90
@@ -51,63 +57,39 @@ function PTA() {
 
         <h2>🌍 PTE is Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://www.studyinaustralia.gov.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
-              <p>Australia</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.studywithnewzealand.govt.nz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img
-                src="https://flagcdn.com/w320/nz.png"
-                alt="New Zealand Flag"
-              />
-              <p>New Zealand</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.educanada.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-              <p>Canada</p>
-            </div>
-          </a>
-
-          <a
-            href="https://study-uk.britishcouncil.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-              <p>United Kingdom</p>
-            </div>
-          </a>
-
-          <a
-            href="https://educationusa.state.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
-              <p>USA</p>
-            </div>
-          </a>
+          {[
+            {
+              href: "https://www.studyinaustralia.gov.au/",
+              flag: "au",
+              name: "Australia",
+            },
+            {
+              href: "https://www.studywithnewzealand.govt.nz/",
+              flag: "nz",
+              name: "New Zealand",
+            },
+            { href: "https://www.educanada.ca/", flag: "ca", name: "Canada" },
+            {
+              href: "https://study-uk.britishcouncil.org/",
+              flag: "gb",
+              name: "United Kingdom",
+            },
+            {
+              href: "https://educationusa.state.gov/",
+              flag: "us",
+              name: "USA",
+            },
+          ].map(({ href, flag, name }) => (
+            <a key={flag} href={href} target="_blank" rel="noopener noreferrer">
+              <div>
+                <img
+                  src={`https://flagcdn.com/w320/${flag}.png`}
+                  alt={`${name} Flag`}
+                />
+                <p>{name}</p>
+              </div>
+            </a>
+          ))}
         </div>
 
         <h2>💰 Course Plans & Pricing</h2>
@@ -141,8 +123,17 @@ function PTA() {
         <p style={{ marginTop: "20px" }}>
           <strong>Get PTE-ready with us!</strong> Reach your dream score with
           structured guidance.
-          <a href="/contact"> Contact us</a> today for a free trial session.
+          <Link to="/contact"> Contact us</Link> today for a free trial session.
         </p>
+
+        <div className="course-navigation">
+          <Link to="/toefl" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/gre" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ieltsImage from "../assets/ielts-banner.jpg";
+import { Link } from "react-router-dom";
 
 function IELTS() {
   return (
-    <div className="ielts-container">
+    <div className="page-container">
       <h1>IELTS Online Coaching</h1>
 
       <div className="ielts-intro">
@@ -24,25 +25,24 @@ function IELTS() {
       </div>
 
       <div className="ielts-details">
-        <h2>📘 What is IELTS?</h2>
+        <h2>📘 IELTS</h2>
         <ul>
           <li>
             <strong>Total Band Score:</strong> Scored on a 0–9 scale
           </li>
           <li>
-            <strong>Test Types:</strong> Academic (for study abroad) and General
-            Training (for immigration/work)
+            <strong>Test Types:</strong> Academic and General Training
           </li>
           <li>
-            <strong>Total Duration:</strong> Approximately 2 hours 45 minutes
+            <strong>Total Duration:</strong> ~2 hours 45 minutes
           </li>
           <li>
             <strong>Test Sections:</strong>
             <ul>
-              <li>Listening – 30 minutes (4 sections, 40 questions)</li>
-              <li>Reading – 60 minutes (3 passages, 40 questions)</li>
-              <li>Writing – 60 minutes (2 tasks)</li>
-              <li>Speaking – 11 to 14 minutes (face-to-face interview)</li>
+              <li>Listening – 30 minutes</li>
+              <li>Reading – 60 minutes</li>
+              <li>Writing – 60 minutes</li>
+              <li>Speaking – 11 to 14 minutes</li>
             </ul>
           </li>
         </ul>
@@ -55,78 +55,105 @@ function IELTS() {
           <li>Regular mock tests with performance feedback</li>
           <li>1-on-1 speaking practice with fluency training</li>
           <li>Detailed writing task evaluations</li>
-          <li>Flexible batch timings (morning/evening)</li>
+          <li>Flexible batch timings</li>
         </ul>
         <h2>🌍 IELTS is Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://www.gov.uk/student-visa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-              <p>United Kingdom</p>
-            </div>
-          </a>
-
-          <a
-            href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder/study"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
-              <p>Australia</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-              <p>Canada</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.immigration.govt.nz/new-zealand-visas/options/study"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
+          {/* UK */}
+          <div className="country-item">
+            <a
+              href="https://www.gov.uk/student-visa"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                src="https://flagcdn.com/w320/nz.png"
-                alt="New Zealand Flag"
+                src="https://flagcdn.com/w80/gb.png"
+                alt="UK"
+                className="country-flag"
               />
-              <p>New Zealand</p>
-            </div>
-          </a>
+            </a>
+            <p>United Kingdom</p>
+          </div>
 
-          <a
-            href="https://www.irishimmigration.ie/coming-to-study-in-ireland/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ie.png" alt="Ireland Flag" />
-              <p>Ireland</p>
-            </div>
-          </a>
+          {/* Australia */}
+          <div className="country-item">
+            <a
+              href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://flagcdn.com/w80/au.png"
+                alt="Australia"
+                className="country-flag"
+              />
+            </a>
+            <p>Australia</p>
+          </div>
 
-          <a
-            href="https://www.daad.de/en/study-and-research-in-germany/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" />
-              <p>Germany</p>
-            </div>
-          </a>
+          {/* Canada */}
+          <div className="country-item">
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://flagcdn.com/w80/ca.png"
+                alt="Canada"
+                className="country-flag"
+              />
+            </a>
+            <p>Canada</p>
+          </div>
+
+          {/* New Zealand */}
+          <div className="country-item">
+            <a
+              href="https://www.immigration.govt.nz/new-zealand-visas/options/study"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://flagcdn.com/w80/nz.png"
+                alt="New Zealand"
+                className="country-flag"
+              />
+            </a>
+            <p>New Zealand</p>
+          </div>
+
+          {/* Ireland */}
+          <div className="country-item">
+            <a
+              href="https://www.educationinireland.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://flagcdn.com/w80/ie.png"
+                alt="Ireland"
+                className="country-flag"
+              />
+            </a>
+            <p>Ireland</p>
+          </div>
+
+          {/* Germany */}
+          <div className="country-item">
+            <a
+              href="https://www.daad.de/en/study-and-research-in-germany/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://flagcdn.com/w80/de.png"
+                alt="Germany"
+                className="country-flag"
+              />
+            </a>
+            <p>Germany</p>
+          </div>
         </div>
 
         <h2>💰 Course Plans & Pricing</h2>
@@ -141,30 +168,37 @@ function IELTS() {
           <tbody>
             <tr>
               <td>Basic</td>
-              <td>20 Live Classes, PDF Materials, Basic Practice Worksheets</td>
+              <td>20 Live Classes, PDF Materials</td>
               <td>₹5,000</td>
             </tr>
             <tr>
               <td>Premium</td>
-              <td>Basic Plan + 5 Full-Length Mock Tests, Speaking Feedback</td>
+              <td>Basic + 5 Mock Tests, Speaking Feedback</td>
               <td>₹8,000</td>
             </tr>
             <tr>
               <td>Pro</td>
-              <td>
-                Premium Plan + 1-on-1 Personal Coaching, Weekly Writing Task
-                Reviews
-              </td>
+              <td>All Features + Personal Coaching</td>
               <td>₹12,000</td>
             </tr>
           </tbody>
         </table>
 
         <p style={{ marginTop: "20px" }}>
-          <strong>Enroll now</strong> and start your journey to a high IELTS
-          band score! For demo sessions and counseling,{" "}
-          <a href="/contact">contact us</a>.
+          <strong>Enroll now</strong> to start your IELTS journey!{" "}
+          <a href="/contact">Contact us</a> for demo sessions and details.
         </p>
+
+        <div className="course-pagination">
+          <div className="course-navigation">
+            <Link to="/courses" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/toefl" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

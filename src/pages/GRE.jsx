@@ -1,9 +1,14 @@
-import React from "react";
-import greGmatImage from "../assets/gre-gmat-banner.jpg"; // Add a banner image in your assets folder
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import greGmatImage from "../assets/gre-gmat-banner.jpg";
 
 function GreGmat() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="gre-gmat-container">
+    <div className="gre-gmat-container" style={{ paddingTop: "40px" }}>
       <h1>GRE & GMAT Online Coaching</h1>
 
       <div className="gre-gmat-intro">
@@ -11,6 +16,7 @@ function GreGmat() {
           src={greGmatImage}
           alt="GRE and GMAT Coaching"
           className="gre-gmat-img"
+          style={{ width: "100%", borderRadius: "8px", marginBottom: "20px" }}
         />
         <p>
           <strong>The Sanvi’s Academy</strong> delivers expert-led coaching for
@@ -21,7 +27,7 @@ function GreGmat() {
         </p>
       </div>
 
-      <div className="gre-gmat-details">
+      <div className="gre-gmat-details" style={{ marginTop: "30px" }}>
         <h2>📘 GRE Overview</h2>
         <ul>
           <li>
@@ -56,61 +62,48 @@ function GreGmat() {
         </ul>
 
         <h2>🌍 Accepted In</h2>
-        <div className="country-grid">
-          <a
-            href="https://educationusa.state.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
-              <p>USA</p>
-            </div>
-          </a>
-
-          <a
-            href="https://study-uk.britishcouncil.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-              <p>United Kingdom</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.educanada.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-              <p>Canada</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.studyinaustralia.gov.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
-              <p>Australia</p>
-            </div>
-          </a>
-
-          <a
-            href="https://www.daad.de/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" />
-              <p>Germany</p>
-            </div>
-          </a>
+        <div
+          className="country-grid"
+          style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}
+        >
+          {[
+            {
+              img: "us.png",
+              name: "USA",
+              link: "https://educationusa.state.gov/",
+            },
+            {
+              img: "gb.png",
+              name: "United Kingdom",
+              link: "https://study-uk.britishcouncil.org/",
+            },
+            {
+              img: "ca.png",
+              name: "Canada",
+              link: "https://www.educanada.ca/",
+            },
+            {
+              img: "au.png",
+              name: "Australia",
+              link: "https://www.studyinaustralia.gov.au/",
+            },
+            { img: "de.png", name: "Germany", link: "https://www.daad.de/en/" },
+          ].map((country) => (
+            <a
+              key={country.name}
+              href={country.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textAlign: "center", width: "100px" }}
+            >
+              <img
+                src={`https://flagcdn.com/w320/${country.img}`}
+                alt={country.name}
+                style={{ width: "100%" }}
+              />
+              <p>{country.name}</p>
+            </a>
+          ))}
         </div>
 
         <h2>🎯 Why Choose Us?</h2>
@@ -123,9 +116,12 @@ function GreGmat() {
         </ul>
 
         <h2>💰 Course Pricing</h2>
-        <table className="pricing-table">
+        <table
+          className="pricing-table"
+          style={{ width: "100%", borderCollapse: "collapse" }}
+        >
           <thead>
-            <tr>
+            <tr style={{ backgroundColor: "#f0f0f0" }}>
               <th>Plan</th>
               <th>Features</th>
               <th>Price (INR)</th>
@@ -153,9 +149,25 @@ function GreGmat() {
         <p style={{ marginTop: "20px" }}>
           <strong>Get GRE/GMAT-ready with us!</strong> Achieve your dream
           university admit.
-          <a href="/contact"> Contact us</a> now to start with a free demo
+          <Link to="/contact"> Contact us</Link> now to start with a free demo
           session.
         </p>
+
+        <div
+          className="course-navigation"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: "30px",
+          }}
+        >
+          <Link to="/pte" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/sat" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );
