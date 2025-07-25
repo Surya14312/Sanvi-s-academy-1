@@ -133,12 +133,12 @@ function SAT() {
             </thead>
             <tbody>
               <tr>
-                <td>SAT</td>
-                <td>34</td>
-                <td>7</td>
-                <td>Study Material, Class Recording</td>
-                <td>22500</td>
-                <td>15 - 20%</td>
+                <td data-label="Course" >SAT</td>
+                <td data-label="No. of Classes">34</td>
+                <td data-label="Mock Tests">7</td>
+                <td data-label="Benefits">Study Material, Class Recording</td>
+                <td data-label="Fees">22500</td>
+                <td data-label="discount">15 - 20%</td>
               </tr>
             </tbody>
           </table>

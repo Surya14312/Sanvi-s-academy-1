@@ -134,12 +134,12 @@ function French() {
           </thead>
           <tbody>
             <tr>
-              <td>FRENCH</td>
-              <td>45</td>
-              <td>3</td>
-              <td>Study Material, Class Recording</td>
-              <td>15000</td>
-              <td>15 - 20%</td>
+              <td data-label="Course">FRENCH</td>
+              <td data-label="No. of Classes">45</td>
+              <td data-label="Mock Tests">3</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">15000</td>
+              <td data-label="discount">15 - 20%</td>
             </tr>
           </tbody>
         </table>

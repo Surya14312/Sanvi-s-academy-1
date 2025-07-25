@@ -166,12 +166,12 @@ function IELTS() {
         <table className="course-table">
           <thead>
             <tr>
-              <th>Course</th>
-              <th>No. of Classes</th>
-              <th>Mock Tests</th>
-              <th>Benefits</th>
-              <th>Fees</th>
-              <th>Discount</th>
+              <th data-label="Course">Course</th>
+              <th data-label="No. of Classes">No. of Classes</th>
+              <th data-label="Mock Tests">Mock Tests</th>
+              <th data-label="Benefits">Benefits</th>
+              <th data-label="Fees">Fees</th>
+              <th data-label="discount">Discount</th>
             </tr>
           </thead>
           <tbody>

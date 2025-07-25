@@ -127,12 +127,12 @@ function TOEFL() {
           </thead>
           <tbody>
             <tr>
-              <td>TOEFL</td>
-              <td>30</td>
-              <td>4</td>
-              <td>Study Material, Class Recording</td>
-              <td>8000</td>
-              <td>10 - 15%</td>
+              <td data-label="Course">TOEFL</td>
+              <td data-label="No. of Classes">30</td>
+              <td data-label="Mock Tests">4</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">8000</td>
+              <td data-label="discount"> 10 - 15%</td>
             </tr>
           </tbody>
         </table>

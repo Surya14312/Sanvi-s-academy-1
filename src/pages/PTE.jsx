@@ -118,12 +118,12 @@ function PTA() {
           </thead>
           <tbody>
             <tr>
-              <td>PTE</td>
-              <td>20</td>
-              <td>1</td>
-              <td>Study Material, Class Recording</td>
-              <td>8000</td>
-              <td>10 - 15%</td>
+              <td data-label="Course">PTE</td>
+              <td data-label="No. of Classes">20</td>
+              <td data-label="Mock Tests">1</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">8000</td>
+              <td data-label="discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>

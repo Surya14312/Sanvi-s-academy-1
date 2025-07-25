@@ -148,20 +148,20 @@ function GreGmat() {
           </thead>
           <tbody>
             <tr>
-              <td>GRE</td>
-              <td>50</td>
-              <td>10</td>
-              <td>Study Material, Class Recording</td>
-              <td>22500</td>
-              <td>15 - 20%</td>
+              <td data-label="Course">GRE</td>
+              <td data-label="No. of Classes">50</td>
+              <td data-label="Mock Tests">10</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">22500</td>
+              <td data-label="discount">15 - 20%</td>
             </tr>
             <tr>
-              <td>GMAT</td>
-              <td>50</td>
-              <td>6</td>
-              <td>Study Material, Class Recording</td>
-              <td>22500</td>
-              <td>15 - 20%</td>
+              <td data-label="Course">GMAT</td>
+              <td data-label="No. of Classes">50</td>
+              <td data-label="Mock Tests">6</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">22500</td>
+              <td data-label="discount">15 - 20%</td>
             </tr>
           </tbody>
         </table>

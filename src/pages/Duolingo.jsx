@@ -140,12 +140,12 @@ function Duolingo() {
           </thead>
           <tbody>
             <tr>
-              <td>DUOLINGO</td>
-              <td>12</td>
-              <td>2</td>
-              <td>Study Material, Class Recording</td>
-              <td>8000</td>
-              <td>10 - 15%</td>
+              <td data-label="Course">DUOLINGO</td>
+              <td data-label="No. of Classes">12</td>
+              <td data-label="Mock Tests">2</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">8000</td>
+              <td data-label="discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
