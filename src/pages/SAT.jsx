@@ -109,10 +109,48 @@ function SAT() {
             <li>Adaptive drills tailored to your weaknesses</li>
             <li>Mock exams with section-wise reports</li>
             <li>Expert mentoring & progress tracking</li>
+            <li>Access to a comprehensive SAT question bank</li>
+            <li>Weekly vocabulary boosters and grammar exercises</li>
+            <li>Personalized study plans and score improvement targets</li>
+            <li>24x7 access to recorded classes and doubt-clearing sessions</li>
+            <li>Updated content aligned with the latest Digital SAT format</li>
+            <li>
+              Special focus on calculator and non-calculator math sections
+            </li>
           </ul>
 
-          <h2>💰 SAT Coaching Plans</h2>
-          <table className="pricing-table">
+          <h2>💰 Course Plans & Pricing</h2>
+          <table className="course-table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>No. of Classes</th>
+                <th>Mock Tests</th>
+                <th>Benefits</th>
+                <th>Fees</th>
+                <th>Discount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SAT</td>
+                <td>34</td>
+                <td>7</td>
+                <td>Study Material, Class Recording</td>
+                <td>22500</td>
+                <td>15 - 20%</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style={{ marginTop: "20px", textAlign: "center" }}>
+            <Link to="/contact" className="contact-link">
+              <button className="contact-btn">
+                📞 Contact Us for Enrollment
+              </button>
+            </Link>
+          </div>
+
+          {/* <table className="pricing-table">
             <thead>
               <tr>
                 <th>Plan</th>
@@ -124,20 +162,20 @@ function SAT() {
               <tr>
                 <td>Basic</td>
                 <td>16 Live Classes + E-Books + Weekly Quizzes</td>
-                <td>₹6,000</td>
+                <td>₹22,000</td>
               </tr>
               <tr>
                 <td>Premium</td>
                 <td>Basic + 4 Mock Tests + Test Feedback Sessions</td>
-                <td>₹9,000</td>
+                <td>₹23,000</td>
               </tr>
               <tr>
                 <td>Pro</td>
                 <td>Premium + 1-on-1 Math/English Mentoring</td>
-                <td>₹13,000</td>
+                <td>₹24,000</td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
 
           <p style={{ marginTop: "20px" }}>
             <strong>Target a 1500+ SAT score with us!</strong> Book a free demo

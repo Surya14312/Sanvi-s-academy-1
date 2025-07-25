@@ -58,7 +58,7 @@ function German() {
             <li>One-on-one speaking booths & cultural immersion content</li>
           </ul>
 
-          <h2>🌍 Suitable For</h2>
+          <h2>🌍 German is Accepted In</h2>
           <div className="country-grid">
             <a
               href="https://www.daad.de/en/"
@@ -119,10 +119,53 @@ function German() {
             <li>Weekend/evening batch flexibility</li>
             <li>Exam-focused mock test series</li>
             <li>Guidance for job/study visa documentation</li>
+            <li>
+              Certified Goethe & TestDaF trainers with real exam experience
+            </li>
+            <li>
+              Structured A1 to C2 level courses aligned with CEFR standards
+            </li>
+            <li>
+              Level-wise grammar correction + real-life conversation sessions
+            </li>
+            <li>Weekend, evening, and fast-track batch options</li>
+            <li>Interactive classroom tools and digital learning materials</li>
+            <li>German culture & etiquette immersion through role-plays</li>
           </ul>
 
           <h2>💰 Course Pricing</h2>
-          <table className="pricing-table">
+
+          <table className="course-table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>No. of Classes</th>
+                <th>Mock Tests</th>
+                <th>Benefits</th>
+                <th>Fees</th>
+                <th>Discount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GERMAN</td>
+                <td>45</td>
+                <td>3</td>
+                <td>Study Material, Class Recording</td>
+                <td>15000</td>
+                <td>15 - 20%</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style={{ marginTop: "20px", textAlign: "center" }}>
+            <Link to="/contact" className="contact-link">
+              <button className="contact-btn">
+                📞 Contact Us for Enrollment
+              </button>
+            </Link>
+          </div>
+
+          {/* <table className="pricing-table">
             <thead>
               <tr>
                 <th>Level</th>
@@ -134,20 +177,20 @@ function German() {
               <tr>
                 <td>A1 / A2</td>
                 <td>30 sessions + exam prep + grammar bootcamp</td>
-                <td>₹5,000</td>
+                <td>₹15,000</td>
               </tr>
               <tr>
                 <td>B1 / B2</td>
                 <td>Intermediate + TestDaF prep + mocks</td>
-                <td>₹8,000</td>
+                <td>₹16,000</td>
               </tr>
               <tr>
                 <td>C1 / C2</td>
                 <td>Advanced fluency + Goethe writing/speaking mastery</td>
-                <td>₹12,000</td>
+                <td>₹17,000</td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
 
           <p style={{ marginTop: "20px" }}>
             <strong>

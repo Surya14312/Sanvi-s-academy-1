@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function SpeakingMistakes() {
   useEffect(() => {
@@ -46,7 +47,7 @@ function SpeakingMistakes() {
         </li>
       </ul>
 
-      <h2>✅ Tips to Avoid These Mistakes</h2>
+      <h2> Tips to Avoid These Mistakes</h2>
       <ul>
         <li>
           🎤 <strong>Practice with a timer:</strong> Learn to express ideas
@@ -112,6 +113,14 @@ function SpeakingMistakes() {
         yourself clearly and confidently. Practice smart, avoid the common
         pitfalls, and you’re sure to impress the examiner.
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/why-japan" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/sop-lor-guide" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

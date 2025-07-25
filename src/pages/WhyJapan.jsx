@@ -82,11 +82,11 @@ function WhyJapan() {
         step of the process:
       </p>
       <ul>
-        <li>✔️ University Selection & Course Matching</li>
-        <li>✔️ Application Documentation</li>
-        <li>✔️ SOP & LOR Preparation</li>
-        <li>✔️ Interview & Visa Assistance</li>
-        <li>✔️ Japanese Language Training (Optional)</li>
+        <li> University Selection & Course Matching</li>
+        <li> Application Documentation</li>
+        <li> SOP & LOR Preparation</li>
+        <li> Interview & Visa Assistance</li>
+        <li> Japanese Language Training (Optional)</li>
       </ul>
 
       <p>
@@ -112,6 +112,14 @@ function WhyJapan() {
           Programs — Limited seats for Fall 2025 intake!
         </em>
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/study-abroad-2025" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/speaking-mistakes" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

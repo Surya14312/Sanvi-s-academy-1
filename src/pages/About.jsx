@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import founder1 from "../assets/founder1.jpg";
 import founder2 from "../assets/founder2.jpg";
-import infrastructure from "../assets/infrastructure.jpg";
+
 import { Link } from "react-router-dom";
 
 function About() {
@@ -85,10 +85,10 @@ function About() {
 
       <div className="course-pagination">
         <div className="course-navigation">
-          <Link to="/home" className="nav-btn">
+          <Link to="/courses" className="nav-btn">
             ⟵ Previous
           </Link>
-          <Link to="/home" className="nav-btn">
+          <Link to="/contact" className="nav-btn">
             Next ⟶
           </Link>
         </div>

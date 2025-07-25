@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function BestApps2025() {
   useEffect(() => {
@@ -7,7 +8,7 @@ function BestApps2025() {
 
   return (
     <div className="blog-detail">
-      <h1>🧑‍🏫 Best Language Learning Apps for 2025</h1>
+      <h1>Best Language Learning Apps for 2025</h1>
 
       <p>
         In today’s fast-paced world, learning a new language has become more
@@ -74,11 +75,10 @@ function BestApps2025() {
 
       <h2>Tips for Choosing the Right App</h2>
       <ul>
-        <li>🕒 Set your daily learning goals.</li>
-        <li>🎯 Choose apps based on your language level and exam type.</li>
+        <li>Set your daily learning goals.</li>
+        <li>Choose apps based on your language level and exam type.</li>
         <li>
-          📱 Mix apps for speaking, listening, and writing for holistic
-          learning.
+          Mix apps for speaking, listening, and writing for holistic learning.
         </li>
       </ul>
 
@@ -87,6 +87,14 @@ function BestApps2025() {
         your career, these apps will empower your language journey in 2025. Keep
         practicing consistently and track your progress weekly!
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/student-visa-interview" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/study-abroad-2025" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

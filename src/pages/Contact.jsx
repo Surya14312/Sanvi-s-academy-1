@@ -226,10 +226,10 @@ function Contact() {
 
         <div className="course-pagination">
           <div className="course-navigation">
-            <Link to="/footer" className="nav-btn">
+            <Link to="/about" className="nav-btn">
               ⟵ Previous
             </Link>
-            <Link to="/home" className="nav-btn">
+            <Link to="/testimonials" className="nav-btn">
               Next ⟶
             </Link>
           </div>

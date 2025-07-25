@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 function EuropeUniversities() {
   useEffect(() => {
@@ -18,15 +20,16 @@ function EuropeUniversities() {
 
       <h2>🇩🇪 Study in Germany</h2>
       <p>
-        Germany offers **tuition-free education** at most public universities.
-        Top institutions like TU Munich, Heidelberg University, and RWTH Aachen
-        provide programs in English, especially at the master's level.
+        Germany offers <strong>tuition-free education</strong> at most public
+        universities. Top institutions like TU Munich, Heidelberg University,
+        and RWTH Aachen provide programs in English, especially at the master's
+        level.
       </p>
       <ul>
-        <li>✔ No tuition fees for most public universities</li>
-        <li>✔ IELTS 6.0+ usually required</li>
+        <li>No tuition fees for most public universities</li>
+        <li>IELTS 6.0+ usually required</li>
         <li>
-          ✔ Apply via <strong>Uni-Assist</strong> or directly to the university
+          Apply via <strong>Uni-Assist</strong> or directly to the university
         </li>
       </ul>
 
@@ -34,29 +37,30 @@ function EuropeUniversities() {
       <p>
         France has over 1,500 English-taught programs. Schools like Sciences Po,
         Sorbonne University, and ESCP are globally ranked. Public universities
-        offer low fees, and government scholarships like **Eiffel Excellence**
+        offer low fees, and government scholarships like{" "}
+        <strong>Eiffel Excellence</strong>
         are available.
       </p>
       <ul>
-        <li>✔ Affordable living costs in smaller cities</li>
-        <li>✔ French language not mandatory for many programs</li>
-        <li>✔ Applications open in October for Fall intake</li>
+        <li>Affordable living costs in smaller cities</li>
+        <li>French language not mandatory for many programs</li>
+        <li>Applications open in October for Fall intake</li>
       </ul>
 
       <h2>🇮🇹 Study in Italy</h2>
       <p>
         Italy offers quality education at affordable fees. Universities like
         Politecnico di Milano, University of Bologna, and Sapienza are popular
-        choices. Scholarships like **DSU** and **Invest Your Talent in Italy**
+        choices. Scholarships like <strong>DSU</strong> and{" "}
+        <strong>Invest Your Talent in Italy</strong>
         are open to international students.
       </p>
       <ul>
         <li>
-          ✔ English-taught courses available in business, engineering, and
-          fashion
+          English-taught courses available in business, engineering, and fashion
         </li>
-        <li>✔ Cost of living is budget-friendly in many cities</li>
-        <li>✔ Scholarship coverage can include housing and meals</li>
+        <li>Cost of living is budget-friendly in many cities</li>
+        <li>Scholarship coverage can include housing and meals</li>
       </ul>
 
       <h2>🇳🇱 Netherlands</h2>
@@ -66,10 +70,10 @@ function EuropeUniversities() {
         Delft, Erasmus University, and University of Amsterdam are top-ranked.
       </p>
       <ul>
-        <li>✔ Programs are 100% in English</li>
-        <li>✔ IELTS or TOEFL required</li>
+        <li>Programs are 100% in English</li>
+        <li>IELTS or TOEFL required</li>
         <li>
-          ✔ Apply via <strong>Studielink</strong> portal
+          Apply via <strong>Studielink</strong> portal
         </li>
       </ul>
 
@@ -99,11 +103,11 @@ function EuropeUniversities() {
 
       <h2>📑 Required Documents</h2>
       <ul>
-        <li>✅ Academic transcripts</li>
-        <li>✅ Statement of Purpose (SOP)</li>
-        <li>✅ Letter of Recommendation (LOR)</li>
-        <li>✅ IELTS/TOEFL scores (if required)</li>
-        <li>✅ Passport copy & CV</li>
+        <li>Academic transcripts</li>
+        <li>Statement of Purpose (SOP)</li>
+        <li>Letter of Recommendation (LOR)</li>
+        <li>IELTS/TOEFL scores (if required)</li>
+        <li>Passport copy & CV</li>
       </ul>
 
       <h2>🚀 Final Tips</h2>
@@ -129,6 +133,14 @@ function EuropeUniversities() {
         take the leap? Let Sanvi’s Academy help you plan your successful journey
         to Europe!
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/sop-lor-guide" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/success-stories" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

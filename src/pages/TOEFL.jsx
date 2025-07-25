@@ -55,6 +55,15 @@ function TOEFL() {
           <li>Mock tests & real exam simulations</li>
           <li>1-on-1 speaking & writing evaluation</li>
           <li>Flexible schedules (weekday/weekend)</li>
+          <li>Updated study material with ETS-aligned strategies and tips</li>
+          <li>
+            Access to recorded sessions for revision and self-paced learning
+          </li>
+          <li>Regular full-length mock tests and real-exam simulations</li>
+          <li>1-on-1 speaking practice with personalized feedback</li>
+          <li>
+            Writing task evaluation with corrections, suggestions, and scoring
+          </li>
         </ul>
 
         <h2>🌍 TOEFL is Accepted In</h2>
@@ -105,7 +114,37 @@ function TOEFL() {
         </div>
 
         <h2>💰 Course Plans & Pricing</h2>
-        <table className="pricing-table">
+        <table className="course-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>No. of Classes</th>
+              <th>Mock Tests</th>
+              <th>Benefits</th>
+              <th>Fees</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TOEFL</td>
+              <td>30</td>
+              <td>4</td>
+              <td>Study Material, Class Recording</td>
+              <td>8000</td>
+              <td>10 - 15%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <Link to="/contact" className="contact-link">
+            <button className="contact-btn">
+              📞 Contact Us for Enrollment
+            </button>
+          </Link>
+        </div>
+
+        {/* <table className="pricing-table">
           <thead>
             <tr>
               <th>Plan</th>
@@ -117,12 +156,12 @@ function TOEFL() {
             <tr>
               <td>Basic</td>
               <td>15 Live Classes, Study Material, Section-wise Drills</td>
-              <td>₹4,500</td>
+              <td>₹8,500</td>
             </tr>
             <tr>
               <td>Premium</td>
               <td>Basic + 4 Mock Tests + Speaking & Writing Evaluation</td>
-              <td>₹7,500</td>
+              <td>₹10,500</td>
             </tr>
             <tr>
               <td>Pro</td>
@@ -130,7 +169,7 @@ function TOEFL() {
               <td>₹11,000</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
 
         <p style={{ marginTop: "20px" }}>
           <strong>Ready to boost your TOEFL score?</strong> Get started with our

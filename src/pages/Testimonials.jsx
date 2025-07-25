@@ -222,6 +222,16 @@ function Testimonials() {
           </div>
         ))}
       </div>
+      <div className="course-pagination">
+        <div className="course-navigation">
+          <Link to="/contact" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/blog" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

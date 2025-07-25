@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function SOPandLOR() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function SOPandLOR() {
         and how the program fits into your future.
       </p>
 
-      <h3>✅ SOP Must-Have Sections:</h3>
+      <h3> SOP Must-Have Sections:</h3>
       <ul>
         <li>
           <strong>Introduction:</strong> Who you are and your motivation to
@@ -70,7 +71,7 @@ function SOPandLOR() {
         capabilities and character.
       </p>
 
-      <h3>✅ LOR Essentials:</h3>
+      <h3> LOR Essentials:</h3>
       <ul>
         <li>🧑‍🏫 Recommender’s relationship with the student</li>
         <li>📚 Comments on academic abilities and work ethic</li>
@@ -113,6 +114,14 @@ function SOPandLOR() {
         Need expert review? <strong>Sanvi’s Academy</strong> offers personalized
         SOP editing and LOR drafting services. Reach out today!
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/speaking-mistakes" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/europe-universities" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

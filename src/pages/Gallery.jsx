@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const galleryImages = [
   {
@@ -45,6 +46,16 @@ function Gallery() {
             />
           </div>
         ))}
+      </div>
+      <div className="course-pagination">
+        <div className="course-navigation">
+          <Link to="/faq" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

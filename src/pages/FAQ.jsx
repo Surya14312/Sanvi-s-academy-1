@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const faqData = [
   {
@@ -114,6 +115,16 @@ function FAQ() {
             )}
           </div>
         ))}
+      </div>
+      <div className="course-pagination">
+        <div className="course-navigation">
+          <Link to="/blog" className="nav-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/gallery" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

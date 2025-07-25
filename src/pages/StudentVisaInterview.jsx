@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 function StudentVisaInterview() {
   useEffect(() => {
@@ -111,6 +113,14 @@ function StudentVisaInterview() {
         Preparation is key, and with the right approach, your visa approval is
         within reach!
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/gre-vocabulary" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/best-apps-2025" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

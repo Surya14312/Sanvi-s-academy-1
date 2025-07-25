@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function StudyAbroad2025() {
   useEffect(() => {
@@ -130,6 +131,15 @@ function StudyAbroad2025() {
         journey today with <strong>The Sanvi’s Academy</strong> — your expert
         abroad education partner!
       </p>
+
+      <div className="blog-navigation">
+        <Link to="/blog/ielts-tips/best-apps-2025" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/toefl-vs-duolingo/why-japan" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

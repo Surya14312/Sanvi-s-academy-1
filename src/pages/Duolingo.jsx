@@ -112,10 +112,52 @@ function Duolingo() {
           <li>Section-wise improvement drills & feedback</li>
           <li>Access to recorded sessions & practice materials</li>
           <li>Flexible learning schedule with personal mentoring</li>
+          <li>
+            Latest tips and hacks for open response & fill-in-the-blanks
+            questions
+          </li>
+          <li>Real-time performance analytics & progress tracking</li>
+          <li>Vocabulary-building activities with daily practice</li>
+          <li>
+            Fluency, intonation, and clarity training for speaking responses
+          </li>
+          <li>Custom study plans based on student goals (85+, 100+ etc.)</li>
+          <li>Practice with real exam-style question types and difficulty</li>
+          <li>24/7 student support via WhatsApp & email</li>
         </ul>
 
-        <h2>💰 Duolingo Coaching Plans</h2>
-        <table className="pricing-table">
+        <h2>💰 Course Plans & Pricing</h2>
+        <table className="course-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>No. of Classes</th>
+              <th>Mock Tests</th>
+              <th>Benefits</th>
+              <th>Fees</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DUOLINGO</td>
+              <td>12</td>
+              <td>2</td>
+              <td>Study Material, Class Recording</td>
+              <td>8000</td>
+              <td>10 - 15%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <Link to="/contact" className="contact-link">
+            <button className="contact-btn">
+              📞 Contact Us for Enrollment
+            </button>
+          </Link>
+        </div>
+
+        {/* <table className="pricing-table">
           <thead>
             <tr>
               <th>Plan</th>
@@ -127,20 +169,20 @@ function Duolingo() {
             <tr>
               <td>Basic</td>
               <td>10 Live Classes + Sample Questions + Strategy Guide</td>
-              <td>₹3,500</td>
+              <td>₹8000</td>
             </tr>
             <tr>
               <td>Premium</td>
               <td>Basic + 2 Full-Length Mock Tests + Feedback Analysis</td>
-              <td>₹5,500</td>
+              <td>₹10,000</td>
             </tr>
             <tr>
               <td>Pro</td>
               <td>Premium + 1-on-1 Sessions + Speaking/Writing Evaluation</td>
-              <td>₹8,500</td>
+              <td>₹11,500</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
 
         <p style={{ marginTop: "20px" }}>
           <strong>Score 120+ on your DET with our expert guidance!</strong>{" "}

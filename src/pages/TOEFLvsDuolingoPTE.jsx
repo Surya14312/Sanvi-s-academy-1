@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function TOEFLvsDuolingoPTE() {
   useEffect(() => {
@@ -114,6 +115,14 @@ function TOEFLvsDuolingoPTE() {
         📞 <strong>Contact us today</strong> for expert guidance, demo classes,
         and customized test prep plans.
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/study-abroad-2025" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/blog/gre-vocabulary" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }

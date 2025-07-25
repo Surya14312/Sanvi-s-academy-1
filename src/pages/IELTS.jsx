@@ -56,6 +56,12 @@ function IELTS() {
           <li>1-on-1 speaking practice with fluency training</li>
           <li>Detailed writing task evaluations</li>
           <li>Flexible batch timings</li>
+          <li>
+            Weekly full-length mock tests with detailed performance analysis
+          </li>
+          <li>1-on-1 speaking sessions with accent and fluency improvement</li>
+          <li>Detailed feedback and correction on Writing Task 1 & 2</li>
+          <li>Flexible batches: morning, evening, and weekend options</li>
         </ul>
         <h2>🌍 IELTS is Accepted In</h2>
         <div className="country-grid">
@@ -157,7 +163,37 @@ function IELTS() {
         </div>
 
         <h2>💰 Course Plans & Pricing</h2>
-        <table className="pricing-table">
+        <table className="course-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>No. of Classes</th>
+              <th>Mock Tests</th>
+              <th>Benefits</th>
+              <th>Fees</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IELTS</td>
+              <td>25</td>
+              <td>2</td>
+              <td>Study Material, Class Recording</td>
+              <td>8000</td>
+              <td>10 - 15%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <Link to="/contact" className="contact-link">
+            <button className="contact-btn">
+              📞 Contact Us for Enrollment
+            </button>
+          </Link>
+        </div>
+
+        {/* <table className="pricing-table">
           <thead>
             <tr>
               <th>Plan</th>
@@ -169,20 +205,20 @@ function IELTS() {
             <tr>
               <td>Basic</td>
               <td>20 Live Classes, PDF Materials</td>
-              <td>₹5,000</td>
+              <td>₹8,000</td>
             </tr>
             <tr>
               <td>Premium</td>
               <td>Basic + 5 Mock Tests, Speaking Feedback</td>
-              <td>₹8,000</td>
+              <td>₹11,000</td>
             </tr>
             <tr>
               <td>Pro</td>
               <td>All Features + Personal Coaching</td>
-              <td>₹12,000</td>
+              <td>₹14,000</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
 
         <p style={{ marginTop: "20px" }}>
           <strong>Enroll now</strong> to start your IELTS journey!{" "}

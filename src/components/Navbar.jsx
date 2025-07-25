@@ -1,14 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/logo.png"; // Replace with your actual logo path
-
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo-section">
-        <img src={logo} alt="Sanvi Logo" className="logo-img" />
-        <span className="logo-text">The Sanvi’s Academy</span>
+        <div className="logo-circle">
+          <img
+            src="/images/Sanvi's-logo.jpg"
+            alt="Sanvi Logo"
+            className="globe-img"
+          />
+        </div>
+        <img
+          src="/images/Academy.jpg"
+          alt="The Sanvi’s Academy"
+          className="logo-text-img"
+        />
       </div>
 
       <ul className="nav-links">
@@ -25,8 +33,7 @@ function Navbar() {
           <Link to="/testimonials">Testimonials</Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>{" "}
-          {/* ✅ FIXED: changed `<link>` to `<Link>` */}
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
           <Link to="/faq">FAQ</Link>

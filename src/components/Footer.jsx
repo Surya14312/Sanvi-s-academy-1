@@ -24,7 +24,7 @@ function Footer() {
           <div className="contact-item">
             <FaLinkedin className="icon" />
             <a
-              href="https://www.linkedin.com/company/sanvisacademy"
+              href="http://www.linkedin.com/in/sanvi-infolink-system"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -56,58 +56,52 @@ function French() {
           <li>1-on-1 speaking room & feedback tools</li>
         </ul>
 
-        <h2>🌍 Useful For</h2>
+        <h2>🌍 French is Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://www.campusfrance.org/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/fr.png" alt="France" />
-              <p>France</p>
-            </div>
-          </a>
-          <a
-            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/language-testing.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada" />
-              <p>Canada (TEF/TCF for PR)</p>
-            </div>
-          </a>
-          <a
-            href="https://www.swissuniversities.ch/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ch.png" alt="Switzerland" />
-              <p>Switzerland</p>
-            </div>
-          </a>
-          <a
-            href="https://www.studyinbelgium.be/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/be.png" alt="Belgium" />
-              <p>Belgium</p>
-            </div>
-          </a>
-          <a
-            href="https://www.ifcameroun.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/cm.png" alt="Cameroon" />
-              <p>Africa (Francophone Nations)</p>
-            </div>
-          </a>
+          <div className="country-item">
+            <img
+              src="https://flagcdn.com/fr.svg"
+              alt="France"
+              className="country-flag"
+            />
+            <p>France</p>
+          </div>
+
+          <div className="country-item">
+            <img
+              src="https://flagcdn.com/ca.svg"
+              alt="Canada"
+              className="country-flag"
+            />
+            <p>Canada (TEF/TCF for PR)</p>
+          </div>
+
+          <div className="country-item">
+            <img
+              src="https://flagcdn.com/ch.svg"
+              alt="Switzerland"
+              className="country-flag"
+            />
+            <p>Switzerland</p>
+          </div>
+
+          <div className="country-item">
+            <img
+              src="https://flagcdn.com/be.svg"
+              alt="Belgium"
+              className="country-flag"
+            />
+            <p>Belgium</p>
+          </div>
+
+          <div className="country-item">
+            <img
+              src="https://flagcdn.com/cm.svg"
+              alt="Africa"
+              className="country-flag"
+            />
+            <p>Africa (Francophone Nations)</p>
+          </div>
         </div>
 
         <h2>🎯 Why Learn French with Us?</h2>
@@ -117,10 +111,47 @@ function French() {
           <li>Spoken & written French immersion training</li>
           <li>Flexible batches (weekday/weekend)</li>
           <li>Job and study-abroad French readiness</li>
+          <li>Certified native and bilingual French trainers</li>
+          <li>Structured curriculum aligned with CEFR (A1 to C2 levels)</li>
+          <li>Spoken & written French immersion with real-world scenarios</li>
+          <li>Flexible batch timings: weekday, weekend & fast-track options</li>
+          <li>Flexible batch timings: weekday, weekend & fast-track options</li>
+          <li>Mock tests and personalized feedback on all modules</li>
         </ul>
 
         <h2>💰 French Course Pricing</h2>
-        <table className="pricing-table">
+
+        <table className="course-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>No. of Classes</th>
+              <th>Mock Tests</th>
+              <th>Benefits</th>
+              <th>Fees</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FRENCH</td>
+              <td>45</td>
+              <td>3</td>
+              <td>Study Material, Class Recording</td>
+              <td>15000</td>
+              <td>15 - 20%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <Link to="/contact" className="contact-link">
+            <button className="contact-btn">
+              📞 Contact Us for Enrollment
+            </button>
+          </Link>
+        </div>
+
+        {/* <table className="pricing-table">
           <thead>
             <tr>
               <th>Level</th>
@@ -132,20 +163,20 @@ function French() {
             <tr>
               <td>A1 / A2</td>
               <td>Beginner level + 20 live sessions + materials</td>
-              <td>₹4,500</td>
+              <td>₹15,000</td>
             </tr>
             <tr>
               <td>B1 / B2</td>
               <td>Intermediate level + DELF prep + mocks</td>
-              <td>₹7,000</td>
+              <td>₹15,000</td>
             </tr>
             <tr>
               <td>C1 / C2</td>
               <td>Advanced level + Writing & Oral mastery</td>
-              <td>₹10,000</td>
+              <td>₹16,000</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
 
         <p style={{ marginTop: "20px" }}>
           <strong>

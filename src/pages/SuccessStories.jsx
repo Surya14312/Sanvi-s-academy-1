@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 function SuccessStories() {
   useEffect(() => {
@@ -41,10 +43,10 @@ function SuccessStories() {
 
       <h2>💬 What Made Their Journey Special?</h2>
       <ul>
-        <li>✅ Personalized study plans and doubt-solving sessions</li>
-        <li>✅ Real-time mock tests with feedback</li>
-        <li>✅ Mentorship from certified trainers and counselors</li>
-        <li>✅ Mental wellness sessions during high-stress times</li>
+        <li> Personalized study plans and doubt-solving sessions</li>
+        <li> Real-time mock tests with feedback</li>
+        <li> Mentorship from certified trainers and counselors</li>
+        <li> Mental wellness sessions during high-stress times</li>
       </ul>
 
       <h2>📍 From Small Towns to Global Classrooms</h2>
@@ -78,6 +80,14 @@ function SuccessStories() {
         Ready to create your success story? 🌟 Contact us today and start your
         journey towards global education excellence.
       </p>
+      <div className="blog-navigation">
+        <Link to="/blog/europe-universities" className="btn-nav">
+          👈 Previous
+        </Link>
+        <Link to="/faq" className="btn-nav">
+          Next 👉
+        </Link>
+      </div>
     </div>
   );
 }
