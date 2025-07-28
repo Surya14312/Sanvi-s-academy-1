@@ -147,6 +147,7 @@ const buttonStyle = {
   padding: "10px 20px",
   margin: "0 5px",
   backgroundColor: "#3b82f6",
+
   color: "#fff",
   border: "none",
   borderRadius: "6px",

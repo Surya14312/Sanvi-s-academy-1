@@ -133,10 +133,10 @@ function StudyAbroad2025() {
       </p>
 
       <div className="blog-navigation">
-        <Link to="/blog/ielts-tips/best-apps-2025" className="btn-nav">
+        <Link to="/blog/best-apps-2025" className="btn-nav">
           👈 Previous
         </Link>
-        <Link to="/blog/toefl-vs-duolingo/why-japan" className="btn-nav">
+        <Link to="/blog/why-japan" className="btn-nav">
           Next 👉
         </Link>
       </div>

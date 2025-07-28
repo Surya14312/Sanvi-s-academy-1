@@ -153,7 +153,7 @@ function German() {
                 <td data-label="Mock Tests">3</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">15000</td>
-                <td data-label="discount">15 - 20%</td>
+                <td data-label="Discount">15 - 20%</td>
               </tr>
             </tbody>
           </table>
@@ -201,14 +201,29 @@ function German() {
             <Link to="/contact">Contact Us</Link> to begin your language
             journey.
           </p>
-
-          <div className="course-navigation">
-            <Link to="/french" className="nav-btn">
-              ⟵ Previous
-            </Link>
-            <Link to="/about" className="nav-btn">
-              Next ⟶
-            </Link>
+          <div
+            className="course-pagination"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "40px",
+              marginBottom: "20px",
+            }}
+          >
+            <div
+              className="course-navigation"
+              style={{
+                display: "flex",
+                gap: "20px",
+              }}
+            >
+              <Link to="/french" className="nav-btn">
+                ⟵ Previous
+              </Link>
+              <Link to="/about" className="nav-btn">
+                Next ⟶
+              </Link>
+            </div>
           </div>
         </div>
       </div>

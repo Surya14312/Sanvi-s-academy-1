@@ -166,22 +166,22 @@ function IELTS() {
         <table className="course-table">
           <thead>
             <tr>
-              <th data-label="Course">Course</th>
-              <th data-label="No. of Classes">No. of Classes</th>
-              <th data-label="Mock Tests">Mock Tests</th>
-              <th data-label="Benefits">Benefits</th>
-              <th data-label="Fees">Fees</th>
-              <th data-label="discount">Discount</th>
+              <td>Course</td>
+              <td>No.of Classes</td>
+              <td>Mock Tst</td>
+              <td>Benefits</td>
+              <td>Fees</td>
+              <td>Discount</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>IELTS</td>
-              <td>25</td>
-              <td>2</td>
-              <td>Study Material, Class Recording</td>
-              <td>8000</td>
-              <td>10 - 15%</td>
+              <td data-label="Course">IELTS</td>
+              <td data-label="No. of Classes">25</td>
+              <td data-label="Mock Tests">2</td>
+              <td data-label="Benefits">Study Material, Class Recording</td>
+              <td data-label="Fees">8000</td>
+              <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
@@ -225,8 +225,22 @@ function IELTS() {
           <a href="/contact">Contact us</a> for demo sessions and details.
         </p>
 
-        <div className="course-pagination">
-          <div className="course-navigation">
+        <div
+          className="course-pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
             <Link to="/courses" className="nav-btn">
               ⟵ Previous
             </Link>

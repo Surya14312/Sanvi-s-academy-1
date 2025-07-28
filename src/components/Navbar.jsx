@@ -38,9 +38,6 @@ function Navbar() {
         <li>
           <Link to="/faq">FAQ</Link>
         </li>
-        <li>
-          <Link to="/gallery">Gallery</Link>
-        </li>
       </ul>
     </nav>
   );

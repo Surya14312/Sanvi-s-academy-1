@@ -153,7 +153,7 @@ function GreGmat() {
               <td data-label="Mock Tests">10</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">22500</td>
-              <td data-label="discount">15 - 20%</td>
+              <td data-label="Discount">15 - 20%</td>
             </tr>
             <tr>
               <td data-label="Course">GMAT</td>
@@ -161,7 +161,7 @@ function GreGmat() {
               <td data-label="Mock Tests">6</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">22500</td>
-              <td data-label="discount">15 - 20%</td>
+              <td data-label="Discount">15 - 20%</td>
             </tr>
           </tbody>
         </table>
@@ -208,21 +208,29 @@ function GreGmat() {
           <Link to="/contact"> Contact us</Link> now to start with a free demo
           session.
         </p>
-
         <div
-          className="course-navigation"
+          className="course-pagination"
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            marginTop: "30px",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
           }}
         >
-          <Link to="/pte" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/sat" className="nav-btn">
-            Next ⟶
-          </Link>
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <Link to="/pte" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/sat" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>

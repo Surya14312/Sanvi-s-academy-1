@@ -132,7 +132,7 @@ function TOEFL() {
               <td data-label="Mock Tests">4</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000</td>
-              <td data-label="discount"> 10 - 15%</td>
+              <td data-label="Discount"> 10 - 15%</td>
             </tr>
           </tbody>
         </table>
@@ -177,13 +177,29 @@ function TOEFL() {
           <Link to="/contact"> Contact us</Link> for demo sessions and guidance.
         </p>
 
-        <div className="course-navigation">
-          <Link to="/ielts" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/pte" className="nav-btn">
-            Next ⟶
-          </Link>
+        <div
+          className="course-navigation"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <Link to="/ielts" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/pte" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>

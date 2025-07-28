@@ -7,9 +7,16 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-container">
         {/* Brand Section */}
-        <div className="footer-brand">
-          <h2 className="logo-text">The Sanvi’s Academy</h2>
-          <p>Empowering Success Globally.</p>
+        <div className="footer-logo">
+          <img
+            src="/images/Academy.jpg"
+            alt="Sanvi Academy Logo"
+            className="footer-logo-img"
+          />
+
+          <div className="logo-texts">
+            <p>Empowering Success Globally.</p>
+          </div>
         </div>
 
         {/* Contact Info */}

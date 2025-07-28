@@ -18,7 +18,6 @@ import Courses from "./components/Courses.jsx";
 import Testimonials from "./pages/Testimonials.jsx"; // ✅ Corrected this line
 import Blog from "./pages/Blog.jsx";
 import FAQ from "./pages/FAQ.jsx";
-import Gallery from "./pages/Gallery.jsx";
 import IELTSTips from "./pages/IELTSTIPS.jsx";
 import StudyAbroad2025 from "./pages/StudyAbroad2025.jsx";
 
@@ -55,7 +54,7 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/gallery" element={<Gallery />} />
+
         <Route path="/blog/ielts-tips" element={<IELTSTips />} />
         <Route path="/blog/study-abroad-2025" element={<StudyAbroad2025 />} />
         <Route path="/blog/toefl-vs-duolingo" element={<TOEFLvsDuolingo />} />

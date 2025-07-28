@@ -7,36 +7,13 @@ const faqData = [
     answer:
       "We offer expert coaching for IELTS, TOEFL, SAT, GRE, GMAT, Duolingo, French, German, and more — all tailored to help students reach their highest potential.",
   },
-  {
-    question: "Are classes available online?",
-    answer:
-      "Yes! You can attend both online and offline classes, based on your convenience. Our online sessions are live, interactive, and backed by expert faculty.",
-  },
-  {
-    question: "Do you help with study abroad applications?",
-    answer:
-      "Absolutely! From choosing the right university to SOP writing and visa documentation — our counselors provide end-to-end study abroad support.",
-  },
+
   {
     question: "Who are the instructors at Sanvi’s Academy?",
     answer:
       "Our trainers are certified, highly experienced, and passionate educators with a proven track record in helping students achieve top scores.",
   },
-  {
-    question: "What is the batch size for coaching classes?",
-    answer:
-      "We maintain small batch sizes to ensure personalized attention. Typically, a batch consists of 8–12 students.",
-  },
-  {
-    question: "Is there a free demo class available?",
-    answer:
-      "Yes, we offer one free demo session for most courses. It helps you evaluate our teaching style and content before enrolling.",
-  },
-  {
-    question: "Do you provide mock tests and study materials?",
-    answer:
-      "Yes, we provide regular mock tests, detailed performance feedback, and updated study materials designed to match the latest exam patterns.",
-  },
+
   {
     question: "How do I register or contact Sanvi’s Academy?",
     answer:
@@ -52,6 +29,12 @@ const faqData = [
     answer:
       "Absolutely. Our dedicated study abroad team guides students through every step of the overseas education journey — from selecting the right country and university to crafting a strong SOP (Statement of Purpose), getting powerful LORs (Letters of Recommendation), applying for scholarships, and filing student visas. We specialize in destinations like the USA, UK, Canada, Australia, Europe, Japan, and more.",
   },
+  {
+    question: "💻 Are classes available online only?",
+    answer:
+      "Yes, all our classes are conducted 100% online. This allows students to attend from anywhere while receiving the same expert guidance and interactive support.",
+  },
+
   {
     question: "👨‍🏫 Who are the instructors at The Sanvi’s Academy?",
     answer:
@@ -77,11 +60,7 @@ const faqData = [
     answer:
       "Getting started is easy! You can contact us through our official website, call our admissions team, send a WhatsApp message, or walk into our center. Online registration forms are also available. Once we receive your inquiry, our counselors will connect with you to recommend the right course and batch timing based on your goals.",
   },
-  {
-    question: "📍 Where is your coaching center located?",
-    answer:
-      "Our coaching center is centrally located in [Your City] with easy access to public transportation. In addition to in-person classes, we also offer a full online learning platform that reaches students across India and abroad. Whether you live nearby or far away, The Sanvi’s Academy is always within reach.",
-  },
+
   {
     question: "📈 What makes The Sanvi’s Academy different?",
     answer:
@@ -121,7 +100,7 @@ function FAQ() {
           <Link to="/blog" className="nav-btn">
             ⟵ Previous
           </Link>
-          <Link to="/gallery" className="nav-btn">
+          <Link to="/" className="nav-btn">
             Next ⟶
           </Link>
         </div>

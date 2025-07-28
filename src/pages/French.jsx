@@ -186,14 +186,29 @@ function French() {
           personalized learning roadmap.
           <a href="/contact"> Contact us</a> to begin.
         </p>
-
-        <div className="course-navigation">
-          <Link to="/duolingo" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/german" className="nav-btn">
-            Next ⟶
-          </Link>
+        <div
+          className="course-pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <Link to="/duolingo" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/german" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>

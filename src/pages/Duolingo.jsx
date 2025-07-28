@@ -145,7 +145,7 @@ function Duolingo() {
               <td data-label="Mock Tests">2</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000</td>
-              <td data-label="discount">10 - 15%</td>
+              <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
@@ -191,13 +191,29 @@ function Duolingo() {
           <Link to="/contact"> Contact us</Link> to begin your journey.
         </p>
 
-        <div className="course-navigation">
-          <Link to="/sat" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/french" className="nav-btn">
-            Next ⟶
-          </Link>
+        <div
+          className="course-pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <Link to="/sat" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/french" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>

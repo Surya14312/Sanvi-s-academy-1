@@ -133,12 +133,12 @@ function SAT() {
             </thead>
             <tbody>
               <tr>
-                <td data-label="Course" >SAT</td>
+                <td data-label="Course">SAT</td>
                 <td data-label="No. of Classes">34</td>
                 <td data-label="Mock Tests">7</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">22500</td>
-                <td data-label="discount">15 - 20%</td>
+                <td data-label="Discount">15 - 20%</td>
               </tr>
             </tbody>
           </table>
@@ -182,14 +182,29 @@ function SAT() {
             and get your personalized prep roadmap.{" "}
             <Link to="/contact">Contact us</Link> now to get started.
           </p>
-
-          <div className="course-navigation">
-            <Link to="/gre" className="nav-btn">
-              ⟵ Previous
-            </Link>
-            <Link to="/duolingo" className="nav-btn">
-              Next ⟶
-            </Link>
+          <div
+            className="course-pagination"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "40px",
+              marginBottom: "20px",
+            }}
+          >
+            <div
+              className="course-navigation"
+              style={{
+                display: "flex",
+                gap: "20px",
+              }}
+            >
+              <Link to="/gre" className="nav-btn">
+                ⟵ Previous
+              </Link>
+              <Link to="/duolingo" className="nav-btn">
+                Next ⟶
+              </Link>
+            </div>
           </div>
         </div>
       </div>

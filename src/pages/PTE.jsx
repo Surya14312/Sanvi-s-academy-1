@@ -123,7 +123,7 @@ function PTA() {
               <td data-label="Mock Tests">1</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000</td>
-              <td data-label="discount">10 - 15%</td>
+              <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
@@ -167,14 +167,29 @@ function PTA() {
           structured guidance. <Link to="/contact"> Contact us</Link> today for
           a free trial.
         </p>
-
-        <div className="course-navigation">
-          <Link to="/toefl" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/gre" className="nav-btn">
-            Next ⟶
-          </Link>
+        <div
+          className="course-pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          <div
+            className="course-navigation"
+            style={{
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <Link to="/toefl" className="nav-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/gre" className="nav-btn">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>
