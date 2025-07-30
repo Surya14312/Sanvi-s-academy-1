@@ -9,7 +9,7 @@ function SpeakingMistakes() {
   return (
     <div className="blog-detail">
       <h1>
-        🗣️ Top Mistakes Students Make in Speaking Tests (IELTS | TOEFL | PTE)
+        Top Mistakes Students Make in Speaking Tests (IELTS | TOEFL | PTE)
       </h1>
 
       <p>
@@ -22,27 +22,27 @@ function SpeakingMistakes() {
       <h2>🚫 Common Mistakes Students Make</h2>
       <ul>
         <li>
-          ⏸️ <strong>Long pauses and hesitation:</strong> Shows lack of fluency
-          and confidence.
+          <strong>Long pauses and hesitation:</strong> Shows lack of fluency and
+          confidence.
         </li>
         <li>
-          🌀 <strong>Repeating phrases:</strong> Repeating the same point or
+          <strong>Repeating phrases:</strong> Repeating the same point or
           vocabulary indicates weak language range.
         </li>
         <li>
-          😕 <strong>Off-topic responses:</strong> Not answering the exact
-          question asked lowers coherence.
+          <strong>Off-topic responses:</strong> Not answering the exact question
+          asked lowers coherence.
         </li>
         <li>
-          🤐 <strong>Very short answers:</strong> You miss chances to show your
+          <strong>Very short answers:</strong> You miss chances to show your
           grammar and vocabulary skills.
         </li>
         <li>
-          🔄 <strong>Overusing filler words:</strong> “Umm”, “like”, “you know”
+          <strong>Overusing filler words:</strong> “Umm”, “like”, “you know”
           reduces clarity and professionalism.
         </li>
         <li>
-          🗯️ <strong>Incorrect pronunciation or monotone tone:</strong> Affects
+          <strong>Incorrect pronunciation or monotone tone:</strong> Affects
           intelligibility and listener engagement.
         </li>
       </ul>
@@ -50,24 +50,24 @@ function SpeakingMistakes() {
       <h2> Tips to Avoid These Mistakes</h2>
       <ul>
         <li>
-          🎤 <strong>Practice with a timer:</strong> Learn to express ideas
+          <strong>Practice with a timer:</strong> Learn to express ideas
           smoothly within a fixed time.
         </li>
         <li>
-          🧱 <strong>Use a structure:</strong> For each answer, follow a
-          pattern: <em>Point – Reason – Example – Result</em>.
+          <strong>Use a structure:</strong> For each answer, follow a pattern:{" "}
+          <em>Point – Reason – Example – Result</em>.
         </li>
         <li>
-          📚 <strong>Improve vocabulary:</strong> Use topic-specific words to
-          sound more fluent and confident.
+          <strong>Improve vocabulary:</strong> Use topic-specific words to sound
+          more fluent and confident.
         </li>
         <li>
-          🗣️ <strong>Record and review:</strong> Identify your weak spots by
+          <strong>Record and review:</strong> Identify your weak spots by
           listening to your own responses.
         </li>
         <li>
-          👂 <strong>Listen to native content:</strong> Watch TED Talks,
-          podcasts, and English interviews to absorb real-life speech rhythm.
+          <strong>Listen to native content:</strong> Watch TED Talks, podcasts,
+          and English interviews to absorb real-life speech rhythm.
         </li>
       </ul>
 
@@ -78,19 +78,19 @@ function SpeakingMistakes() {
       </p>
       <ul>
         <li>
-          🔄 <strong>Fluency and Coherence:</strong> Are your ideas flowing
+          <strong>Fluency and Coherence:</strong> Are your ideas flowing
           logically without frequent stops?
         </li>
         <li>
-          🔊 <strong>Pronunciation:</strong> Can the listener clearly understand
+          <strong>Pronunciation:</strong> Can the listener clearly understand
           your words and intonation?
         </li>
         <li>
-          🧾 <strong>Grammatical Range and Accuracy:</strong> Do you use tenses,
+          <strong>Grammatical Range and Accuracy:</strong> Do you use tenses,
           clauses, and structures correctly?
         </li>
         <li>
-          📖 <strong>Lexical Resource:</strong> Are you using a rich variety of
+          <strong>Lexical Resource:</strong> Are you using a rich variety of
           words instead of basic ones?
         </li>
       </ul>
@@ -98,11 +98,11 @@ function SpeakingMistakes() {
       <h2>🚀 Boost Your Speaking Confidence</h2>
       <p>Try these final confidence boosters:</p>
       <ul>
-        <li>🎭 Speak with friends, mentors, or AI tools every day</li>
-        <li>📄 Keep a journal of new words and expressions</li>
-        <li>🧍 Practice speaking in front of a mirror to build fluency</li>
+        <li> Speak with friends, mentors, or AI tools every day</li>
+        <li> Keep a journal of new words and expressions</li>
+        <li> Practice speaking in front of a mirror to build fluency</li>
         <li>
-          🧑‍🏫 Join speaking mock tests at <strong>Sanvi’s Academy</strong> for
+          Join speaking mock tests at <strong>Sanvi’s Academy</strong> for
           expert evaluation
         </li>
       </ul>
@@ -113,11 +113,43 @@ function SpeakingMistakes() {
         yourself clearly and confidently. Practice smart, avoid the common
         pitfalls, and you’re sure to impress the examiner.
       </p>
-      <div className="blog-navigation">
-        <Link to="/blog/why-japan" className="btn-nav">
+
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/best-apps-2025"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/sop-lor-guide" className="btn-nav">
+        <Link
+          to="/blog/europe-universities"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

@@ -45,85 +45,14 @@ function German() {
             </li>
           </ul>
 
-          <h2>🏫 Coaching Infrastructure</h2>
-          <img
-            src={germanInfra}
-            alt="German Class Setup"
-            className="infra-img"
-          />
-          <ul>
-            <li>Smart classrooms with whiteboard and pronunciation labs</li>
-            <li>German grammar & vocabulary drills with visual aids</li>
-            <li>Goethe & TestDaF simulated practice tests</li>
-            <li>One-on-one speaking booths & cultural immersion content</li>
-          </ul>
-
-          <h2>🌍 German is Accepted In</h2>
-          <div className="country-grid">
-            <a
-              href="https://www.daad.de/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/de.png" alt="Germany" />
-                <p>Germany</p>
-              </div>
-            </a>
-            <a
-              href="https://studyinaustria.at/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/at.png" alt="Austria" />
-                <p>Austria</p>
-              </div>
-            </a>
-            <a
-              href="https://www.swissuniversities.ch/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/ch.png" alt="Switzerland" />
-                <p>Switzerland</p>
-              </div>
-            </a>
-            <a
-              href="https://luxembourg.public.lu/en/studies.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/lu.png" alt="Luxembourg" />
-                <p>Luxembourg</p>
-              </div>
-            </a>
-            <a
-              href="https://www.studyinnamibia.info/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/na.png" alt="Namibia" />
-                <p>Namibia</p>
-              </div>
-            </a>
-          </div>
-
           <h2>🎯 Why Choose Our German Classes?</h2>
           <ul>
             <li>Certified Goethe & TestDaF trainers</li>
             <li>Level-wise speaking + grammar correction sessions</li>
-            <li>Weekend/evening batch flexibility</li>
             <li>Exam-focused mock test series</li>
             <li>Guidance for job/study visa documentation</li>
             <li>
-              Certified Goethe & TestDaF trainers with real exam experience
-            </li>
-            <li>
-              Structured A1 to C2 level courses aligned with CEFR standards
+              Structured A1 to B2 level courses aligned with CEFR standards
             </li>
             <li>
               Level-wise grammar correction + real-life conversation sessions
@@ -148,22 +77,22 @@ function German() {
             </thead>
             <tbody>
               <tr>
-                <td data-label="Course">GERMAN</td>
+                <td data-label="Course">German</td>
                 <td data-label="No. of Classes">45</td>
                 <td data-label="Mock Tests">3</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
-                <td data-label="Fees">15000</td>
+                <td data-label="Fees">15000 INR</td>
                 <td data-label="Discount">15 - 20%</td>
               </tr>
             </tbody>
           </table>
-          <div style={{ marginTop: "20px", textAlign: "center" }}>
+          {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
             <Link to="/contact" className="contact-link">
               <button className="contact-btn">
                 📞 Contact Us for Enrollment
               </button>
             </Link>
-          </div>
+          </div> */}
 
           {/* <table className="pricing-table">
             <thead>

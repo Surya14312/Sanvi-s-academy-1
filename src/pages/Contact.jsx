@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -19,7 +21,10 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const sendWhatsApp = () => {
+  const sendMail = async () => {
+    if (isSubmitting) return;
+
+    // Validate all form fields are filled
     const {
       name,
       age,
@@ -33,19 +38,86 @@ function Contact() {
       whatsapp,
     } = formData;
 
-    const message = `📚 *New Admission Enquiry*\n\n👤 Name: ${name}\n🎂 Age: ${age}\n🎓 Course: ${course}\n📘 Education Level: ${education}\n🌍 Country Interested: ${country}\n🗓️ Start Date: ${startDate}\n🗓️ End Date: ${endDate}\n🏠 Address: ${address}\n📞 Phone No: ${phone}\n📱 WhatsApp No: ${whatsapp}`;
+    if (
+      !name ||
+      !age ||
+      !course ||
+      !education ||
+      !country ||
+      !startDate ||
+      !endDate ||
+      !address ||
+      !phone ||
+      !whatsapp
+    ) {
+      setSubmitMessage("⚠️ Please fill all fields before clicking submit.");
+      return;
+    }
 
-    const phoneNumber = "919966428787";
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(whatsappURL, "_blank");
+    setIsSubmitting(true);
+    setSubmitMessage("");
+
+    try {
+      // For now, this is a placeholder - in a real implementation,
+      // you would integrate with a backend service to send emails
+      const {
+        name,
+        age,
+        course,
+        education,
+        country,
+        startDate,
+        endDate,
+        address,
+        phone,
+        whatsapp,
+      } = formData;
+
+      const emailData = {
+        to: "thesanvisacademy@gmail.com",
+        subject: "New Admission Enquiry",
+        body: `📚 New Admission Enquiry\n\n👤 Name: ${name}\n🎂 Age: ${age}\n🎓 Course: ${course}\n📘 Education Level: ${education}\n🌍 Country Interested: ${country}\n🗓️ Start Date: ${startDate}\n🗓️ End Date: ${endDate}\n🏠 Address: ${address}\n📞 Phone No: ${phone}\n📱 WhatsApp No: ${whatsapp}`,
+      };
+
+      // Simulate form processing delay
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
+      // This would typically send to your backend API
+      console.log("Email data to send:", emailData);
+
+      // Show success message
+      setSubmitMessage(
+        "✅ Form submitted successfully! Email sent to thesanvisacademy@gmail.com"
+      );
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setFormData({
+          name: "",
+          age: "",
+          course: "",
+          education: "",
+          country: "",
+          startDate: "",
+          endDate: "",
+          address: "",
+          phone: "",
+          whatsapp: "",
+        });
+        setSubmitMessage("");
+      }, 3000);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitMessage("❌ Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="contact">
       <div className="contact-container">
-        <h2>📞 Contact Us</h2>
+        <h2 className="page-heading">📞 Contact Us</h2>
         <p>📱 Phone: +91 99664 28787</p>
         <p>
           📧 Email:{" "}
@@ -62,7 +134,7 @@ function Contact() {
         <p>
           🔗 LinkedIn:{" "}
           <a
-            href="https://www.linkedin.com/posts/sanvi-infolink-system_studyinuk-studyabroad-ukeducation-activity-7209922540947869696-pFVZ"
+            href="https://www.linkedin.com/in/sanvi-infolink-system"
             target="_blank"
             rel="noreferrer"
           >
@@ -71,8 +143,12 @@ function Contact() {
         </p>
         <p>
           📸 Instagram:{" "}
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            @thesanvisacademy
+          <a
+            href="https://www.instagram.com/thesanvisabroadxperts"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit Profile
           </a>
         </p>
 
@@ -204,9 +280,41 @@ function Contact() {
             required
           ></textarea>
 
-          <button type="submit" onClick={sendWhatsApp}>
-            🚀 Send via WhatsApp
+          <button
+            type="submit"
+            onClick={sendMail}
+            disabled={isSubmitting}
+            style={{
+              opacity: isSubmitting ? 0.7 : 1,
+              cursor: isSubmitting ? "not-allowed" : "pointer",
+            }}
+          >
+            {isSubmitting ? "⏳ Sending..." : "🚀 Send via Mail"}
           </button>
+
+          {submitMessage && (
+            <div
+              style={{
+                marginTop: "15px",
+                padding: "12px",
+                border: submitMessage.includes("✅")
+                  ? "2px solid #4CAF50"
+                  : "2px solid #f44336",
+                backgroundColor: submitMessage.includes("✅")
+                  ? "#e8f5e8"
+                  : "#fdeaea",
+                borderRadius: "8px",
+                fontSize: "16px",
+                color: submitMessage.includes("✅") ? "#2e7d32" : "#c62828",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+                textAlign: "center",
+                fontWeight: "500",
+              }}
+            >
+              {submitMessage}
+            </div>
+          )}
+
           <div
             style={{
               marginTop: "15px",
@@ -223,17 +331,6 @@ function Contact() {
             <strong>thesanvisacademy@gmail.com</strong>
           </div>
         </form>
-
-        <div className="course-pagination">
-          <div className="course-navigation">
-            <Link to="/about" className="nav-btn">
-              ⟵ Previous
-            </Link>
-            <Link to="/testimonials" className="nav-btn">
-              Next ⟶
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );

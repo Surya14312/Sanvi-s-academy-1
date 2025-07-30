@@ -53,15 +53,9 @@ function IELTS() {
           <li>Complete study material in PDF format</li>
           <li>Band-specific strategies and time management tips</li>
           <li>Regular mock tests with performance feedback</li>
-          <li>1-on-1 speaking practice with fluency training</li>
           <li>Detailed writing task evaluations</li>
-          <li>Flexible batch timings</li>
-          <li>
-            Weekly full-length mock tests with detailed performance analysis
-          </li>
-          <li>1-on-1 speaking sessions with accent and fluency improvement</li>
+          <li>Flexible batch timings (evening)</li>
           <li>Detailed feedback and correction on Writing Task 1 & 2</li>
-          <li>Flexible batches: morning, evening, and weekend options</li>
         </ul>
         <h2>🌍 IELTS is Accepted In</h2>
         <div className="country-grid">
@@ -168,7 +162,7 @@ function IELTS() {
             <tr>
               <td>Course</td>
               <td>No.of Classes</td>
-              <td>Mock Tst</td>
+              <td>Mock Test</td>
               <td>Benefits</td>
               <td>Fees</td>
               <td>Discount</td>
@@ -180,18 +174,18 @@ function IELTS() {
               <td data-label="No. of Classes">25</td>
               <td data-label="Mock Tests">2</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">8000</td>
+              <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
+        {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
           <Link to="/contact" className="contact-link">
             <button className="contact-btn">
               📞 Contact Us for Enrollment
             </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* <table className="pricing-table">
           <thead>
@@ -229,7 +223,7 @@ function IELTS() {
           className="course-pagination"
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "space-around",
             marginTop: "40px",
             marginBottom: "20px",
           }}
@@ -241,7 +235,7 @@ function IELTS() {
               gap: "20px",
             }}
           >
-            <Link to="/courses" className="nav-btn">
+            <Link to="/" className="nav-btn">
               ⟵ Previous
             </Link>
             <Link to="/toefl" className="nav-btn">

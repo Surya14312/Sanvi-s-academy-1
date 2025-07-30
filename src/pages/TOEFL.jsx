@@ -53,14 +53,10 @@ function TOEFL() {
           <li>Updated materials with ETS-aligned strategies</li>
           <li>Time management techniques for each section</li>
           <li>Mock tests & real exam simulations</li>
-          <li>1-on-1 speaking & writing evaluation</li>
           <li>Flexible schedules (weekday/weekend)</li>
-          <li>Updated study material with ETS-aligned strategies and tips</li>
           <li>
             Access to recorded sessions for revision and self-paced learning
           </li>
-          <li>Regular full-length mock tests and real-exam simulations</li>
-          <li>1-on-1 speaking practice with personalized feedback</li>
           <li>
             Writing task evaluation with corrections, suggestions, and scoring
           </li>
@@ -131,18 +127,11 @@ function TOEFL() {
               <td data-label="No. of Classes">30</td>
               <td data-label="Mock Tests">4</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">8000</td>
+              <td data-label="Fees">8000 INR</td>
               <td data-label="Discount"> 10 - 15%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
-          <Link to="/contact" className="contact-link">
-            <button className="contact-btn">
-              📞 Contact Us for Enrollment
-            </button>
-          </Link>
-        </div>
 
         {/* <table className="pricing-table">
           <thead>

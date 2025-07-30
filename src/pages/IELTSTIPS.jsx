@@ -103,10 +103,34 @@ function IELTSTips() {
           marginTop: "40px",
         }}
       >
-        <Link to="/blog" className="btn-nav">
+        <Link
+          to="/blog"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/study-abroad-2025" className="btn-nav">
+        <Link
+          to="/blog/study-abroad-2025"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

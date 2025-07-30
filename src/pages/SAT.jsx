@@ -44,6 +44,18 @@ function SAT() {
               <strong>Mode:</strong> Computer-Based Test
             </li>
           </ul>
+          <h2>🎯 Why Choose Our SAT Coaching?</h2>
+          <ul>
+            <li>Concept-building for Reading, Writing, and Math</li>
+            <li>Digital SAT practice with real-time analytics</li>
+            <li>Mock exams with section-wise reports</li>
+            <li>Access to a comprehensive SAT question bank</li>
+            <li>24x7 access to recorded classes and doubt-clearing sessions</li>
+            <li>Updated content aligned with the latest Digital SAT format</li>
+            <li>
+              Special focus on calculator and non-calculator math sections
+            </li>
+          </ul>
 
           <h2>🌍 SAT Accepted In</h2>
           <div className="country-grid">
@@ -102,23 +114,6 @@ function SAT() {
             </a>
           </div>
 
-          <h2>🎯 Why Choose Our SAT Coaching?</h2>
-          <ul>
-            <li>Concept-building for Reading, Writing, and Math</li>
-            <li>Digital SAT practice with real-time analytics</li>
-            <li>Adaptive drills tailored to your weaknesses</li>
-            <li>Mock exams with section-wise reports</li>
-            <li>Expert mentoring & progress tracking</li>
-            <li>Access to a comprehensive SAT question bank</li>
-            <li>Weekly vocabulary boosters and grammar exercises</li>
-            <li>Personalized study plans and score improvement targets</li>
-            <li>24x7 access to recorded classes and doubt-clearing sessions</li>
-            <li>Updated content aligned with the latest Digital SAT format</li>
-            <li>
-              Special focus on calculator and non-calculator math sections
-            </li>
-          </ul>
-
           <h2>💰 Course Plans & Pricing</h2>
           <table className="course-table">
             <thead>
@@ -137,18 +132,18 @@ function SAT() {
                 <td data-label="No. of Classes">34</td>
                 <td data-label="Mock Tests">7</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
-                <td data-label="Fees">22500</td>
+                <td data-label="Fees">22500 INR</td>
                 <td data-label="Discount">15 - 20%</td>
               </tr>
             </tbody>
           </table>
-          <div style={{ marginTop: "20px", textAlign: "center" }}>
+          {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
             <Link to="/contact" className="contact-link">
               <button className="contact-btn">
                 📞 Contact Us for Enrollment
               </button>
             </Link>
-          </div>
+          </div> */}
 
           {/* <table className="pricing-table">
             <thead>

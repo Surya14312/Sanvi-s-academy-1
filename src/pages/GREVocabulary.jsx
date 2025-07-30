@@ -24,16 +24,8 @@ function GREVocabulary() {
         quickly and accurately.
       </p>
 
-      <h2>High-Frequency GRE & SAT Words</h2>
-      <p>Focus on the most commonly tested words. Start with lists like:</p>
-      <ul>
-        <li>Magoosh GRE 1000 Words</li>
-        <li>Barron’s Essential 800</li>
-        <li>Princeton Review Hit Parade</li>
-        <li>Kaplan’s SAT Power Words</li>
-      </ul>
-
       <h2>Sample Words You Must Know</h2>
+
       <ul>
         <li>
           <strong>Obfuscate</strong> – to confuse or make unclear
@@ -107,11 +99,43 @@ function GREVocabulary() {
         trickiest GRE/SAT verbal questions. Let Sanvi’s Academy guide you every
         step of the way!
       </p>
-      <div className="blog-navigation">
-        <Link to="/blog/toefl-vs-duolingo" className="btn-nav">
+
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/student-visa-interview" className="btn-nav">
+        <Link
+          to="/blog/student-visa-interview"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

@@ -50,6 +50,22 @@ function Duolingo() {
             <strong>Results:</strong> Delivered within 48 hours
           </li>
         </ul>
+        <h2>🎯 Why Choose Our Duolingo Coaching?</h2>
+        <ul>
+          <li>Targeted practice for AI-evaluated speaking & writing</li>
+          <li>Complete test simulation with instant scoring insights</li>
+          <li>Section-wise improvement drills & feedback</li>
+          <li>Access to recorded sessions & practice materials</li>
+          <li>
+            Latest tips and hacks for open response & fill-in-the-blanks
+            questions
+          </li>
+          <li>Vocabulary-building activities with daily practice</li>
+          <li>
+            Fluency, intonation, and clarity training for speaking responses
+          </li>
+          <li>Practice with real exam-style question types and difficulty</li>
+        </ul>
 
         <h2>🌍 DET Accepted In</h2>
         <div className="country-grid">
@@ -105,27 +121,6 @@ function Duolingo() {
           </a>
         </div>
 
-        <h2>🎯 Why Choose Our Duolingo Coaching?</h2>
-        <ul>
-          <li>Targeted practice for AI-evaluated speaking & writing</li>
-          <li>Complete test simulation with instant scoring insights</li>
-          <li>Section-wise improvement drills & feedback</li>
-          <li>Access to recorded sessions & practice materials</li>
-          <li>Flexible learning schedule with personal mentoring</li>
-          <li>
-            Latest tips and hacks for open response & fill-in-the-blanks
-            questions
-          </li>
-          <li>Real-time performance analytics & progress tracking</li>
-          <li>Vocabulary-building activities with daily practice</li>
-          <li>
-            Fluency, intonation, and clarity training for speaking responses
-          </li>
-          <li>Custom study plans based on student goals (85+, 100+ etc.)</li>
-          <li>Practice with real exam-style question types and difficulty</li>
-          <li>24/7 student support via WhatsApp & email</li>
-        </ul>
-
         <h2>💰 Course Plans & Pricing</h2>
         <table className="course-table">
           <thead>
@@ -140,22 +135,15 @@ function Duolingo() {
           </thead>
           <tbody>
             <tr>
-              <td data-label="Course">DUOLINGO</td>
+              <td data-label="Course">Duolingo</td>
               <td data-label="No. of Classes">12</td>
               <td data-label="Mock Tests">2</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">8000</td>
+              <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
-          <Link to="/contact" className="contact-link">
-            <button className="contact-btn">
-              📞 Contact Us for Enrollment
-            </button>
-          </Link>
-        </div>
 
         {/* <table className="pricing-table">
           <thead>

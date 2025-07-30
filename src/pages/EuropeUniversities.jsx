@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 function EuropeUniversities() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -112,17 +111,15 @@ function EuropeUniversities() {
 
       <h2>🚀 Final Tips</h2>
       <ul>
+        <li>Learn the basics of the local language for smoother adjustment.</li>
+        <li> Apply early—European deadlines are strict.</li>
         <li>
-          💬 Learn the basics of the local language for smoother adjustment.
-        </li>
-        <li>🧾 Apply early—European deadlines are strict.</li>
-        <li>
-          🎓 Use platforms like{" "}
+          Use platforms like{" "}
           <strong>DAAD, Campus France, and Uni-Italia</strong> for official
           guidance.
         </li>
         <li>
-          🔗 Check each university's website for exact admission steps and
+          Check each university's website for exact admission steps and
           deadlines.
         </li>
       </ul>
@@ -133,11 +130,43 @@ function EuropeUniversities() {
         take the leap? Let Sanvi’s Academy help you plan your successful journey
         to Europe!
       </p>
-      <div className="blog-navigation">
-        <Link to="/blog/sop-lor-guide" className="btn-nav">
+
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/speaking-mistakes"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/success-stories" className="btn-nav">
+        <Link
+          to="/faq"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

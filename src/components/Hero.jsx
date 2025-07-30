@@ -8,7 +8,7 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>
-            Welcome The <span className="highlight">Sanvi’s Academy</span>
+            Welcome to The <span className="highlight">Sanvi’s Academy</span>
           </h1>
           <h2>Ace Your Exams & Learn Languages</h2>
           <p>

@@ -7,38 +7,20 @@ const faqData = [
     answer:
       "We offer expert coaching for IELTS, TOEFL, SAT, GRE, GMAT, Duolingo, French, German, and more — all tailored to help students reach their highest potential.",
   },
-
-  {
-    question: "Who are the instructors at Sanvi’s Academy?",
-    answer:
-      "Our trainers are certified, highly experienced, and passionate educators with a proven track record in helping students achieve top scores.",
-  },
-
-  {
-    question: "How do I register or contact Sanvi’s Academy?",
-    answer:
-      "You can visit our contact page, call us directly, or fill out the inquiry form. Our team will get back to you within 24 hours.",
-  },
   {
     question: "💻 Are classes available online or offline?",
     answer:
-      "Yes! We provide flexible learning options to suit your convenience. You can attend in-person classes at our state-of-the-art coaching center or join our live online sessions from the comfort of your home. Both formats include interactive lessons, personalized feedback, doubt-clearing sessions, and regular progress tracking. We also provide access to recorded classes so you never miss a concept.",
+      "The classes are held online and can be attended from the comfort of your home. The sessions include interactive lessons, doubt-clearing sessions, and regular progress tracking. We also provide access to recorded classes so you never miss a concept.",
   },
   {
     question: "🌍 Do you assist with study abroad applications?",
     answer:
-      "Absolutely. Our dedicated study abroad team guides students through every step of the overseas education journey — from selecting the right country and university to crafting a strong SOP (Statement of Purpose), getting powerful LORs (Letters of Recommendation), applying for scholarships, and filing student visas. We specialize in destinations like the USA, UK, Canada, Australia, Europe, Japan, and more.",
+      "Absolutely. Our dedicated study abroad team The Sanvi's Abroad Xperts guides students through every step of the overseas education journey — from selecting the right country and university to crafting a strong SOP (Statement of Purpose), getting powerful LORs (Letters of Recommendation), applying for scholarships, and filing student visas. We specialize in destinations like the Italy, France, Germany, Switzerland, UK, Singapore, Japan, and more.",
   },
-  {
-    question: "💻 Are classes available online only?",
-    answer:
-      "Yes, all our classes are conducted 100% online. This allows students to attend from anywhere while receiving the same expert guidance and interactive support.",
-  },
-
   {
     question: "👨‍🏫 Who are the instructors at The Sanvi’s Academy?",
     answer:
-      "Our instructors are certified language trainers, subject experts, and test prep specialists with years of international teaching experience. Many are former high-scorers in exams like IELTS, GRE, and TOEFL. They follow result-driven strategies, offer one-on-one mentoring, and adapt teaching based on each student’s pace and learning style.",
+      "Our instructors are certified language trainers, subject experts, and test prep specialists with years of international teaching experience. Many are former high-scorers in exams like IELTS, GRE, and TOEFL. They follow result-driven strategies, and adapt teaching based on each student’s pace and learning style.",
   },
   {
     question: "👥 What is the typical batch size?",
@@ -60,11 +42,10 @@ const faqData = [
     answer:
       "Getting started is easy! You can contact us through our official website, call our admissions team, send a WhatsApp message, or walk into our center. Online registration forms are also available. Once we receive your inquiry, our counselors will connect with you to recommend the right course and batch timing based on your goals.",
   },
-
   {
     question: "📈 What makes The Sanvi’s Academy different?",
     answer:
-      "What sets us apart is our student-first approach. We provide personalized mentoring, result-oriented training, small batches, modern learning tools, and a global outlook. From coaching to visa processing, we ensure you’re guided at every stage. Our mission is not just to teach — it’s to empower students to thrive on international platforms.",
+      "What sets us apart is our student-first approach. We provide result-oriented training, small batches, modern learning tools, and a global outlook. From coaching to visa processing, we ensure you’re guided at every stage. Our mission is not just to teach — it’s to empower students to thrive on international platforms.",
   },
 ];
 

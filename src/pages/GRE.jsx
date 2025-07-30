@@ -124,13 +124,9 @@ function GreGmat() {
           <li>Advanced strategies for Quant & Verbal mastery</li>
           <li>Full-length timed mock exams</li>
           <li>Section-wise analytics and improvement tracking</li>
-          <li>1-on-1 mentoring with doubt clearing sessions</li>
           <li>Recorded lectures and flexible scheduling</li>
-          <li> Personalized Study Plans</li>
-          <li>Live Interactive Sessionss</li>
+          <li>Live Interactive Sessions</li>
           <li>Analytical Writing Practice</li>
-          <li>Comprehensive Materials</li>
-          <li>1-on-1 Mentorship</li>
           <li>Score Improvement Guarantee</li>
         </ul>
 
@@ -152,7 +148,7 @@ function GreGmat() {
               <td data-label="No. of Classes">50</td>
               <td data-label="Mock Tests">10</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">22500</td>
+              <td data-label="Fees">22500 INR</td>
               <td data-label="Discount">15 - 20%</td>
             </tr>
             <tr>
@@ -160,18 +156,18 @@ function GreGmat() {
               <td data-label="No. of Classes">50</td>
               <td data-label="Mock Tests">6</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">22500</td>
+              <td data-label="Fees">22500 INR</td>
               <td data-label="Discount">15 - 20%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
+        {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
           <Link to="/contact" className="contact-link">
             <button className="contact-btn">
               📞 Contact Us for Enrollment
             </button>
           </Link>
-        </div>
+        </div> */}
         {/* <table
           className="pricing-table"
           style={{ width: "100%", borderCollapse: "collapse" }}

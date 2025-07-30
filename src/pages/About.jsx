@@ -32,13 +32,8 @@ function About() {
         <h3>Meet Our Founders</h3>
         <div className="founder-profiles">
           <div className="founder-card">
-            <img
-              src={founder1}
-              alt="Mrs. V. Sangeetha"
-              style={{ width: "200px", borderRadius: "12px" }}
-            />
             <h4>Mrs. V. Sangeetha</h4>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               A Serial Entrepreneur who founded Sanvi’s Academy. She has over 10
               years of Experience in Counselling and Administration, Gained in
               both India and Singapore.Sangeetha Specializes in Guiding students
@@ -56,13 +51,8 @@ function About() {
             </p>
           </div>
           <div className="founder-card">
-            <img
-              src={founder2}
-              alt="Mr. R.V. Rajan"
-              style={{ width: "200px", borderRadius: "12px" }}
-            />
             <h4>Mr.Vijayarajan</h4>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               Brings over 26 years of extensive Industry Rich Experience, having
               successfully executed a wide range of Domestic and International
               Projects Across Diverse Sectors. He Possesses Deep Insights Into
@@ -80,17 +70,6 @@ function About() {
               Aspirations into Achievements.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="course-pagination">
-        <div className="course-navigation">
-          <Link to="/courses" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/contact" className="nav-btn">
-            Next ⟶
-          </Link>
         </div>
       </div>
     </div>

@@ -48,11 +48,8 @@ function PTA() {
         <h2>🎯 Why Choose Our PTE Coaching?</h2>
         <ul>
           <li>Interactive live classes with AI‑scored practice</li>
-          <li>Full mock tests with instant feedback</li>
           <li>Real‑world question practice</li>
-          <li>1‑on‑1 mentoring & performance tracking</li>
           <li>Flexible batch timing for students & professionals</li>
-          <li>Flexible batch timing for students & working professionals</li>
           <li>
             Targeted training for all four modules – Speaking, Writing, Reading,
             Listening
@@ -62,7 +59,6 @@ function PTA() {
             Score booster strategies for difficult question types like Repeat
             Sentence & Essay
           </li>
-          <li>Access to online portal with 24x7 practice material</li>
           <li>Expert feedback on writing tasks with improvement suggestions</li>
         </ul>
 
@@ -122,18 +118,11 @@ function PTA() {
               <td data-label="No. of Classes">20</td>
               <td data-label="Mock Tests">1</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">8000</td>
+              <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
-          <Link to="/contact" className="contact-link">
-            <button className="contact-btn">
-              📞 Contact Us for Enrollment
-            </button>
-          </Link>
-        </div>
 
         {/* <table className="pricing-table">
           <thead>

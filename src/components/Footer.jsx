@@ -9,14 +9,13 @@ function Footer() {
         {/* Brand Section */}
         <div className="footer-logo">
           <img
-            src="/images/Academy.jpg"
-            alt="Sanvi Academy Logo"
-            className="footer-logo-img"
+            src="/images/Academy.png"
+            alt="Sanvi Logo"
+            className="globe-img"
           />
+          <p className="footer-tagline">Empowering Success Globally.</p>
 
-          <div className="logo-texts">
-            <p>Empowering Success Globally.</p>
-          </div>
+          <div className="logo-texts"></div>
         </div>
 
         {/* Contact Info */}
@@ -55,7 +54,7 @@ function Footer() {
           <Link to="/about">📘 About Us</Link>
           <Link to="/contact">📩 Contact</Link>
           <Link to="/testimonials">💬 Testimonials</Link>
-          <Link to="/gallery">🖼️ Gallery</Link>
+
           <Link to="/blog">📝 Blog</Link>
         </div>
 

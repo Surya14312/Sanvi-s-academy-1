@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+// Blog post data
 const blogPosts = [
   {
     link: "/blog/ielts-tips",
@@ -13,8 +14,8 @@ const blogPosts = [
     desc: "Understand emerging admission trends in the UK, Europe, and Japan. Get expert advice on profile building, university shortlisting, and deadlines.",
   },
   {
-    link: "/blog/toefl-vs-duolingo",
-    title: "💡 TOEFL vs. Duolingo vs. PTE",
+    link: "/blog/ielts-vs-toefl-vs-duolingo-vs-pte",
+    title: "💡 IELTS vs TOEFL vs. Duolingo vs. PTE",
     desc: "Choosing the right English test? We break down key differences in format, scoring, preparation time, and university acceptability.",
   },
   {
@@ -33,34 +34,14 @@ const blogPosts = [
     desc: "Explore the top language learning apps to boost fluency from your mobile — ideal for busy learners.",
   },
   {
-    link: "/blog/study-abroad-2025",
-    title: "📆 Study Plan for Working Professionals",
-    desc: "This flexible study plan helps working professionals prepare for exams like IELTS or GRE after work hours.",
-  },
-  {
-    link: "/blog/why-japan",
-    title: "🇯🇵 Why Japan is Emerging as a Study Hub",
-    desc: "Discover why Japan is becoming a top destination for international students. Learn how Sanvi’s Academy supports your journey.",
-  },
-  {
     link: "/blog/speaking-mistakes",
     title: "📖 Top Mistakes Students Make in Speaking Tests",
     desc: "Avoid common speaking test errors in IELTS, TOEFL, and PTE with practical tips to improve fluency, coherence, and confidence.",
   },
   {
-    link: "/blog/sop-lor-guide",
-    title: "💬 How to Write the Perfect SOP & LOR",
-    desc: "Get templates, examples, and formatting tips to impress any admissions committee.",
-  },
-  {
     link: "/blog/europe-universities",
     title: "🌐 Exploring European Universities: A Guide",
     desc: "Explore tuition-free education in Germany to scholarships in Italy and France.",
-  },
-  {
-    link: "/blog/success-stories",
-    title: "👩‍🎓 Real Success Stories from Sanvi Students",
-    desc: "Be inspired by students who cracked IELTS, GRE, and SAT with Sanvi’s help — and got into their dream universities abroad!",
   },
 ];
 
@@ -68,11 +49,10 @@ function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 4;
 
-  // Get current page's posts
+  // Pagination logic
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
   const currentPosts = blogPosts.slice(indexOfFirst, indexOfLast);
-
   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
   const nextPage = () => {
@@ -92,12 +72,12 @@ function Blog() {
         <strong>TOEFL strategies</strong>, <strong>GRE/SAT success tips</strong>
         , and <strong>study abroad guidance</strong>.
       </p>
-
       <p className="blog-intro">
         With insights from certified trainers, visa experts, and real student
         journeys, our blog is packed with actionable advice.
       </p>
 
+      {/* Blog Cards */}
       <div className="blog-articles">
         {currentPosts.map((post, idx) => (
           <Link to={post.link} className="blog-card" key={idx}>
@@ -107,6 +87,7 @@ function Blog() {
         ))}
       </div>
 
+      {/* Pagination */}
       <div
         className="pagination-controls"
         style={{ textAlign: "center", marginTop: "30px" }}
@@ -114,30 +95,25 @@ function Blog() {
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
-          style={buttonStyle}
+          style={{ ...buttonStyle, opacity: currentPage === 1 ? 0.6 : 1 }}
         >
           ◀ Previous
         </button>
+
         <span style={{ margin: "0 15px" }}>
           Page {currentPage} of {totalPages}
         </span>
+
         <button
           onClick={nextPage}
           disabled={currentPage === totalPages}
-          style={buttonStyle}
+          style={{
+            ...buttonStyle,
+            opacity: currentPage === totalPages ? 0.6 : 1,
+          }}
         >
           Next ▶
         </button>
-      </div>
-      <div className="course-pagination">
-        <div className="course-navigation">
-          <Link to="/testimonials" className="nav-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/faq" className="nav-btn">
-            Next ⟶
-          </Link>
-        </div>
       </div>
     </div>
   );
@@ -146,13 +122,13 @@ function Blog() {
 const buttonStyle = {
   padding: "10px 20px",
   margin: "0 5px",
-  backgroundColor: "#3b82f6",
-
+  backgroundColor: "#2563eb", // tailwind blue-600
   color: "#fff",
   border: "none",
   borderRadius: "6px",
   cursor: "pointer",
   fontSize: "1rem",
+  transition: "background-color 0.3s ease",
 };
 
 export default Blog;

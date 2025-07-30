@@ -87,11 +87,43 @@ function BestApps2025() {
         your career, these apps will empower your language journey in 2025. Keep
         practicing consistently and track your progress weekly!
       </p>
-      <div className="blog-navigation">
-        <Link to="/blog/student-visa-interview" className="btn-nav">
+    
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/student-visa-interview"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/study-abroad-2025" className="btn-nav">
+        <Link
+          to="/blog/speaking-mistakes"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

@@ -15,7 +15,7 @@ function Courses() {
 
   return (
     <section className="courses">
-      <h3>Our Online Coaching Covers</h3>
+      <h3>Our Online Coaching Classes</h3>
       <div className="course-list">
         {courseList.map((course, index) => (
           <Link to={course.path} className="course-item" key={index}>

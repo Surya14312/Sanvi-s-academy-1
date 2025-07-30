@@ -46,64 +46,6 @@ function French() {
             <strong>Mode:</strong> Online + On-demand practice
           </li>
         </ul>
-
-        <h2>🏫 Coaching Infrastructure</h2>
-        <img src={frenchInfra} alt="French Class Setup" className="infra-img" />
-        <ul>
-          <li>Interactive digital whiteboard classrooms</li>
-          <li>Pronunciation labs with headset-mic setup</li>
-          <li>French learning apps & e-library access</li>
-          <li>1-on-1 speaking room & feedback tools</li>
-        </ul>
-
-        <h2>🌍 French is Accepted In</h2>
-        <div className="country-grid">
-          <div className="country-item">
-            <img
-              src="https://flagcdn.com/fr.svg"
-              alt="France"
-              className="country-flag"
-            />
-            <p>France</p>
-          </div>
-
-          <div className="country-item">
-            <img
-              src="https://flagcdn.com/ca.svg"
-              alt="Canada"
-              className="country-flag"
-            />
-            <p>Canada (TEF/TCF for PR)</p>
-          </div>
-
-          <div className="country-item">
-            <img
-              src="https://flagcdn.com/ch.svg"
-              alt="Switzerland"
-              className="country-flag"
-            />
-            <p>Switzerland</p>
-          </div>
-
-          <div className="country-item">
-            <img
-              src="https://flagcdn.com/be.svg"
-              alt="Belgium"
-              className="country-flag"
-            />
-            <p>Belgium</p>
-          </div>
-
-          <div className="country-item">
-            <img
-              src="https://flagcdn.com/cm.svg"
-              alt="Africa"
-              className="country-flag"
-            />
-            <p>Africa (Francophone Nations)</p>
-          </div>
-        </div>
-
         <h2>🎯 Why Learn French with Us?</h2>
         <ul>
           <li>Certified native and bilingual trainers</li>
@@ -111,11 +53,8 @@ function French() {
           <li>Spoken & written French immersion training</li>
           <li>Flexible batches (weekday/weekend)</li>
           <li>Job and study-abroad French readiness</li>
-          <li>Certified native and bilingual French trainers</li>
-          <li>Structured curriculum aligned with CEFR (A1 to C2 levels)</li>
+          <li>Structured curriculum aligned with CEFR (A1 to B2 levels)</li>
           <li>Spoken & written French immersion with real-world scenarios</li>
-          <li>Flexible batch timings: weekday, weekend & fast-track options</li>
-          <li>Flexible batch timings: weekday, weekend & fast-track options</li>
           <li>Mock tests and personalized feedback on all modules</li>
         </ul>
 
@@ -134,22 +73,22 @@ function French() {
           </thead>
           <tbody>
             <tr>
-              <td data-label="Course">FRENCH</td>
+              <td data-label="Course">French</td>
               <td data-label="No. of Classes">45</td>
               <td data-label="Mock Tests">3</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
-              <td data-label="Fees">15000</td>
+              <td data-label="Fees">15000 INR</td>
               <td data-label="discount">15 - 20%</td>
             </tr>
           </tbody>
         </table>
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
+        {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
           <Link to="/contact" className="contact-link">
             <button className="contact-btn">
               📞 Contact Us for Enrollment
             </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* <table className="pricing-table">
           <thead>

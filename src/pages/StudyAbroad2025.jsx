@@ -47,12 +47,16 @@ function StudyAbroad2025() {
 
       <h2>💼 Most In-Demand Courses in 2025</h2>
       <ul>
+        <li>Technology and Software Development</li>
+        <li>Healthcare</li>
+        <li>Medicine</li>
+        <li>Logistics and Supply Chain Management</li>
+        <li>Skilled Trades and Construction</li>
         <li>Artificial Intelligence & Machine Learning</li>
-        <li>Cybersecurity & Data Science</li>
-        <li>Business Analytics & Digital Marketing</li>
-        <li>Healthcare & Public Health</li>
-        <li>Sustainable Energy & Environmental Studies</li>
-        <li>Robotics, Automation & Advanced Engineering</li>
+        <li>Sustainability and Renewable Energy</li>
+        <li>Business and Financial Analysis</li>
+        <li>Education and Human Resources</li>
+        <li>Hospitality Management</li>
       </ul>
 
       <h2>🎓 Scholarship Opportunities</h2>
@@ -107,20 +111,20 @@ function StudyAbroad2025() {
 
       <h2>💡 Tips for Success in 2025</h2>
       <ul>
-        <li>🎯 Start early and stay ahead of deadlines</li>
-        <li>🧠 Focus on skill-based courses with job relevance</li>
-        <li>💼 Get internship or work experience before applying</li>
-        <li>📢 Attend virtual university fairs and webinars</li>
-        <li>📝 Write a powerful Statement of Purpose (SOP)</li>
-        <li>📁 Keep your documents organized and updated</li>
+        <li> Start early and stay ahead of deadlines</li>
+        <li> Focus on skill-based courses with job relevance</li>
+        <li> Get internship or work experience before applying</li>
+        <li> Attend virtual university fairs and webinars</li>
+        <li> Write a powerful Statement of Purpose (SOP)</li>
+        <li> Keep your documents organized and updated</li>
       </ul>
 
       <h2>📈 What's New in 2025?</h2>
       <ul>
-        <li>🛂 Simplified visa policies in Canada, UK, and Australia</li>
-        <li>💻 Rise of hybrid and online master's programs</li>
-        <li>🤖 More AI/ML courses and automation-based careers</li>
-        <li>🌿 Growth in environmental studies and sustainability careers</li>
+        <li> Simplified visa policies in Canada, UK, and Australia</li>
+        <li> Rise of hybrid and online master's programs</li>
+        <li> More AI/ML courses and automation-based careers</li>
+        <li> Growth in environmental studies and sustainability careers</li>
       </ul>
 
       <h2>🌟 Final Thought</h2>
@@ -132,11 +136,42 @@ function StudyAbroad2025() {
         abroad education partner!
       </p>
 
-      <div className="blog-navigation">
-        <Link to="/blog/best-apps-2025" className="btn-nav">
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/ielts-tips"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/why-japan" className="btn-nav">
+        <Link
+          to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>

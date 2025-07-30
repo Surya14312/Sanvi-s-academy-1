@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 function StudentVisaInterview() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -113,11 +112,50 @@ function StudentVisaInterview() {
         Preparation is key, and with the right approach, your visa approval is
         within reach!
       </p>
-      <div className="blog-navigation">
-        <Link to="/blog/gre-vocabulary" className="btn-nav">
+      <div
+        className="blog-nav-buttons"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      ></div>
+      <div
+        className="blog-navigation"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "40px",
+        }}
+      >
+        <Link
+          to="/blog/gre-vocabulary"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           👈 Previous
         </Link>
-        <Link to="/blog/best-apps-2025" className="btn-nav">
+        <Link
+          to="/blog/best-apps-2025"
+          className="btn-nav"
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#4e8cff",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "600",
+            fontFamily: "Poppins, sans-serif",
+          }}
+        >
           Next 👉
         </Link>
       </div>
