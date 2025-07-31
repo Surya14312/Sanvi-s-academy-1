@@ -50,6 +50,7 @@ function Duolingo() {
             <strong>Results:</strong> Delivered within 48 hours
           </li>
         </ul>
+
         <h2>🎯 Why Choose Our Duolingo Coaching?</h2>
         <ul>
           <li>Targeted practice for AI-evaluated speaking & writing</li>
@@ -69,59 +70,29 @@ function Duolingo() {
 
         <h2>🌍 DET Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://educationusa.state.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
-              <p>United States</p>
-            </div>
-          </a>
-          <a
-            href="https://www.gov.uk/student-visa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-              <p>United Kingdom</p>
-            </div>
-          </a>
-          <a
-            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-              <p>Canada</p>
-            </div>
-          </a>
-          <a
-            href="https://www.daad.de/en/study-and-research-in-germany/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" />
-              <p>Germany</p>
-            </div>
-          </a>
-          <a
-            href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder/study"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
-              <p>Australia</p>
-            </div>
-          </a>
+          <div>
+            <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
+            <p>United States</p>
+          </div>
+          <div>
+            <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
+            <p>United Kingdom</p>
+          </div>
+          <div>
+            <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
+            <p>Canada</p>
+          </div>
+          <div>
+            <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" />
+            <p>Germany</p>
+          </div>
+          <div>
+            <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" />
+            <p>Australia</p>
+          </div>
         </div>
 
-        <h2>💰 Course Plans & Pricing</h2>
+        <h2>💰 Duolingo Course Pricing</h2>
         <table className="course-table">
           <thead>
             <tr>
@@ -145,63 +116,24 @@ function Duolingo() {
           </tbody>
         </table>
 
-        {/* <table className="pricing-table">
-          <thead>
-            <tr>
-              <th>Plan</th>
-              <th>Features</th>
-              <th>Price (INR)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basic</td>
-              <td>10 Live Classes + Sample Questions + Strategy Guide</td>
-              <td>₹8000</td>
-            </tr>
-            <tr>
-              <td>Premium</td>
-              <td>Basic + 2 Full-Length Mock Tests + Feedback Analysis</td>
-              <td>₹10,000</td>
-            </tr>
-            <tr>
-              <td>Pro</td>
-              <td>Premium + 1-on-1 Sessions + Speaking/Writing Evaluation</td>
-              <td>₹11,500</td>
-            </tr>
-          </tbody>
-        </table> */}
-
         <p style={{ marginTop: "20px" }}>
           <strong>Score 120+ on your DET with our expert guidance!</strong>{" "}
           Schedule your free trial today and boost your global admission
           chances.
-          <Link to="/contact"> Contact us</Link> to begin your journey.
+          <Link to="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
+            {" "}
+            Contact us
+          </Link>{" "}
+          to begin your journey.
         </p>
 
-        <div
-          className="course-pagination"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "40px",
-            marginBottom: "20px",
-          }}
-        >
-          <div
-            className="course-navigation"
-            style={{
-              display: "flex",
-              gap: "20px",
-            }}
-          >
-            <Link to="/sat" className="nav-btn">
-              ⟵ Previous
-            </Link>
-            <Link to="/french" className="nav-btn">
-              Next ⟶
-            </Link>
-          </div>
+        <div className="course-pagination1">
+          <Link to="/sat" className="prev-btn">
+            ⟵ Previous
+          </Link>
+          <Link to="/french" className="next-btn">
+            Next ⟶
+          </Link>
         </div>
       </div>
     </div>

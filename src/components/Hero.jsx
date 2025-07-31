@@ -8,15 +8,15 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>
-            Welcome to The <span className="highlight">Sanvi’s Academy</span>
+            Welcome to <span className="highlight">The Sanvi’s Academy</span>
           </h1>
-          <h2>Ace Your Exams & Learn Languages</h2>
+          <h2 style={{ color: "#002366" }}>Ace Your Exams & Learn Languages</h2>
           <p>
             Get top scores in globally recognized exams like IELTS, TOEFL, PTE,
             GRE, GMAT, SAT, Duolingo & more. Our experienced tutors conduct
             regular live classes to guide you towards success.
           </p>
-          <Link to="/courses" className="cta-button">
+          <Link to="/contact" className="cta-button">
             {" "}
             {/* ✅ Link for internal navigation */}
             Get Started

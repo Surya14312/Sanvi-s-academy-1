@@ -21,7 +21,7 @@ function TOEFLvsDuolingoPTE() {
         based on your goals, skills, and timelines.
       </p>
 
-      <h2>📝 Overview of Each Test</h2>
+      <h2  style={{ color: "#d32f2f" }}>📝 Overview of Each Test</h2>
 
       <h3> IELTS (International English Language Testing System)</h3>
       <p>
@@ -30,7 +30,7 @@ function TOEFLvsDuolingoPTE() {
         is available in Academic and General formats, on paper or computer.
       </p>
 
-      <h3> TOEFL (Test of English as a Foreign Language)</h3>
+      <h3  style={{ color: "#d32f2f" }}> TOEFL (Test of English as a Foreign Language)</h3>
       <p>
         TOEFL is widely accepted in over 150 countries and trusted by 11,000+
         universities. It tests academic English through reading, listening,
@@ -38,7 +38,7 @@ function TOEFLvsDuolingoPTE() {
         some regions.
       </p>
 
-      <h3> Duolingo English Test (DET)</h3>
+      <h3  style={{ color: "#d32f2f" }}> Duolingo English Test (DET)</h3>
       <p>
         Duolingo is a modern, fully online test that gained popularity
         post-pandemic. It’s short, affordable, and can be taken from home. It
@@ -46,7 +46,7 @@ function TOEFLvsDuolingoPTE() {
         4,000+ institutions.
       </p>
 
-      <h3> PTE (Pearson Test of English)</h3>
+      <h3  style={{ color: "#d32f2f" }}> PTE (Pearson Test of English)</h3>
       <p>
         PTE is a computer-based test with high accuracy due to its AI scoring
         system. It evaluates real-life English used in academic settings and is
@@ -54,7 +54,7 @@ function TOEFLvsDuolingoPTE() {
         Europe.
       </p>
 
-      <h2>📊 Comparison Table</h2>
+      <h2 style={{ color: "#d32f2f" }}>📊 Comparison Table</h2>
       <div className="comptab">
         <table className="course-table">
         <thead>

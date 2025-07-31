@@ -123,27 +123,22 @@ function French() {
           </strong>{" "}
           Book your <strong>free demo</strong> today and receive your
           personalized learning roadmap.
-          <a href="/contact"> Contact us</a> to begin.
+          <a href="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
+            {" "}
+            Contact us
+          </a>{" "}
+          to begin.
         </p>
-        <div
-          className="course-pagination"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "40px",
-            marginBottom: "20px",
-          }}
-        >
-          <div
-            className="course-navigation"
-            style={{
-              display: "flex",
-              gap: "20px",
-            }}
-          >
+        <div className="course-pagination">
+          {/* Left: Previous */}
+          <div>
             <Link to="/duolingo" className="nav-btn">
               ⟵ Previous
             </Link>
+          </div>
+
+          {/* Right: Next */}
+          <div>
             <Link to="/german" className="nav-btn">
               Next ⟶
             </Link>

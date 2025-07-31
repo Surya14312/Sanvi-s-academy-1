@@ -7,8 +7,6 @@ function SAT() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Scroll to top on page load
-
   return (
     <div className="sat-page">
       <div className="page-container">
@@ -44,6 +42,7 @@ function SAT() {
               <strong>Mode:</strong> Computer-Based Test
             </li>
           </ul>
+
           <h2>🎯 Why Choose Our SAT Coaching?</h2>
           <ul>
             <li>Concept-building for Reading, Writing, and Math</li>
@@ -58,63 +57,26 @@ function SAT() {
           </ul>
 
           <h2>🌍 SAT Accepted In</h2>
-          <div className="country-grid">
-            <a
-              href="https://collegereadiness.collegeboard.org/sat"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
-                <p>United States</p>
-              </div>
-            </a>
-            <a
-              href="https://study-uk.britishcouncil.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
-                <p>United Kingdom</p>
-              </div>
-            </a>
-            <a
-              href="https://www.educanada.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
-                <p>Canada</p>
-              </div>
-            </a>
-            <a
-              href="https://www.studyinsingapore.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img
-                  src="https://flagcdn.com/w320/sg.png"
-                  alt="Singapore Flag"
-                />
-                <p>Singapore</p>
-              </div>
-            </a>
-            <a
-              href="https://studyinindia.gov.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                <img src="https://flagcdn.com/w320/in.png" alt="India Flag" />
-                <p>India (International Pathways)</p>
-              </div>
-            </a>
+          <div className="country-grid fade-in">
+            <div>
+              <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" />
+              <p>United States</p>
+            </div>
+            <div>
+              <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" />
+              <p>United Kingdom</p>
+            </div>
+            <div>
+              <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" />
+              <p>Canada</p>
+            </div>
+            <div>
+              <img src="https://flagcdn.com/w320/sg.png" alt="Singapore Flag" />
+              <p>Singapore</p>
+            </div>
           </div>
 
-          <h2>💰 Course Plans & Pricing</h2>
+          <h2>💰 SAT Course Pricing</h2>
           <table className="course-table">
             <thead>
               <tr>
@@ -137,69 +99,26 @@ function SAT() {
               </tr>
             </tbody>
           </table>
-          {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
-            <Link to="/contact" className="contact-link">
-              <button className="contact-btn">
-                📞 Contact Us for Enrollment
-              </button>
-            </Link>
-          </div> */}
-
-          {/* <table className="pricing-table">
-            <thead>
-              <tr>
-                <th>Plan</th>
-                <th>Features</th>
-                <th>Price (INR)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Basic</td>
-                <td>16 Live Classes + E-Books + Weekly Quizzes</td>
-                <td>₹22,000</td>
-              </tr>
-              <tr>
-                <td>Premium</td>
-                <td>Basic + 4 Mock Tests + Test Feedback Sessions</td>
-                <td>₹23,000</td>
-              </tr>
-              <tr>
-                <td>Pro</td>
-                <td>Premium + 1-on-1 Math/English Mentoring</td>
-                <td>₹24,000</td>
-              </tr>
-            </tbody>
-          </table> */}
 
           <p style={{ marginTop: "20px" }}>
             <strong>Target a 1500+ SAT score with us!</strong> Book a free demo
             and get your personalized prep roadmap.{" "}
-            <Link to="/contact">Contact us</Link> now to get started.
-          </p>
-          <div
-            className="course-pagination"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "40px",
-              marginBottom: "20px",
-            }}
-          >
-            <div
-              className="course-navigation"
-              style={{
-                display: "flex",
-                gap: "20px",
-              }}
+            <Link
+              to="/contact"
+              style={{ color: "#c91432", fontWeight: "bold" }}
             >
-              <Link to="/gre" className="nav-btn">
-                ⟵ Previous
-              </Link>
-              <Link to="/duolingo" className="nav-btn">
-                Next ⟶
-              </Link>
-            </div>
+              Contact us
+            </Link>{" "}
+            now to get started.
+          </p>
+
+          <div className="course-pagination1">
+            <Link to="/gre" className="prev-btn">
+              ⟵ Previous
+            </Link>
+            <Link to="/duolingo" className="next-btn">
+              Next ⟶
+            </Link>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ function StudentVisaInterview() {
         pro.
       </p>
 
-      <h2>🎯 What Is a Student Visa Interview?</h2>
+      <h2 style={{ color: "#d32f2f" }}>🎯 What Is a Student Visa Interview?</h2>
       <p>
         The interview assesses whether you're a genuine student, financially
         capable, and planning to return after your studies. It typically lasts
@@ -25,7 +25,7 @@ function StudentVisaInterview() {
         university choice, finances, and future plans.
       </p>
 
-      <h2>📋 Common Visa Interview Questions</h2>
+      <h2 style={{ color: "#d32f2f" }}>📋 Common Visa Interview Questions</h2>
       <ul>
         <li>
           🇺🇸 <strong>Why did you choose this university/country?</strong>
@@ -50,8 +50,8 @@ function StudentVisaInterview() {
         </li>
       </ul>
 
-      <h2>✅ Dos and Don’ts During the Interview</h2>
-      <h3>✔️ Do:</h3>
+      <h2 style={{ color: "#d32f2f" }}> Dos and Don’ts During the Interview</h2>
+      <h3 style={{ color: "#d32f2f" }}>✔️ Do:</h3>
       <ul>
         <li>Speak clearly and confidently in English</li>
         <li>Give honest and to-the-point answers</li>
@@ -63,7 +63,7 @@ function StudentVisaInterview() {
         </li>
       </ul>
 
-      <h3>❌ Don’t:</h3>
+      <h3 style={{ color: "#d32f2f" }}>❌ Don’t:</h3>
       <ul>
         <li>Lie or exaggerate — officers verify details</li>
         <li>Sound rehearsed or robotic</li>
@@ -74,7 +74,7 @@ function StudentVisaInterview() {
         <li>Criticize your home country or compare it negatively</li>
       </ul>
 
-      <h2>💬 Sample Answer Example</h2>
+      <h2 style={{ color: "#d32f2f" }}>💬 Sample Answer Example</h2>
       <p>
         <strong>Q: Why did you choose the University of XYZ?</strong>
       </p>
@@ -86,18 +86,16 @@ function StudentVisaInterview() {
         which I find very valuable.”
       </p>
 
-      <h2>📁 Documents You Should Carry</h2>
+      <h2 style={{ color: "#d32f2f" }}>📁 Documents You Should Carry</h2>
       <ul>
-        <li>✔️ Passport & Visa Application Confirmation</li>
-        <li>✔️ Admission Letter (I-20, CAS, Offer Letter)</li>
-        <li>
-          ✔️ Proof of Funds (bank statements, scholarships, sponsor letters)
-        </li>
-        <li>✔️ Academic Certificates & Transcripts</li>
-        <li>✔️ SOP, LORs, and Resume (optional but helpful)</li>
+        <li> Passport & Visa Application Confirmation</li>
+        <li> Admission Letter (I-20, CAS, Offer Letter)</li>
+        <li>Proof of Funds (bank statements, scholarships, sponsor letters)</li>
+        <li> Academic Certificates & Transcripts</li>
+        <li> SOP, LORs, and Resume (optional but helpful)</li>
       </ul>
 
-      <h2>🚀 Confidence-Building Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>🚀 Confidence-Building Tips</h2>
       <ul>
         <li>Practice with mock interviews (record yourself)</li>
         <li>Join Sanvi’s Academy visa preparation sessions</li>
@@ -105,7 +103,7 @@ function StudentVisaInterview() {
         <li>Dress professionally and arrive early on interview day</li>
       </ul>
 
-      <h2>🏁 Final Advice</h2>
+      <h2 style={{ color: "#d32f2f" }}>🏁 Final Advice</h2>
       <p>
         Treat your visa interview like a conversation, not an exam. Be genuine,
         stay calm, and focus on your purpose — your dream of studying abroad.

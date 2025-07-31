@@ -156,7 +156,7 @@ function IELTS() {
           </div>
         </div>
 
-        <h2>💰 Course Plans & Pricing</h2>
+        <h2>💰 IELTS Course Pricing</h2>
         <table className="course-table">
           <thead>
             <tr>
@@ -216,28 +216,22 @@ function IELTS() {
 
         <p style={{ marginTop: "20px" }}>
           <strong>Enroll now</strong> to start your IELTS journey!{" "}
-          <a href="/contact">Contact us</a> for demo sessions and details.
+          <a href="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
+            Contact us
+          </a>{" "}
+          for demo sessions and details.
         </p>
 
-        <div
-          className="course-pagination"
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            marginTop: "40px",
-            marginBottom: "20px",
-          }}
-        >
-          <div
-            className="course-navigation"
-            style={{
-              display: "flex",
-              gap: "20px",
-            }}
-          >
+        <div className="course-pagination">
+          {/* Left: Previous */}
+          <div>
             <Link to="/" className="nav-btn">
               ⟵ Previous
             </Link>
+          </div>
+
+          {/* Right: Next */}
+          <div>
             <Link to="/toefl" className="nav-btn">
               Next ⟶
             </Link>

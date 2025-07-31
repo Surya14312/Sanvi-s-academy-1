@@ -17,7 +17,7 @@ function StudyAbroad2025() {
         to pursue their dream studies abroad.
       </p>
 
-      <h2>🎯 Top Study Destinations for 2025</h2>
+      <h2 style={{ color: "#d32f2f" }}>🎯 Top Study Destinations for 2025</h2>
       <ul>
         <li>
           🇨🇦 <strong>Canada:</strong> Post-graduation work permits, diverse
@@ -45,7 +45,7 @@ function StudyAbroad2025() {
         </li>
       </ul>
 
-      <h2>💼 Most In-Demand Courses in 2025</h2>
+      <h2 style={{ color: "#d32f2f" }}>💼 Most In-Demand Courses in 2025</h2>
       <ul>
         <li>Technology and Software Development</li>
         <li>Healthcare</li>
@@ -59,7 +59,7 @@ function StudyAbroad2025() {
         <li>Hospitality Management</li>
       </ul>
 
-      <h2>🎓 Scholarship Opportunities</h2>
+      <h2 style={{ color: "#d32f2f" }}>🎓 Scholarship Opportunities</h2>
       <p>
         Many governments and universities are expanding scholarships for
         international students in 2025:
@@ -86,7 +86,7 @@ function StudyAbroad2025() {
         </li>
       </ul>
 
-      <h2>📋 2025 Application Timeline</h2>
+      <h2 style={{ color: "#d32f2f" }}>📋 2025 Application Timeline</h2>
       <ul>
         <li>
           <strong>Aug – Dec 2024:</strong> Research programs and shortlist
@@ -109,7 +109,7 @@ function StudyAbroad2025() {
         </li>
       </ul>
 
-      <h2>💡 Tips for Success in 2025</h2>
+      <h2 style={{ color: "#d32f2f" }}>💡 Tips for Success in 2025</h2>
       <ul>
         <li> Start early and stay ahead of deadlines</li>
         <li> Focus on skill-based courses with job relevance</li>
@@ -119,7 +119,7 @@ function StudyAbroad2025() {
         <li> Keep your documents organized and updated</li>
       </ul>
 
-      <h2>📈 What's New in 2025?</h2>
+      <h2 style={{ color: "#d32f2f" }}>📈 What's New in 2025?</h2>
       <ul>
         <li> Simplified visa policies in Canada, UK, and Australia</li>
         <li> Rise of hybrid and online master's programs</li>
@@ -127,7 +127,7 @@ function StudyAbroad2025() {
         <li> Growth in environmental studies and sustainability careers</li>
       </ul>
 
-      <h2>🌟 Final Thought</h2>
+      <h2 style={{ color: "#d32f2f" }}>🌟 Final Thought</h2>
       <p>
         2025 is your year to dream big and study globally. With the right
         guidance, financial planning, and preparation, you can secure a top

@@ -16,7 +16,7 @@ function GREVocabulary() {
         score percentile, mastering word power is a must.
       </p>
 
-      <h2>Why Vocabulary Matters</h2>
+      <h2 style={{ color: "#d32f2f" }}>Why Vocabulary Matters</h2>
       <p>
         Both the GRE and SAT place significant weight on vocabulary through
         reading comprehension, sentence equivalence, and text completion (GRE).
@@ -24,7 +24,7 @@ function GREVocabulary() {
         quickly and accurately.
       </p>
 
-      <h2>Sample Words You Must Know</h2>
+      <h2 style={{ color: "#d32f2f" }}>Sample Words You Must Know</h2>
 
       <ul>
         <li>
@@ -44,7 +44,7 @@ function GREVocabulary() {
         </li>
       </ul>
 
-      <h2>Techniques to Memorize Effectively</h2>
+      <h2 style={{ color: "#d32f2f" }}>Techniques to Memorize Effectively</h2>
       <ol>
         <li>
           <strong>Mnemonic Devices:</strong> Create mental stories to remember
@@ -68,7 +68,7 @@ function GREVocabulary() {
         </li>
       </ol>
 
-      <h2>How to Create Your Own Word List</h2>
+      <h2 style={{ color: "#d32f2f" }}>How to Create Your Own Word List</h2>
       <p>Maintain a personal vocabulary journal. For each word:</p>
       <ul>
         <li>Write the meaning in your own words</li>
@@ -77,7 +77,9 @@ function GREVocabulary() {
         <li>Mark difficulty level (Easy/Medium/Hard)</li>
       </ul>
 
-      <h2>Apps to Supercharge Your Vocab Learning</h2>
+      <h2 style={{ color: "#d32f2f" }}>
+        Apps to Supercharge Your Vocab Learning
+      </h2>
       <ul>
         <li>Magoosh Vocabulary Builder</li>
         <li>Knudge.me</li>
@@ -85,7 +87,9 @@ function GREVocabulary() {
         <li>WordUp App</li>
       </ul>
 
-      <h2>Final Tips to Master GRE/SAT Vocabulary</h2>
+      <h2 style={{ color: "#d32f2f" }}>
+        Final Tips to Master GRE/SAT Vocabulary
+      </h2>
       <ul>
         <li>Practice 15–20 new words daily</li>
         <li>Revise weekly with quizzes</li>

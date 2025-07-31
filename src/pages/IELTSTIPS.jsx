@@ -8,7 +8,9 @@ function IELTSTips() {
 
   return (
     <div className="blog-detail">
-      <h1>🎯 Top IELTS Tips for 2025 – Score 7+ Band with Confidence</h1>
+      <h1 style={{ color: "#d32f2f" }}>
+        🎯 Top IELTS Tips for 2025 – Score 7+ Band with Confidence
+      </h1>
 
       <p>
         Are you preparing for the IELTS in 2025? Whether you aim to study, work,
@@ -17,7 +19,7 @@ function IELTSTips() {
         Reading, Writing, and Speaking.
       </p>
 
-      <h2>🎧 IELTS Listening Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>🎧 IELTS Listening Tips</h2>
       <ul>
         <li>
           <strong>Read the questions before the audio starts</strong> to know
@@ -34,7 +36,7 @@ function IELTSTips() {
         </li>
       </ul>
 
-      <h2>📖 IELTS Reading Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>📖 IELTS Reading Tips</h2>
       <ul>
         <li>
           <strong>Skim first, scan later:</strong> get the gist of the passage
@@ -51,7 +53,7 @@ function IELTSTips() {
         </li>
       </ul>
 
-      <h2>✍️ IELTS Writing Tips (Task 1 & 2)</h2>
+      <h2 style={{ color: "#d32f2f" }}>✍️ IELTS Writing Tips (Task 1 & 2)</h2>
       <ul>
         <li>
           <strong>Structure is everything:</strong> Introduction, 2–3 Body
@@ -65,7 +67,7 @@ function IELTSTips() {
         <li>Practice formal tone; avoid slang and contractions.</li>
       </ul>
 
-      <h2>🗣️ IELTS Speaking Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>🗣️ IELTS Speaking Tips</h2>
       <ul>
         <li>
           <strong>Speak fluently, not perfectly:</strong> minor grammar errors
@@ -80,7 +82,7 @@ function IELTSTips() {
         <li>Record yourself to analyze pronunciation and pacing.</li>
       </ul>
 
-      <h2>⏰ Extra Preparation Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>⏰ Extra Preparation Tips</h2>
       <ul>
         <li>Create a daily 4-skill study plan (L, R, W, S).</li>
         <li>Use Cambridge IELTS books 1–17 for real practice.</li>

@@ -62,7 +62,7 @@ function German() {
             <li>German culture & etiquette immersion through role-plays</li>
           </ul>
 
-          <h2>💰 Course Pricing</h2>
+          <h2>💰 German Course Pricing</h2>
 
           <table className="course-table">
             <thead>
@@ -127,28 +127,24 @@ function German() {
               career in Europe!
             </strong>{" "}
             Book your <strong>free demo</strong> or{" "}
-            <Link to="/contact">Contact Us</Link> to begin your language
-            journey.
-          </p>
-          <div
-            className="course-pagination"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "40px",
-              marginBottom: "20px",
-            }}
-          >
-            <div
-              className="course-navigation"
-              style={{
-                display: "flex",
-                gap: "20px",
-              }}
+            <Link
+              to="/contact"
+              style={{ color: "#c91432", fontWeight: "bold" }}
             >
+              Contact Us
+            </Link>{" "}
+            to begin your language journey.
+          </p>
+          <div className="course-pagination">
+            {/* Left: Previous */}
+            <div>
               <Link to="/french" className="nav-btn">
                 ⟵ Previous
               </Link>
+            </div>
+
+            {/* Right: Next */}
+            <div>
               <Link to="/about" className="nav-btn">
                 Next ⟶
               </Link>

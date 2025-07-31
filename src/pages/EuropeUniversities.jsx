@@ -17,7 +17,7 @@ function EuropeUniversities() {
         France and Italy — this guide will help you get started.
       </p>
 
-      <h2>🇩🇪 Study in Germany</h2>
+      <h2 style={{ color: "#d32f2f" }}>🇩🇪 Study in Germany</h2>
       <p>
         Germany offers <strong>tuition-free education</strong> at most public
         universities. Top institutions like TU Munich, Heidelberg University,
@@ -32,7 +32,7 @@ function EuropeUniversities() {
         </li>
       </ul>
 
-      <h2>🇫🇷 Study in France</h2>
+      <h2 style={{ color: "#d32f2f" }}>🇫🇷 Study in France</h2>
       <p>
         France has over 1,500 English-taught programs. Schools like Sciences Po,
         Sorbonne University, and ESCP are globally ranked. Public universities
@@ -46,7 +46,7 @@ function EuropeUniversities() {
         <li>Applications open in October for Fall intake</li>
       </ul>
 
-      <h2>🇮🇹 Study in Italy</h2>
+      <h2 style={{ color: "#d32f2f" }}>🇮🇹 Study in Italy</h2>
       <p>
         Italy offers quality education at affordable fees. Universities like
         Politecnico di Milano, University of Bologna, and Sapienza are popular
@@ -62,7 +62,7 @@ function EuropeUniversities() {
         <li>Scholarship coverage can include housing and meals</li>
       </ul>
 
-      <h2>🇳🇱 Netherlands</h2>
+      <h2 style={{ color: "#d32f2f" }}>🇳🇱 Netherlands</h2>
       <p>
         Known for its progressive teaching methods and tech-focused degrees, the
         Netherlands is great for international students. Universities like TU
@@ -76,7 +76,9 @@ function EuropeUniversities() {
         </li>
       </ul>
 
-      <h2>🎯 How to Shortlist European Universities</h2>
+      <h2 style={{ color: "#d32f2f" }}>
+        🎯 How to Shortlist European Universities
+      </h2>
       <p>Here’s a simple method to choose the best university for you:</p>
       <ol>
         <li>
@@ -100,7 +102,7 @@ function EuropeUniversities() {
         </li>
       </ol>
 
-      <h2>📑 Required Documents</h2>
+      <h2 style={{ color: "#d32f2f" }}>📑 Required Documents</h2>
       <ul>
         <li>Academic transcripts</li>
         <li>Statement of Purpose (SOP)</li>
@@ -109,7 +111,7 @@ function EuropeUniversities() {
         <li>Passport copy & CV</li>
       </ul>
 
-      <h2>🚀 Final Tips</h2>
+      <h2 style={{ color: "#d32f2f" }}>🚀 Final Tips</h2>
       <ul>
         <li>Learn the basics of the local language for smoother adjustment.</li>
         <li> Apply early—European deadlines are strict.</li>

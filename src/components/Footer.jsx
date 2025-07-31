@@ -1,5 +1,10 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaLinkedin,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -21,12 +26,19 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
+
+          <div className="contact-item">
+            <FaPhoneAlt className="icon" />
+            <a href="tel:+919123456789">+91 91234 56789</a>
+          </div>
+
           <div className="contact-item">
             <FaEnvelope className="icon" />
             <a href="mailto:thesanvisacademy@gmail.com">
               thesanvisacademy@gmail.com
             </a>
           </div>
+
           <div className="contact-item">
             <FaLinkedin className="icon" />
             <a
@@ -37,9 +49,10 @@ function Footer() {
               LinkedIn Profile
             </a>
           </div>
+
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
-            <span>
+            <span className="address">
               A23, Basement Floor, Gemini Parsn Commercial Complex,
               <br />
               Nungambakkam, Chennai, India - 600034
@@ -52,10 +65,10 @@ function Footer() {
           <h4>Quick Links</h4>
           <Link to="/">🏠 Home</Link>
           <Link to="/about">📘 About Us</Link>
-          <Link to="/contact">📩 Contact</Link>
           <Link to="/testimonials">💬 Testimonials</Link>
-
           <Link to="/blog">📝 Blog</Link>
+          <Link to="/faq">❓ FAQ</Link>
+          <Link to="/contact">📩 Contact</Link>
         </div>
 
         {/* Google Map */}
@@ -73,9 +86,20 @@ function Footer() {
         </div>
       </div>
 
-      <p className="footer-brand">
-        &copy; {new Date().getFullYear()} <strong>The Sanvi’s Academy</strong>.
-        All rights reserved.
+      <p
+        className="footer-brand"
+        style={{
+          textAlign: "center",
+          marginTop: "30px",
+          // color: "#444",
+          fontWeight: "bold",
+        }}
+      >
+        &copy; {new Date().getFullYear()}{" "}
+        <span style={{ color: "#c62828", fontWeight: "bold" }}>
+          The Sanvi’s Academy
+        </span>
+        . All rights reserved.
       </p>
     </footer>
   );

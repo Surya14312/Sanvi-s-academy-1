@@ -13,7 +13,7 @@ function About() {
   return (
     <div className="about-page">
       <div className="about-container">
-        <h2>About The Sanvi’s Academy</h2>
+        <h2>About The Sanvi's Academy</h2>
         <p>
           At The Sanvi’s Academy, we specialize in coaching for international
           exams such as IELTS, TOEFL, GRE, GMAT, PTE, French, and German. Our
@@ -32,8 +32,16 @@ function About() {
         <h3>Meet Our Founders</h3>
         <div className="founder-profiles">
           <div className="founder-card">
-            <h4>Mrs. V. Sangeetha</h4>
-            <p style={{ textAlign: "justify" }}>
+            <h4 style={{ color: "#c62828" }}>Mrs. V. Sangeetha</h4>
+            <p
+              style={{
+                textAlign: "justify",
+                color: "#333333",
+                fontSize: "18px",
+                fontWeight: "400",
+                lineHeight: "1.8",
+              }}
+            >
               A Serial Entrepreneur who founded Sanvi’s Academy. She has over 10
               years of Experience in Counselling and Administration, Gained in
               both India and Singapore.Sangeetha Specializes in Guiding students
@@ -51,8 +59,16 @@ function About() {
             </p>
           </div>
           <div className="founder-card">
-            <h4>Mr.Vijayarajan</h4>
-            <p style={{ textAlign: "justify" }}>
+            <h4 style={{ color: "#c62828" }}>Mr.Vijayarajan</h4>
+            <p
+              style={{
+                textAlign: "justify",
+                color: "#333333",
+                fontSize: "18px",
+                fontWeight: "400",
+                lineHeight: "1.8",
+              }}
+            >
               Brings over 26 years of extensive Industry Rich Experience, having
               successfully executed a wide range of Domestic and International
               Projects Across Diverse Sectors. He Possesses Deep Insights Into

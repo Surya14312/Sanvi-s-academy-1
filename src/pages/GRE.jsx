@@ -23,7 +23,7 @@ function GreGmat() {
           <strong> GRE (Graduate Record Examination)</strong> and
           <strong> GMAT (Graduate Management Admission Test)</strong>. Our
           courses are designed for students aspiring to pursue postgraduate and
-          MBA programs at global universities.Our tailored courses are designed
+          MBA programs at global universities. Our tailored courses are designed
           for students aiming to pursue postgraduate and MBA programs in leading
           global universities. With strategic preparation, personal mentoring,
           and full-length mock tests, we ensure you're fully equipped to ace
@@ -67,56 +67,18 @@ function GreGmat() {
 
         <h2>🌍 GRE/GMAT Accepted In</h2>
         <div className="country-grid">
-          <a
-            href="https://www.daad.de/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/de.png" alt="Germany" />
-              <p>Germany</p>
+          {[
+            { flag: "de", name: "Germany" },
+            { flag: "at", name: "Austria" },
+            { flag: "ch", name: "Switzerland" },
+            { flag: "lu", name: "Luxembourg" },
+            { flag: "na", name: "Namibia" },
+          ].map(({ flag, name }) => (
+            <div key={flag} className="country-card">
+              <img src={`https://flagcdn.com/w320/${flag}.png`} alt={name} />
+              <p>{name}</p>
             </div>
-          </a>
-          <a
-            href="https://studyinaustria.at/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/at.png" alt="Austria" />
-              <p>Austria</p>
-            </div>
-          </a>
-          <a
-            href="https://www.swissuniversities.ch/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/ch.png" alt="Switzerland" />
-              <p>Switzerland</p>
-            </div>
-          </a>
-          <a
-            href="https://luxembourg.public.lu/en/studies.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/lu.png" alt="Luxembourg" />
-              <p>Luxembourg</p>
-            </div>
-          </a>
-          <a
-            href="https://www.studyinnamibia.info/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <img src="https://flagcdn.com/w320/na.png" alt="Namibia" />
-              <p>Namibia</p>
-            </div>
-          </a>
+          ))}
         </div>
 
         <h2>🎯 Why Choose Us?</h2>
@@ -130,7 +92,7 @@ function GreGmat() {
           <li>Score Improvement Guarantee</li>
         </ul>
 
-        <h2>💰 Course Plans & Pricing</h2>
+        <h2>💰 GRE/GMAT Course Pricing</h2>
         <table className="course-table">
           <thead>
             <tr>
@@ -161,68 +123,23 @@ function GreGmat() {
             </tr>
           </tbody>
         </table>
-        {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
-          <Link to="/contact" className="contact-link">
-            <button className="contact-btn">
-              📞 Contact Us for Enrollment
-            </button>
-          </Link>
-        </div> */}
-        {/* <table
-          className="pricing-table"
-          style={{ width: "100%", borderCollapse: "collapse" }}
-        >
-          <thead>
-            <tr style={{ backgroundColor: "#f0f0f0" }}>
-              <th>Plan</th>
-              <th>Features</th>
-              <th>Price (INR)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basic</td>
-              <td>Live Classes + Study Material</td>
-              <td>₹22,000</td>
-            </tr>
-            <tr>
-              <td>Premium</td>
-              <td>+ Mock Tests + Sectional Reviews</td>
-              <td>₹23,000</td>
-            </tr>
-            <tr>
-              <td>Pro</td>
-              <td>+ 1-on-1 Mentoring + AWA & IR Evaluation</td>
-              <td>₹24,000</td>
-            </tr>
-          </tbody>
-        </table> */}
 
         <p style={{ marginTop: "20px" }}>
           <strong>Get GRE/GMAT-ready with us!</strong> Achieve your dream
-          university admit.
-          <Link to="/contact"> Contact us</Link> now to start with a free demo
-          session.
+          university admit.{" "}
+          <Link to="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
+            Contact us
+          </Link>{" "}
+          now to start with a free demo session.
         </p>
-        <div
-          className="course-pagination"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "40px",
-            marginBottom: "20px",
-          }}
-        >
-          <div
-            className="course-navigation"
-            style={{
-              display: "flex",
-              gap: "20px",
-            }}
-          >
+
+        <div className="course-pagination">
+          <div>
             <Link to="/pte" className="nav-btn">
               ⟵ Previous
             </Link>
+          </div>
+          <div>
             <Link to="/sat" className="nav-btn">
               Next ⟶
             </Link>
