@@ -283,7 +283,8 @@ html {
 .hero-image {
   flex: 1 1 400px;
   text-align: center;
-  animation: fadeInRight 1.2s ease-in-out;
+  animation: fadeInRight 0.8s ease-in-out;
+  will-change: transform, opacity;
 }
 
 .hero-image img {
@@ -292,17 +293,18 @@ html {
   border-radius: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  loading: lazy; /* Not a valid CSS but ensure it's set in HTML */
 }
 
 .hero-image img:hover {
   transform: scale(1.03);
 }
 
-/* Animations */
-@keyframes fadeInLeft {
+/* Animation */
+@keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(40px);
   }
   to {
     opacity: 1;
@@ -594,7 +596,8 @@ body::after {
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
   opacity: 1;
   transform: scale(0.95);
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
   overflow: hidden;
   border: 2px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(2px);
@@ -602,6 +605,7 @@ body::after {
   margin: 20px auto;
   height: auto;
 }
+
 
 /* Animation Class */
 .animate-img {
@@ -927,21 +931,24 @@ body::after {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 .toefl-img {
+
+  flex: 1 1 300px;
+  max-width: 100%;
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  aspect-ratio: 5 / 4; /* Maintains ratio for responsiveness */
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transform: scale(0.95) translateY(24px);
-  animation: zoomFade 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-  filter: brightness(1.05) contrast(1.08) saturate(1.1);
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
   display: block;
   margin: 20px auto;
+  height: auto;
 }
+
 
 /* Hover effect */
 .toefl-img:hover {
@@ -1248,20 +1255,24 @@ body {
 
 /*  Image Animation */
 .pte-img {
+ 
+  flex: 1 1 300px;
+  max-width: 100%;
   width: 100%;
-  max-width: 520px;
-  flex: 1 1 400px;
-  margin: 20px auto;
   border-radius: 20px;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
-  animation: pteZoomFade 1s ease-out forwards;
-  object-fit: cover;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  opacity: 0;
-  transform: scale(0.95) translateY(25px);
-  filter: brightness(1.05) contrast(1.05);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
   display: block;
+  margin: 20px auto;
+  height: auto;
 }
+
 
 /* Hover effect */
 .pte-img:hover {
@@ -1560,19 +1571,24 @@ body {
 
 /* Image Section */
 .gre-gmat-img-wrapper {
-  position: relative;
-  width: 100%;
+ 
+  flex: 1 1 300px;
   max-width: 100%;
-  margin: 0 auto 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-  animation: fadeZoom 1s ease-out forwards;
-  opacity: 0;
-  transform: scale(0.96);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
   will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  display: block;
+  margin: 20px auto;
+  height: auto;
 }
+
 
 .gre-gmat-img-wrapper:hover {
   transform: scale(1.02);
@@ -1581,14 +1597,24 @@ body {
 
 /* Image itself */
 .gre-gmat-img {
+
+  flex: 1 1 300px;
+  max-width: 100%;
   width: 100%;
-  height: auto;
-  max-height: 480px;
-  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
   display: block;
-  border-radius: 12px;
-  transition: filter 0.3s ease;
+  margin: 20px auto;
+  height: auto;
 }
+
 
 /* Fade and scale animation */
 @keyframes fadeZoom {
@@ -1934,6 +1960,25 @@ body {
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+.sat -img img {
+  
+  flex: 1 1 300px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  display: block;
+  margin: 20px auto;
+  height: auto;
+}
+
 
 /* ========== Details Section ========== */
 .sat-details {
@@ -2117,14 +2162,25 @@ body {
 
 /* Image */
 .duolingo-img {
+  
+  flex: 1 1 300px;
+  max-width: 100%;
   width: 100%;
-  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transform: scale(0.95);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, opacity;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  display: block;
+  margin: 20px auto;
   height: auto;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  margin: auto;
 }
+
+
 
 .duolingo-img:hover {
   transform: scale(1.03);
