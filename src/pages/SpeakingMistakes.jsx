@@ -19,7 +19,7 @@ function SpeakingMistakes() {
         boost your performance.
       </p>
 
-      <h2  style={{ color: "#d32f2f" }}>🚫 Common Mistakes Students Make</h2>
+      <h2 style={{ color: "#d32f2f" }}>🚫 Common Mistakes Students Make</h2>
       <ul>
         <li>
           <strong>Long pauses and hesitation:</strong> Shows lack of fluency and
@@ -71,7 +71,7 @@ function SpeakingMistakes() {
         </li>
       </ul>
 
-      <h2  style={{ color: "#d32f2f" }}>🧠 Speaking Test Breakdown</h2>
+      <h2 style={{ color: "#d32f2f" }}>🧠 Speaking Test Breakdown</h2>
       <p>
         Here's what examiners look for in speaking modules like IELTS, TOEFL,
         and PTE:
@@ -95,7 +95,7 @@ function SpeakingMistakes() {
         </li>
       </ul>
 
-      <h2  style={{ color: "#d32f2f" }}>🚀 Boost Your Speaking Confidence</h2>
+      <h2 style={{ color: "#d32f2f" }}>🚀 Boost Your Speaking Confidence</h2>
       <p>Try these final confidence boosters:</p>
       <ul>
         <li> Speak with friends, mentors, or AI tools every day</li>
@@ -107,51 +107,26 @@ function SpeakingMistakes() {
         </li>
       </ul>
 
-      <h2  style={{ color: "#d32f2f" }}>🎯 Final Thought</h2>
+      <h2 style={{ color: "#d32f2f" }}>🎯 Final Thought</h2>
       <p>
         Speaking tests are not about perfection — they’re about expressing
         yourself clearly and confidently. Practice smart, avoid the common
         pitfalls, and you’re sure to impress the examiner.
       </p>
+      <div className="course-pagination">
+        {/* Left: Previous */}
+        <div>
+          <Link to="/blog/best-apps-2025" className="nav-btn">
+            ⟵ Previous
+          </Link>
+        </div>
 
-      <div
-        className="blog-navigation"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "40px",
-        }}
-      >
-        <Link
-          to="/blog/best-apps-2025"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          👈 Previous
-        </Link>
-        <Link
-          to="/blog/europe-universities"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          Next 👉
-        </Link>
+        {/* Right: Next */}
+        <div>
+          <Link to="/blog/europe-universities" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

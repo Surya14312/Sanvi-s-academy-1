@@ -28,7 +28,7 @@ function French() {
       </div>
 
       <div className="french-details">
-        <h2>📘 Course Overview</h2>
+        <h2>📘 French Highlights</h2>
         <ul>
           <li>
             <strong>Levels:</strong> A1, A2, B1, B2, C1, C2
@@ -56,6 +56,15 @@ function French() {
           <li>Structured curriculum aligned with CEFR (A1 to B2 levels)</li>
           <li>Spoken & written French immersion with real-world scenarios</li>
           <li>Mock tests and personalized feedback on all modules</li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
 
         <h2>💰 French Course Pricing</h2>
@@ -69,6 +78,8 @@ function French() {
               <th>Benefits</th>
               <th>Fees</th>
               <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -79,6 +90,11 @@ function French() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">15000 INR</td>
               <td data-label="discount">15 - 20%</td>
+              <td data-label="Final Fee">
+                {" "}
+                <div className="final-fee-box">₹12,000 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
           </tbody>
         </table>
@@ -123,10 +139,9 @@ function French() {
           </strong>{" "}
           Book your <strong>free demo</strong> today and receive your
           personalized learning roadmap.
-          <a href="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
-            {" "}
+          <Link to="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
             Contact us
-          </a>{" "}
+          </Link>{" "}
           to begin.
         </p>
         <div className="course-pagination">

@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaLinkedin,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,8 +15,6 @@ function Footer() {
             className="globe-img"
           />
           <p className="footer-tagline">Empowering Success Globally.</p>
-
-          <div className="logo-texts"></div>
         </div>
 
         {/* Contact Info */}
@@ -29,7 +23,7 @@ function Footer() {
 
           <div className="contact-item">
             <FaPhoneAlt className="icon" />
-            <a href="tel:+919123456789">+91 91234 56789</a>
+            <a href="tel:+919966428787">+91 9966428787</a>
           </div>
 
           <div className="contact-item">
@@ -50,12 +44,29 @@ function Footer() {
             </a>
           </div>
 
-          <div className="contact-item">
-            <FaMapMarkerAlt className="icon" />
-            <span className="address">
-              A23, Basement Floor, Gemini Parsn Commercial Complex,
-              <br />
-              Nungambakkam, Chennai, India - 600034
+          {/* Address with map icon */}
+          <div
+            className="address-line"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              marginTop: "0px",
+            }}
+          >
+            <FaMapMarkerAlt
+              style={{
+                color: "#d32f2f",
+                fontSize: "40px",
+                marginBottom: "40px",
+              }}
+              title="Location"
+            />
+            <span
+              style={{ fontSize: "15px", fontWeight: "500", color: "#000" }}
+            >
+              A23, Basement Floor, Gemini Parsn Commerical Complex,
+              Nungambakkam, Chennai - 600034
             </span>
           </div>
         </div>
@@ -86,12 +97,12 @@ function Footer() {
         </div>
       </div>
 
+      {/* Footer Note */}
       <p
         className="footer-brand"
         style={{
           textAlign: "center",
           marginTop: "30px",
-          // color: "#444",
           fontWeight: "bold",
         }}
       >

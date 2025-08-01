@@ -24,10 +24,10 @@ function PTA() {
       </div>
 
       <div className="pte-details">
-        <h2>📘 PTE Overview</h2>
+        <h2>📘 PTE Overview Highlights</h2>
         <ul>
           <li>
-            <strong>Total Score:</strong> 10–90
+            <strong>Total Score:</strong>To Measured on 10–90
           </li>
           <li>
             <strong>Test Type:</strong> Computer‑based, AI‑evaluated
@@ -39,8 +39,8 @@ function PTA() {
             <strong>Test Sections:</strong>
             <ul>
               <li>Speaking & Writing: ~55–67 minutes</li>
-              <li>Reading: ~29–30 minutes</li>
-              <li>Listening: ~30–43 minutes</li>
+              <li>Reading: 29–30 minutes</li>
+              <li>Listening: 30–43 minutes</li>
             </ul>
           </li>
         </ul>
@@ -60,43 +60,34 @@ function PTA() {
             Sentence & Essay
           </li>
           <li>Expert feedback on writing tasks with improvement suggestions</li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
 
         <h2>🌍 PTE is Accepted In</h2>
         <div className="country-grid">
           {[
-            {
-              href: "https://www.studyinaustralia.gov.au/",
-              flag: "au",
-              name: "Australia",
-            },
-            {
-              href: "https://www.studywithnewzealand.govt.nz/",
-              flag: "nz",
-              name: "New Zealand",
-            },
-            { href: "https://www.educanada.ca/", flag: "ca", name: "Canada" },
-            {
-              href: "https://study-uk.britishcouncil.org/",
-              flag: "gb",
-              name: "United Kingdom",
-            },
-            {
-              href: "https://educationusa.state.gov/",
-              flag: "us",
-              name: "USA",
-            },
-          ].map(({ href, flag, name }) => (
-            <a key={flag} href={href} target="_blank" rel="noopener noreferrer">
-              <div>
-                <img
-                  src={`https://flagcdn.com/w320/${flag}.png`}
-                  alt={`${name} Flag`}
-                  className="country-flag"
-                />
-                <p>{name}</p>
-              </div>
-            </a>
+            { flag: "au", name: "Australia" },
+            { flag: "nz", name: "New Zealand" },
+            { flag: "ca", name: "Canada" },
+            { flag: "gb", name: "United Kingdom" },
+            { flag: "us", name: "USA" },
+          ].map(({ flag, name }) => (
+            <div key={flag}>
+              <img
+                src={`https://flagcdn.com/w320/${flag}.png`}
+                alt={`${name} Flag`}
+                className="country-flag"
+              />
+              <p>{name}</p>
+            </div>
           ))}
         </div>
 
@@ -110,6 +101,8 @@ function PTA() {
               <th>Benefits</th>
               <th>Fees</th>
               <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -120,6 +113,10 @@ function PTA() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
+              <td data-label="Final Fee">
+                <div className="final-fee-box">₹6,800 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
           </tbody>
         </table>

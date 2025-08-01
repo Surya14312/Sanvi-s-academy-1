@@ -8,7 +8,9 @@ function GREVocabulary() {
 
   return (
     <div className="blog-detail">
-      <h1>Master Your Vocabulary for GRE/SAT – Boost Your Verbal Score</h1>
+      <h1 style={{ color: "#d32f2f" }}>
+        Master Your Vocabulary for GRE/SAT – Boost Your Verbal Score
+      </h1>
 
       <p>
         A strong vocabulary is the secret weapon to ace the verbal section of
@@ -25,7 +27,6 @@ function GREVocabulary() {
       </p>
 
       <h2 style={{ color: "#d32f2f" }}>Sample Words You Must Know</h2>
-
       <ul>
         <li>
           <strong>Obfuscate</strong> – to confuse or make unclear
@@ -45,7 +46,7 @@ function GREVocabulary() {
       </ul>
 
       <h2 style={{ color: "#d32f2f" }}>Techniques to Memorize Effectively</h2>
-      <ol>
+      <ul>
         <li>
           <strong>Mnemonic Devices:</strong> Create mental stories to remember
           meanings.
@@ -66,7 +67,7 @@ function GREVocabulary() {
           <strong>Contextual Reading:</strong> Read editorials, The Economist,
           or NYT.
         </li>
-      </ol>
+      </ul>
 
       <h2 style={{ color: "#d32f2f" }}>How to Create Your Own Word List</h2>
       <p>Maintain a personal vocabulary journal. For each word:</p>
@@ -100,48 +101,26 @@ function GREVocabulary() {
       <p>
         Building a strong vocabulary is a journey, not a sprint. With consistent
         effort and the right strategies, you’ll be ready to conquer even the
-        trickiest GRE/SAT verbal questions. Let Sanvi’s Academy guide you every
-        step of the way!
+        trickiest GRE/SAT verbal questions. Let{" "}
+        <strong>The Sanvi’s Academy</strong> guide you every step of the way!
       </p>
+      <div className="course-pagination">
+        {/* Left: Previous */}
+        <div>
+          <Link
+            to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
+            className="nav-btn"
+          >
+            ⟵ Previous
+          </Link>
+        </div>
 
-      <div
-        className="blog-navigation"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "40px",
-        }}
-      >
-        <Link
-          to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          👈 Previous
-        </Link>
-        <Link
-          to="/blog/student-visa-interview"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          Next 👉
-        </Link>
+        {/* Right: Next */}
+        <div>
+          <Link to="/blog/student-visa-interview" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ function Duolingo() {
       </div>
 
       <div className="duolingo-details">
-        <h2>📘 Duolingo</h2>
+        <h2>📘 Duolingo Highlights </h2>
         <ul>
           <li>
             <strong>Total Score:</strong> 10–160
@@ -37,7 +37,7 @@ function Duolingo() {
             Conversation, and Production
           </li>
           <li>
-            <strong>Duration:</strong> ~1 hour
+            <strong>Duration:</strong> 1 hour
           </li>
           <li>
             <strong>Question Types:</strong> Reading, Writing, Speaking, and
@@ -66,6 +66,15 @@ function Duolingo() {
             Fluency, intonation, and clarity training for speaking responses
           </li>
           <li>Practice with real exam-style question types and difficulty</li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
 
         <h2>🌍 DET Accepted In</h2>
@@ -102,6 +111,8 @@ function Duolingo() {
               <th>Benefits</th>
               <th>Fees</th>
               <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -112,6 +123,11 @@ function Duolingo() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
+              <td data-label="Final Fee">
+                {" "}
+                <div className="final-fee-box">₹6,800 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
           </tbody>
         </table>

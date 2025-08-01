@@ -24,7 +24,7 @@ function SAT() {
         </div>
 
         <div className="sat-details">
-          <h2>📘 SAT</h2>
+          <h2>📘 SAT Highlights</h2>
           <ul>
             <li>
               <strong>Total Score:</strong> 400–1600
@@ -33,7 +33,7 @@ function SAT() {
               <strong>Test Sections:</strong> Reading & Writing, Math
             </li>
             <li>
-              <strong>Duration:</strong> ~2 hours 14 minutes (Digital SAT)
+              <strong>Duration:</strong> 2 hours 14 minutes (Digital SAT)
             </li>
             <li>
               <strong>Question Types:</strong> Multiple Choice & Grid-In
@@ -53,6 +53,15 @@ function SAT() {
             <li>Updated content aligned with the latest Digital SAT format</li>
             <li>
               Special focus on calculator and non-calculator math sections
+            </li>
+            <li>25 years of Expertise in Standardized Tests Coaching</li>
+            <li>Veteran, Highly Skilled, Certified Trainers</li>
+            <li>Result-Oriented Teaching to Ensure High Scores</li>
+            <li>Individual Attention and Enthused Learning Environment</li>
+            <li>Mock Tests to gain real Test Experience</li>
+            <li>Free Demo Class</li>
+            <li>
+              Each class is 1.5 hours long – approximately 0.5 month duration
             </li>
           </ul>
 
@@ -86,6 +95,8 @@ function SAT() {
                 <th>Benefits</th>
                 <th>Fees</th>
                 <th>Discount</th>
+                <th className="final-fee-header">Final Fee</th>{" "}
+                {/* Styled header */}
               </tr>
             </thead>
             <tbody>
@@ -96,6 +107,10 @@ function SAT() {
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">22500 INR</td>
                 <td data-label="Discount">15 - 20%</td>
+                <td data-label="Final Fee">
+                  <div className="final-fee-box">₹12,800 INR</div>
+                </td>{" "}
+                {/* New Value */}
               </tr>
             </tbody>
           </table>

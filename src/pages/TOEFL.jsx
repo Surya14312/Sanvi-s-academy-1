@@ -33,10 +33,11 @@ function TOEFL() {
       </div>
 
       <div className="toefl-details">
-        <h2>📘 TOEFL</h2>
+        <h2>📘 TOEFL Highlights</h2>
         <ul>
           <li>
-            <strong>Total Score:</strong> 0–120 (each section scored out of 30)
+            <strong>Total Score:</strong> 0–120 (each section Measured out of
+            30)
           </li>
           <li>
             <strong>Test Type:</strong> iBT (Internet-Based Test)
@@ -68,6 +69,15 @@ function TOEFL() {
           <li>
             Writing task evaluation with corrections, suggestions, and scoring
           </li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
 
         <h2>🌍 TOEFL is Accepted In</h2>
@@ -93,6 +103,8 @@ function TOEFL() {
               <th>Benefits</th>
               <th>Fees</th>
               <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -103,17 +115,22 @@ function TOEFL() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
+              <td data-label="Final Fee">
+                {" "}
+                <div className="final-fee-box">₹6,800 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
           </tbody>
         </table>
 
         <p style={{ marginTop: "20px" }}>
-          <strong>Ready to boost your TOEFL score?</strong> Get started with our
-          expert trainers now!{" "}
+          <strong>Ready to boost your TOEFL score?</strong>{" "}
           <Link to="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
             Contact us
           </Link>{" "}
-          for demo sessions and guidance.
+          Get started with our expert trainers now! for demo sessions and
+          guidance.
         </p>
 
         <div className="course-pagination">

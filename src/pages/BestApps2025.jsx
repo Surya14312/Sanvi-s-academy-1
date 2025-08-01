@@ -8,7 +8,7 @@ function BestApps2025() {
 
   return (
     <div className="blog-detail">
-      <h1>Best Language Learning Apps for 2025</h1>
+      <h1 style={{ color: "#d32f2f" }}>Best Language Learning Apps for 2025</h1>
 
       <p>
         In today’s fast-paced world, learning a new language has become more
@@ -87,45 +87,20 @@ function BestApps2025() {
         your career, these apps will empower your language journey in 2025. Keep
         practicing consistently and track your progress weekly!
       </p>
+      <div className="course-pagination">
+        {/* Left: Previous */}
+        <div>
+          <Link to="/blog/student-visa-interview" className="nav-btn">
+            ⟵ Previous
+          </Link>
+        </div>
 
-      <div
-        className="blog-navigation"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "40px",
-        }}
-      >
-        <Link
-          to="/blog/student-visa-interview"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          👈 Previous
-        </Link>
-        <Link
-          to="/blog/speaking-mistakes"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          Next 👉
-        </Link>
+        {/* Right: Next */}
+        <div>
+          <Link to="/blog/speaking-mistakes" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

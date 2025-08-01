@@ -32,7 +32,7 @@ function GreGmat() {
       </div>
 
       <div className="gre-gmat-details" style={{ marginTop: "30px" }}>
-        <h2>📘 GRE Overview</h2>
+        <h2>📘 GRE/GMAT Highlights</h2>
         <ul>
           <li>
             <strong>Total Score:</strong> 260–340
@@ -58,7 +58,7 @@ function GreGmat() {
             Reasoning, AWA
           </li>
           <li>
-            <strong>Duration:</strong> ~2 hours 15 minutes
+            <strong>Duration:</strong> 2 hours 15 minutes
           </li>
           <li>
             <strong>Mode:</strong> Computer-Based (Focus Edition)
@@ -81,7 +81,7 @@ function GreGmat() {
           ))}
         </div>
 
-        <h2>🎯 Why Choose Us?</h2>
+        <h2>🎯Why Choose our GRE/GMAT Coaching?</h2>
         <ul>
           <li>Advanced strategies for Quant & Verbal mastery</li>
           <li>Full-length timed mock exams</li>
@@ -90,6 +90,15 @@ function GreGmat() {
           <li>Live Interactive Sessions</li>
           <li>Analytical Writing Practice</li>
           <li>Score Improvement Guarantee</li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
 
         <h2>💰 GRE/GMAT Course Pricing</h2>
@@ -102,6 +111,8 @@ function GreGmat() {
               <th>Benefits</th>
               <th>Fees</th>
               <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -112,6 +123,11 @@ function GreGmat() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">22500 INR</td>
               <td data-label="Discount">15 - 20%</td>
+              <td data-label="Final Fee">
+                {" "}
+                <div className="final-fee-box">₹18,000 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
             <tr>
               <td data-label="Course">GMAT</td>
@@ -120,6 +136,11 @@ function GreGmat() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">22500 INR</td>
               <td data-label="Discount">15 - 20%</td>
+              <td data-label="Final Fee">
+                {" "}
+                <div className="final-fee-box">₹18,000 INR</div>
+              </td>{" "}
+              {/* New Value */}
             </tr>
           </tbody>
         </table>

@@ -25,16 +25,16 @@ function IELTS() {
       </div>
 
       <div className="ielts-details">
-        <h2>📘 IELTS</h2>
+        <h2>📘 IELTS Highlights</h2>
         <ul>
           <li>
-            <strong>Total Band Score:</strong> Scored on a 0–9 scale
+            <strong>Total Band Score:</strong>Measured on a 0–9 scale
           </li>
           <li>
             <strong>Test Types:</strong> Academic and General Training
           </li>
           <li>
-            <strong>Total Duration:</strong> ~2 hours 45 minutes
+            <strong>Total Duration:</strong> 2 hours 45 minutes
           </li>
           <li>
             <strong>Test Sections:</strong>
@@ -56,102 +56,75 @@ function IELTS() {
           <li>Detailed writing task evaluations</li>
           <li>Flexible batch timings (evening)</li>
           <li>Detailed feedback and correction on Writing Task 1 & 2</li>
+          <li>25 years of Expertise in Standardized Tests Coaching</li>
+          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>Result-Oriented Teaching to Ensure High Scores</li>
+          <li>Individual Attention and Enthused Learning Environment</li>
+          <li>Mock Tests to gain real Test Experience</li>
+          <li>Free Demo Class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
         </ul>
         <h2>🌍 IELTS is Accepted In</h2>
         <div className="country-grid">
           {/* UK */}
           <div className="country-item">
-            <a
-              href="https://www.gov.uk/student-visa"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/gb.png"
-                alt="UK"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/gb.png"
+              alt="UK"
+              className="country-flag"
+            />
             <p>United Kingdom</p>
           </div>
 
           {/* Australia */}
           <div className="country-item">
-            <a
-              href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/au.png"
-                alt="Australia"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/au.png"
+              alt="Australia"
+              className="country-flag"
+            />
             <p>Australia</p>
           </div>
 
           {/* Canada */}
           <div className="country-item">
-            <a
-              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/ca.png"
-                alt="Canada"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/ca.png"
+              alt="Canada"
+              className="country-flag"
+            />
             <p>Canada</p>
           </div>
 
           {/* New Zealand */}
           <div className="country-item">
-            <a
-              href="https://www.immigration.govt.nz/new-zealand-visas/options/study"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/nz.png"
-                alt="New Zealand"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/nz.png"
+              alt="New Zealand"
+              className="country-flag"
+            />
             <p>New Zealand</p>
           </div>
 
           {/* Ireland */}
           <div className="country-item">
-            <a
-              href="https://www.educationinireland.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/ie.png"
-                alt="Ireland"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/ie.png"
+              alt="Ireland"
+              className="country-flag"
+            />
             <p>Ireland</p>
           </div>
 
           {/* Germany */}
           <div className="country-item">
-            <a
-              href="https://www.daad.de/en/study-and-research-in-germany/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://flagcdn.com/w80/de.png"
-                alt="Germany"
-                className="country-flag"
-              />
-            </a>
+            <img
+              src="https://flagcdn.com/w80/de.png"
+              alt="Germany"
+              className="country-flag"
+            />
             <p>Germany</p>
           </div>
         </div>
@@ -160,12 +133,14 @@ function IELTS() {
         <table className="course-table">
           <thead>
             <tr>
-              <td>Course</td>
-              <td>No.of Classes</td>
-              <td>Mock Test</td>
-              <td>Benefits</td>
-              <td>Fees</td>
-              <td>Discount</td>
+              <th>Course</th>
+              <th>No. of Classes</th>
+              <th>Mock Test</th>
+              <th>Benefits</th>
+              <th>Fees</th>
+              <th>Discount</th>
+              <th className="final-fee-header">Final Fee</th>{" "}
+              {/* Styled header */}
             </tr>
           </thead>
           <tbody>
@@ -176,9 +151,13 @@ function IELTS() {
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
               <td data-label="Discount">10 - 15%</td>
+              <td data-label="Final Fee">
+                <div className="final-fee-box">₹6,800 INR</div>
+              </td>
             </tr>
           </tbody>
         </table>
+
         {/* <div style={{ marginTop: "20px", textAlign: "center" }}>
           <Link to="/contact" className="contact-link">
             <button className="contact-btn">
@@ -216,9 +195,9 @@ function IELTS() {
 
         <p style={{ marginTop: "20px" }}>
           <strong>Enroll now</strong> to start your IELTS journey!{" "}
-          <a href="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
+          <Link to="/contact" style={{ color: "#c91432", fontWeight: "bold" }}>
             Contact us
-          </a>{" "}
+          </Link>{" "}
           for demo sessions and details.
         </p>
 

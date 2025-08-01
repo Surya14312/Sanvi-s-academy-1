@@ -25,7 +25,7 @@ function German() {
         </div>
 
         <div className="german-details">
-          <h2>📘 Course Overview</h2>
+          <h2>📘 German Highlights</h2>
           <ul>
             <li>
               <strong>Levels:</strong> A1 to C2 (CEFR standard)
@@ -60,6 +60,15 @@ function German() {
             <li>Weekend, evening, and fast-track batch options</li>
             <li>Interactive classroom tools and digital learning materials</li>
             <li>German culture & etiquette immersion through role-plays</li>
+            <li>25 years of Expertise in Standardized Tests Coaching</li>
+            <li>Veteran, Highly Skilled, Certified Trainers</li>
+            <li>Result-Oriented Teaching to Ensure High Scores</li>
+            <li>Individual Attention and Enthused Learning Environment</li>
+            <li>Mock Tests to gain real Test Experience</li>
+            <li>Free Demo Class</li>
+            <li>
+              Each class is 1.5 hours long – approximately 0.5 month duration
+            </li>
           </ul>
 
           <h2>💰 German Course Pricing</h2>
@@ -73,6 +82,8 @@ function German() {
                 <th>Benefits</th>
                 <th>Fees</th>
                 <th>Discount</th>
+                <th className="final-fee-header">Final Fee</th>{" "}
+                {/* Styled header */}
               </tr>
             </thead>
             <tbody>
@@ -83,6 +94,11 @@ function German() {
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">15000 INR</td>
                 <td data-label="Discount">15 - 20%</td>
+                <td data-label="Final Fee">
+                  {" "}
+                  <div className="final-fee-box">₹12,000 INR</div>
+                </td>{" "}
+                {/* New Value */}
               </tr>
             </tbody>
           </table>

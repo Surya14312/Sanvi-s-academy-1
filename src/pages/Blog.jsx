@@ -5,45 +5,59 @@ import { Link } from "react-router-dom";
 const blogPosts = [
   {
     link: "/blog/ielts-tips",
-    title: "🎯 How to Score 8+ Bands in IELTS",
+    title: " How to Score 8+ Bands in IELTS",
     desc: "Learn smart IELTS preparation tips with strategies for Listening, Reading, Writing, and Speaking. Discover time-tested tips from top scorers and certified trainers.",
   },
   {
     link: "/blog/study-abroad-2025",
-    title: "🌍 Study Abroad in 2025: Trends & Tips",
+    title: "Study Abroad in 2025: Trends & Tips",
     desc: "Understand emerging admission trends in the UK, Europe, and Japan. Get expert advice on profile building, university shortlisting, and deadlines.",
   },
   {
     link: "/blog/ielts-vs-toefl-vs-duolingo-vs-pte",
-    title: "💡 IELTS vs TOEFL vs. Duolingo vs. PTE",
+    title: " IELTS vs TOEFL vs. Duolingo vs. PTE",
     desc: "Choosing the right English test? We break down key differences in format, scoring, preparation time, and university acceptability.",
   },
   {
     link: "/blog/gre-vocabulary",
-    title: "📚 Master Your Vocabulary for GRE/SAT",
+    title: " Master Your Vocabulary for GRE/SAT",
     desc: "Build a strong vocabulary bank with smart memorization techniques — essential for GRE verbal reasoning and SAT critical reading success.",
   },
   {
     link: "/blog/student-visa-interview",
-    title: "✈️ Student Visa Interview Preparation",
+    title: " Student Visa Interview Preparation",
     desc: "Nervous about your student visa interview? Learn how to present yourself confidently and avoid common pitfalls with our expert guidance.",
   },
   {
     link: "/blog/best-apps-2025",
-    title: "🧑‍🏫 Best Language Learning Apps for 2025",
+    title: " Best Language Learning Apps for 2025",
     desc: "Explore the top language learning apps to boost fluency from your mobile — ideal for busy learners.",
   },
   {
     link: "/blog/speaking-mistakes",
-    title: "📖 Top Mistakes Students Make in Speaking Tests",
+    title: " Top Mistakes Students Make in Speaking Tests",
     desc: "Avoid common speaking test errors in IELTS, TOEFL, and PTE with practical tips to improve fluency, coherence, and confidence.",
   },
   {
     link: "/blog/europe-universities",
-    title: "🌐 Exploring European Universities: A Guide",
+    title: " Exploring European Universities: A Guide",
     desc: "Explore tuition-free education in Germany to scholarships in Italy and France.",
   },
 ];
+
+// ✅ Button style outside the component return
+const buttonStyle = {
+  padding: "10px 20px",
+  backgroundColor: "#d32f2f", // Red
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  cursor: "pointer",
+  fontSize: "16px",
+  fontWeight: "bold",
+  transition: "background 0.3s ease",
+  margin: "0 5px",
+};
 
 function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -95,12 +109,16 @@ function Blog() {
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
-          style={{ ...buttonStyle, opacity: currentPage === 1 ? 0.6 : 1 }}
+          style={{
+            ...buttonStyle,
+            opacity: currentPage === 1 ? 0.6 : 1,
+            cursor: currentPage === 1 ? "not-allowed" : "pointer",
+          }}
         >
           ◀ Previous
         </button>
 
-        <span style={{ margin: "0 15px" }}>
+        <span style={{ margin: "0 15px", fontWeight: "500" }}>
           Page {currentPage} of {totalPages}
         </span>
 
@@ -110,6 +128,7 @@ function Blog() {
           style={{
             ...buttonStyle,
             opacity: currentPage === totalPages ? 0.6 : 1,
+            cursor: currentPage === totalPages ? "not-allowed" : "pointer",
           }}
         >
           Next ▶
@@ -118,17 +137,5 @@ function Blog() {
     </div>
   );
 }
-
-const buttonStyle = {
-  padding: "10px 20px",
-  margin: "0 5px",
-  backgroundColor: "#2563eb", // tailwind blue-600
-  color: "#fff",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer",
-  fontSize: "1rem",
-  transition: "background-color 0.3s ease",
-};
 
 export default Blog;

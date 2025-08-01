@@ -8,7 +8,9 @@ function EuropeUniversities() {
 
   return (
     <div className="blog-detail">
-      <h1>🎓 Exploring European Universities: A 2025 Study Abroad Guide</h1>
+      <h1 style={{ color: "#d32f2f" }}>
+        Exploring European Universities: A 2025 Study Abroad Guide
+      </h1>
 
       <p>
         Europe is one of the most popular study destinations for international
@@ -114,7 +116,7 @@ function EuropeUniversities() {
       <h2 style={{ color: "#d32f2f" }}>🚀 Final Tips</h2>
       <ul>
         <li>Learn the basics of the local language for smoother adjustment.</li>
-        <li> Apply early—European deadlines are strict.</li>
+        <li>Apply early—European deadlines are strict.</li>
         <li>
           Use platforms like{" "}
           <strong>DAAD, Campus France, and Uni-Italia</strong> for official
@@ -129,48 +131,23 @@ function EuropeUniversities() {
       <p>
         Studying in Europe in 2025 can be a life-changing opportunity —
         culturally rich, academically strong, and financially smart. Ready to
-        take the leap? Let Sanvi’s Academy help you plan your successful journey
-        to Europe!
+        take the leap? Let <strong>The Sanvi’s Abroad Xperts</strong> help you
+        plan your successful journey to Europe!
       </p>
+      <div className="course-pagination">
+        {/* Left: Previous */}
+        <div>
+          <Link to="/blog/speaking-mistakes" className="nav-btn">
+            ⟵ Previous
+          </Link>
+        </div>
 
-      <div
-        className="blog-navigation"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "40px",
-        }}
-      >
-        <Link
-          to="/blog/speaking-mistakes"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          👈 Previous
-        </Link>
-        <Link
-          to="/faq"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          Next 👉
-        </Link>
+        {/* Right: Next */}
+        <div>
+          <Link to="/faq" className="nav-btn">
+            Next ⟶
+          </Link>
+        </div>
       </div>
     </div>
   );

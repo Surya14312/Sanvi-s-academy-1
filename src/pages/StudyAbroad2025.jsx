@@ -9,14 +9,12 @@ function StudyAbroad2025() {
   return (
     <div className="blog-detail">
       <h1>🌍 Study Abroad in 2025: Trends, Tips & Top Destinations</h1>
-
       <p>
         2025 is shaping up to be one of the most exciting years for global
         education! With increasing student mobility, flexible visa options, and
         emerging technology programs, students have more opportunities than ever
         to pursue their dream studies abroad.
       </p>
-
       <h2 style={{ color: "#d32f2f" }}>🎯 Top Study Destinations for 2025</h2>
       <ul>
         <li>
@@ -44,7 +42,6 @@ function StudyAbroad2025() {
           and Erasmus+ benefits.
         </li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>💼 Most In-Demand Courses in 2025</h2>
       <ul>
         <li>Technology and Software Development</li>
@@ -58,7 +55,6 @@ function StudyAbroad2025() {
         <li>Education and Human Resources</li>
         <li>Hospitality Management</li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>🎓 Scholarship Opportunities</h2>
       <p>
         Many governments and universities are expanding scholarships for
@@ -85,7 +81,6 @@ function StudyAbroad2025() {
           international students in engineering, law, etc.
         </li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>📋 2025 Application Timeline</h2>
       <ul>
         <li>
@@ -108,7 +103,6 @@ function StudyAbroad2025() {
           <strong>Jul – Sep 2025:</strong> Attend visa interview and fly abroad!
         </li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>💡 Tips for Success in 2025</h2>
       <ul>
         <li> Start early and stay ahead of deadlines</li>
@@ -118,7 +112,6 @@ function StudyAbroad2025() {
         <li> Write a powerful Statement of Purpose (SOP)</li>
         <li> Keep your documents organized and updated</li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>📈 What's New in 2025?</h2>
       <ul>
         <li> Simplified visa policies in Canada, UK, and Australia</li>
@@ -126,7 +119,6 @@ function StudyAbroad2025() {
         <li> More AI/ML courses and automation-based careers</li>
         <li> Growth in environmental studies and sustainability careers</li>
       </ul>
-
       <h2 style={{ color: "#d32f2f" }}>🌟 Final Thought</h2>
       <p>
         2025 is your year to dream big and study globally. With the right
@@ -135,46 +127,24 @@ function StudyAbroad2025() {
         journey today with <strong>The Sanvi’s Academy</strong> — your expert
         abroad education partner!
       </p>
+      <div className="course-pagination">
+        {/* Left: Previous */}
+        <div>
+          <Link to="/blog/ielts-tips" className="nav-btn">
+            ⟵ Previous
+          </Link>
+        </div>
 
-      <div
-        className="blog-navigation"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "40px",
-        }}
-      >
-        <Link
-          to="/blog/ielts-tips"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          👈 Previous
-        </Link>
-        <Link
-          to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
-          className="btn-nav"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#4e8cff",
-            color: "#fff",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "600",
-            fontFamily: "Poppins, sans-serif",
-          }}
-        >
-          Next 👉
-        </Link>
-      </div>
+        {/* Right: Next */}
+        <div>
+          <Link
+            to="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
+            className="nav-btn"
+          >
+            Next ⟶
+          </Link>
+        </div>
+      </div>{" "}
     </div>
   );
 }
