@@ -48,23 +48,26 @@ function French() {
         </ul>
         <h2>🎯 Why Learn French with Us?</h2>
         <ul>
-          <li>Certified native and bilingual trainers</li>
-          <li>Mock tests with CEFR-based evaluation</li>
-          <li>Spoken & written French immersion training</li>
-          <li>Flexible batches (weekday/weekend)</li>
-          <li>Job and study-abroad French readiness</li>
-          <li>Structured curriculum aligned with CEFR (A1 to B2 levels)</li>
-          <li>Spoken & written French immersion with real-world scenarios</li>
-          <li>Mock tests and personalized feedback on all modules</li>
           <li>25 years of Expertise in Standardized Tests Coaching</li>
-          <li>Veteran, Highly Skilled, Certified Trainers</li>
+          <li>
+            Daily live online classes with Veteran, Highly Skilled, Certified
+            Trainers
+          </li>
           <li>Result-Oriented Teaching to Ensure High Scores</li>
           <li>Individual Attention and Enthused Learning Environment</li>
-          <li>Mock Tests to gain real Test Experience</li>
+          <li>Regular Mock Tests to gain real Test Experience</li>
           <li>Free Demo Class</li>
           <li>
             Each class is 1.5 hours long – approximately 0.5 month duration
           </li>
+          <li>Flexible evening batch timings</li>
+          <li>
+            Access to recorded sessions for revision and self-paced learning
+          </li>
+          <li>Structured curriculum aligned with CEFR (A1 to B2 levels)</li>
+          <li>Spoken & written French immersion training</li>
+          <li>Job and study-abroad French readiness</li>
+          <li>Spoken & written French immersion with real-world scenarios</li>
         </ul>
 
         <h2>💰 French Course Pricing</h2>
@@ -89,10 +92,10 @@ function French() {
               <td data-label="Mock Tests">3</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">15000 INR</td>
-              <td data-label="discount">15 - 20%</td>
+              <td data-label="discount">20%</td>
               <td data-label="Final Fee">
                 {" "}
-                <div className="final-fee-box">₹12,000 INR</div>
+                <div className="final-fee-box">12,000 INR</div>
               </td>{" "}
               {/* New Value */}
             </tr>
@@ -144,17 +147,17 @@ function French() {
           </Link>{" "}
           to begin.
         </p>
-        <div className="course-pagination">
+        <div className="course-pagination11">
           {/* Left: Previous */}
           <div>
-            <Link to="/duolingo" className="nav-btn">
+            <Link to="/duolingo" className="nav-btn1">
               ⟵ Previous
             </Link>
           </div>
 
           {/* Right: Next */}
           <div>
-            <Link to="/german" className="nav-btn">
+            <Link to="/german" className="nav-btn1">
               Next ⟶
             </Link>
           </div>

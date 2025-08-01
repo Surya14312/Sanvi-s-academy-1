@@ -45,25 +45,11 @@ const blogPosts = [
   },
 ];
 
-// ✅ Button style outside the component return
-const buttonStyle = {
-  padding: "10px 20px",
-  backgroundColor: "#d32f2f", // Red
-  color: "white",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer",
-  fontSize: "16px",
-  fontWeight: "bold",
-  transition: "background 0.3s ease",
-  margin: "0 5px",
-};
-
 function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [hoveredButton, setHoveredButton] = useState(null);
   const postsPerPage = 4;
 
-  // Pagination logic
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
   const currentPosts = blogPosts.slice(indexOfFirst, indexOfLast);
@@ -76,6 +62,28 @@ function Blog() {
   const prevPage = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
+
+  const getButtonStyle = (type) => ({
+    padding: "10px 20px",
+    backgroundColor: hoveredButton === type ? "#ffffff" : "#c91432",
+    color: hoveredButton === type ? "#c91432" : "#ffffff",
+    border: "2px solid #c91432",
+    borderRadius: "6px",
+    fontSize: "16px",
+    fontWeight: "bold",
+    cursor:
+      (type === "prev" && currentPage === 1) ||
+      (type === "next" && currentPage === totalPages)
+        ? "not-allowed"
+        : "pointer",
+    opacity:
+      (type === "prev" && currentPage === 1) ||
+      (type === "next" && currentPage === totalPages)
+        ? 0.6
+        : 1,
+    transition: "all 0.3s ease",
+    margin: "0 5px",
+  });
 
   return (
     <div className="page-section blog-section">
@@ -101,7 +109,7 @@ function Blog() {
         ))}
       </div>
 
-      {/* Pagination */}
+      {/* Pagination Controls */}
       <div
         className="pagination-controls"
         style={{ textAlign: "center", marginTop: "30px" }}
@@ -109,11 +117,9 @@ function Blog() {
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
-          style={{
-            ...buttonStyle,
-            opacity: currentPage === 1 ? 0.6 : 1,
-            cursor: currentPage === 1 ? "not-allowed" : "pointer",
-          }}
+          onMouseEnter={() => setHoveredButton("prev")}
+          onMouseLeave={() => setHoveredButton(null)}
+          style={getButtonStyle("prev")}
         >
           ◀ Previous
         </button>
@@ -125,11 +131,9 @@ function Blog() {
         <button
           onClick={nextPage}
           disabled={currentPage === totalPages}
-          style={{
-            ...buttonStyle,
-            opacity: currentPage === totalPages ? 0.6 : 1,
-            cursor: currentPage === totalPages ? "not-allowed" : "pointer",
-          }}
+          onMouseEnter={() => setHoveredButton("next")}
+          onMouseLeave={() => setHoveredButton(null)}
+          style={getButtonStyle("next")}
         >
           Next ▶
         </button>

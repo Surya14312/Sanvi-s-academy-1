@@ -42,20 +42,21 @@ function About() {
                 lineHeight: "1.8",
               }}
             >
-              A Serial Entrepreneur who founded Sanvi’s Academy. She has over 10
+              A serial entrepreneur who founded Sanvi’s Academy. She has over 10
               years of Experience in Counselling and Administration, Gained in
-              both India and Singapore.Sangeetha Specializes in Guiding students
-              through Global Education Pathways, Offering tailored advice on
-              Test Preparation, University Selection, Visa Processes, and Career
-              Alignment. Her Empathetic Approach and Strategic Insights have
-              helped Hundreds of Students Secure Placements in Top Universities
-              Across the UK, Europe, USA, Japan, Singapore, and Australia. Under
-              her leadership, Sanvi’s Academy has grown into a Trusted
-              Institution known for its Integrity, Personalized Mentorship, and
-              Consistent Success Rates. With a Passion for Empowering Youth
-              through Education, Sangeetha Continues to Innovate in the
-              Education Space, Building Strong Global Partnerships and Mentoring
-              a Growing Team of Expert Faculty and Counsellors.
+              both India and Singapore . Sangeetha Specializes in Guiding
+              students through Global Education pathways, Offering tailored
+              advice on Test Preparation, University Selection, Visa Processes,
+              and Career Alignment. Her Empathetic approach and strategic
+              Insights have helped Hundreds of Students Secure Placements in Top
+              Universities Across the UK, Europe, USA, Japan, Singapore, and
+              cannada. Under her leadership, Sanvi’s Academy has grown into a
+              Trusted Institution known for its Integrity, Personalized
+              Mentorship, and Consistent Success Rates. With a passion for
+              empowering youth through education, Sangeetha Continues to
+              innovate in the Education Space, Building Strong Global
+              Partnerships and Mentoring a Growing Team of Expert Faculty and
+              Counsellors.
             </p>
           </div>
           <div className="founder-card">
@@ -71,18 +72,20 @@ function About() {
             >
               Brings over 26 years of extensive Industry Rich Experience, having
               successfully executed a wide range of Domestic and International
-              Projects Across Diverse Sectors. He Possesses Deep Insights Into
-              Global Education Systems, Student Mobility Trends, and Emerging
-              Career Landscapes. As a Highly Respected Career Counselor and
-              Education Consultant, He has Mentored Thousands of Students,
-              Helping them Identify the right Academic Pathways and Align their
-              Goals with Evolving Global Opportunities. His Strategic Guidance
-              Covers Everything From Course Selection, University Admissions,
-              and Study-Abroad Counseling to Scholarship Planning and Career
-              Roadmap Development. His Holistic Mentoring Approach Empowers
-              Students To make Well-Informed, Confident Decisions about their
-              Academic and Professional Futures. With a Passion for Education
-              and a Commitment to Student Success, He Continues to Transform
+              Projects across diverse Sectors after in Telecome , Difference an
+              Power Infrastructure ( transmission and Distribution ) He
+              Possesses Deep Insights Into Global Education Systems, Student
+              Mobility Trends, and Emerging Career Landscapes. As a highly
+              respected Career Counselor and Education Consultant, He has
+              mentored of students, Helping them Identify the right Academic
+              Pathways and Align their Goals with Evolving Global Opportunities.
+              His Strategic guidance Covers Everything From course selection,
+              University admissions,Country Selection , course and Study-Abroad
+              Counseling to Scholarship Planning and Career Roadmap Development
+              . His Holistic Mentoring Approach Empowers Students To make
+              Well-Informed, confident decisions about their Academic and
+              Professional Futures. With a Passion for Education and a
+              Commitment to Student Success, He continues to transform
               Aspirations into Achievements.
             </p>
           </div>

@@ -15,7 +15,7 @@ const faqData = [
   {
     question: " Do you assist with study abroad applications?",
     answer:
-      "Absolutely. Our dedicated study abroad team The Sanvi's Abroad Xperts guides students through every step of the overseas education journey — from selecting the right country and university to crafting a strong SOP (Statement of Purpose), getting powerful LORs (Letters of Recommendation), applying for scholarships, and filing student visas. We specialize in destinations like the Italy, France, Germany, Switzerland, UK, Singapore, Japan, and more.",
+      "Absolutely. Our dedicated study abroad team The Sanvi's Abroad Xperts guides students through every step of the overseas education journey — from selecting the right country and university to crafting a strong SOP (Statement of Purpose), getting powerful LORs (Letters of Recommendation), applying for scholarships, and filing student visas. We specialize in destinations like the Italy, France, Germany, other European countries, Switzerland, UK, Singapore, Japan, USA and Cannada.",
   },
   {
     question: " Who are the instructors at The Sanvi’s Academy?",
@@ -45,7 +45,7 @@ const faqData = [
   {
     question: " What makes The Sanvi’s Academy different?",
     answer:
-      "What sets us apart is our student-first approach. We provide result-oriented training, small batches, modern learning tools, and a global outlook. From coaching to visa processing, we ensure you’re guided at every stage. Our mission is not just to teach — it’s to empower students to thrive on international platforms.",
+      "What sets us apart is our student-first approach. We provide result-oriented training, small batches, modern learning tools, and a global outlook. From coaching to visa processing, we ensure you’re guided at every stage. Our mission is not just to teach — it’s to empower students to thrive on International platforms.",
   },
 ];
 

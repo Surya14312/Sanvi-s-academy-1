@@ -45,23 +45,28 @@ function SAT() {
 
           <h2>🎯 Why Choose Our SAT Coaching?</h2>
           <ul>
+            <li>25 years of expertise in standardized tests coaching</li>
+            <li>
+              Daily live online classes with veteran, highly skilled, certified
+              trainers
+            </li>
+            <li>Result-oriented teaching to ensure high scores</li>
+            <li>Individual attention and enthused learning environment</li>
+            <li>Regular mock tests to gain real test experience</li>
+            <li>Free demo class</li>
+            <li>
+              Each class is 1.5 hours long – approximately 0.5 month duration
+            </li>
+            <li>Flexible evening batch timings</li>
+            <li>
+              Access to recorded sessions for revision and self-paced learning
+            </li>
             <li>Concept-building for Reading, Writing, and Math</li>
             <li>Digital SAT practice with real-time analytics</li>
-            <li>Mock exams with section-wise reports</li>
             <li>Access to a comprehensive SAT question bank</li>
-            <li>24x7 access to recorded classes and doubt-clearing sessions</li>
             <li>Updated content aligned with the latest Digital SAT format</li>
             <li>
               Special focus on calculator and non-calculator math sections
-            </li>
-            <li>25 years of Expertise in Standardized Tests Coaching</li>
-            <li>Veteran, Highly Skilled, Certified Trainers</li>
-            <li>Result-Oriented Teaching to Ensure High Scores</li>
-            <li>Individual Attention and Enthused Learning Environment</li>
-            <li>Mock Tests to gain real Test Experience</li>
-            <li>Free Demo Class</li>
-            <li>
-              Each class is 1.5 hours long – approximately 0.5 month duration
             </li>
           </ul>
 
@@ -106,9 +111,9 @@ function SAT() {
                 <td data-label="Mock Tests">7</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">22500 INR</td>
-                <td data-label="Discount">15 - 20%</td>
+                <td data-label="Discount">20%</td>
                 <td data-label="Final Fee">
-                  <div className="final-fee-box">₹12,800 INR</div>
+                  <div className="final-fee-box">12,800 INR</div>
                 </td>{" "}
                 {/* New Value */}
               </tr>
@@ -126,14 +131,20 @@ function SAT() {
             </Link>{" "}
             now to get started.
           </p>
+          <div className="course-pagination11">
+            {/* Left: Previous */}
+            <div>
+              <Link to="/gre" className="nav-btn1">
+                ⟵ Previous
+              </Link>
+            </div>
 
-          <div className="course-pagination1">
-            <Link to="/gre" className="prev-btn">
-              ⟵ Previous
-            </Link>
-            <Link to="/duolingo" className="next-btn">
-              Next ⟶
-            </Link>
+            {/* Right: Next */}
+            <div>
+              <Link to="/duolingo" className="nav-btn1">
+                Next ⟶
+              </Link>
+            </div>
           </div>
         </div>
       </div>

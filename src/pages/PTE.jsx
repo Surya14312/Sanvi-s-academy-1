@@ -47,9 +47,23 @@ function PTA() {
 
         <h2>🎯 Why Choose Our PTE Coaching?</h2>
         <ul>
+          <li>25 years of expertise in standardized tests coaching</li>
+          <li>
+            Daily live online classes with veteran, highly skilled, certified
+            trainers
+          </li>
+          <li>Result-oriented teaching to ensure high scores</li>
+          <li>Individual attention and enthused learning environment</li>
+          <li>Regular mock tests to gain real test experience</li>
+          <li>Free demo class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
+          <li>Flexible evening batch timings</li>
+          <li>
+            Access to recorded sessions for revision and self-paced learning
+          </li>
           <li>Interactive live classes with AI‑scored practice</li>
-          <li>Real‑world question practice</li>
-          <li>Flexible batch timing for students & professionals</li>
           <li>
             Targeted training for all four modules – Speaking, Writing, Reading,
             Listening
@@ -60,15 +74,6 @@ function PTA() {
             Sentence & Essay
           </li>
           <li>Expert feedback on writing tasks with improvement suggestions</li>
-          <li>25 years of Expertise in Standardized Tests Coaching</li>
-          <li>Veteran, Highly Skilled, Certified Trainers</li>
-          <li>Result-Oriented Teaching to Ensure High Scores</li>
-          <li>Individual Attention and Enthused Learning Environment</li>
-          <li>Mock Tests to gain real Test Experience</li>
-          <li>Free Demo Class</li>
-          <li>
-            Each class is 1.5 hours long – approximately 0.5 month duration
-          </li>
         </ul>
 
         <h2>🌍 PTE is Accepted In</h2>
@@ -112,9 +117,9 @@ function PTA() {
               <td data-label="Mock Tests">1</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
-              <td data-label="Discount">10 - 15%</td>
+              <td data-label="Discount">15%</td>
               <td data-label="Final Fee">
-                <div className="final-fee-box">₹6,800 INR</div>
+                <div className="final-fee-box">6,800 INR</div>
               </td>{" "}
               {/* New Value */}
             </tr>

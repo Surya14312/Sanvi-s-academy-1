@@ -49,22 +49,25 @@ function IELTS() {
 
         <h2>🎯 Why Choose Our IELTS Coaching?</h2>
         <ul>
-          <li>Daily live online classes with expert trainers</li>
-          <li>Complete study material in PDF format</li>
-          <li>Band-specific strategies and time management tips</li>
-          <li>Regular mock tests with performance feedback</li>
-          <li>Detailed writing task evaluations</li>
-          <li>Flexible batch timings (evening)</li>
-          <li>Detailed feedback and correction on Writing Task 1 & 2</li>
-          <li>25 years of Expertise in Standardized Tests Coaching</li>
-          <li>Veteran, Highly Skilled, Certified Trainers</li>
-          <li>Result-Oriented Teaching to Ensure High Scores</li>
-          <li>Individual Attention and Enthused Learning Environment</li>
-          <li>Mock Tests to gain real Test Experience</li>
-          <li>Free Demo Class</li>
+          <li>25 years of expertise in standardized tests coaching</li>
+          <li>
+            Daily live online classes with veteran, highly skilled, certified
+            trainers
+          </li>
+          <li>Result-oriented teaching to ensure high scores</li>
+          <li>Individual attention and enthused learning environment</li>
+          <li>Regular mock tests to gain real test experience</li>
+          <li>Free demo class</li>
           <li>
             Each class is 1.5 hours long – approximately 0.5 month duration
           </li>
+          <li>Flexible evening batch timings</li>
+          <li>
+            Access to recorded sessions for revision and self-paced learning
+          </li>
+          <li>Complete study material in PDF format</li>
+          <li>Band-specific strategies and time management tips</li>
+          <li>Detailed writing task evaluations</li>
         </ul>
         <h2>🌍 IELTS is Accepted In</h2>
         <div className="country-grid">
@@ -150,9 +153,9 @@ function IELTS() {
               <td data-label="Mock Tests">2</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
-              <td data-label="Discount">10 - 15%</td>
+              <td data-label="Discount">15%</td>
               <td data-label="Final Fee">
-                <div className="final-fee-box">₹6,800 INR</div>
+                <div className="final-fee-box">6,800 INR</div>
               </td>
             </tr>
           </tbody>

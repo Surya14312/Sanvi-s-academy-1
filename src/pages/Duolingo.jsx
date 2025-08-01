@@ -53,10 +53,24 @@ function Duolingo() {
 
         <h2>🎯 Why Choose Our Duolingo Coaching?</h2>
         <ul>
+          <li>25 years of expertise in standardized tests coaching</li>
+          <li>
+            Daily live online classes with veteran, highly skilled, certified
+            trainers
+          </li>
+          <li>Result-oriented teaching to ensure high scores</li>
+          <li>Individual attention and enthused learning environment</li>
+          <li>Regular mock tests to gain real test experience</li>
+          <li>Free demo class</li>
+          <li>
+            Each class is 1.5 hours long – approximately 0.5 month duration
+          </li>
+          <li>Flexible evening batch timings</li>
+          <li>
+            Access to recorded sessions for revision and self-paced learning
+          </li>
           <li>Targeted practice for AI-evaluated speaking & writing</li>
-          <li>Complete test simulation with instant scoring insights</li>
           <li>Section-wise improvement drills & feedback</li>
-          <li>Access to recorded sessions & practice materials</li>
           <li>
             Latest tips and hacks for open response & fill-in-the-blanks
             questions
@@ -64,16 +78,6 @@ function Duolingo() {
           <li>Vocabulary-building activities with daily practice</li>
           <li>
             Fluency, intonation, and clarity training for speaking responses
-          </li>
-          <li>Practice with real exam-style question types and difficulty</li>
-          <li>25 years of Expertise in Standardized Tests Coaching</li>
-          <li>Veteran, Highly Skilled, Certified Trainers</li>
-          <li>Result-Oriented Teaching to Ensure High Scores</li>
-          <li>Individual Attention and Enthused Learning Environment</li>
-          <li>Mock Tests to gain real Test Experience</li>
-          <li>Free Demo Class</li>
-          <li>
-            Each class is 1.5 hours long – approximately 0.5 month duration
           </li>
         </ul>
 
@@ -122,10 +126,10 @@ function Duolingo() {
               <td data-label="Mock Tests">2</td>
               <td data-label="Benefits">Study Material, Class Recording</td>
               <td data-label="Fees">8000 INR</td>
-              <td data-label="Discount">10 - 15%</td>
+              <td data-label="Discount">15%</td>
               <td data-label="Final Fee">
                 {" "}
-                <div className="final-fee-box">₹6,800 INR</div>
+                <div className="final-fee-box">6,800 INR</div>
               </td>{" "}
               {/* New Value */}
             </tr>
@@ -142,14 +146,20 @@ function Duolingo() {
           </Link>{" "}
           to begin your journey.
         </p>
+        <div className="course-pagination11">
+          {/* Left: Previous */}
+          <div>
+            <Link to="/sat" className="nav-btn1">
+              ⟵ Previous
+            </Link>
+          </div>
 
-        <div className="course-pagination1">
-          <Link to="/sat" className="prev-btn">
-            ⟵ Previous
-          </Link>
-          <Link to="/french" className="next-btn">
-            Next ⟶
-          </Link>
+          {/* Right: Next */}
+          <div>
+            <Link to="/french" className="nav-btn1">
+              Next ⟶
+            </Link>
+          </div>
         </div>
       </div>
     </div>

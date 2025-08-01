@@ -47,28 +47,29 @@ function German() {
 
           <h2>🎯 Why Choose Our German Classes?</h2>
           <ul>
-            <li>Certified Goethe & TestDaF trainers</li>
-            <li>Level-wise speaking + grammar correction sessions</li>
-            <li>Exam-focused mock test series</li>
-            <li>Guidance for job/study visa documentation</li>
-            <li>
-              Structured A1 to B2 level courses aligned with CEFR standards
-            </li>
-            <li>
-              Level-wise grammar correction + real-life conversation sessions
-            </li>
-            <li>Weekend, evening, and fast-track batch options</li>
-            <li>Interactive classroom tools and digital learning materials</li>
-            <li>German culture & etiquette immersion through role-plays</li>
             <li>25 years of Expertise in Standardized Tests Coaching</li>
-            <li>Veteran, Highly Skilled, Certified Trainers</li>
+            <li>
+              Daily live online classes with Veteran, Highly Skilled, Certified
+              Trainers
+            </li>
             <li>Result-Oriented Teaching to Ensure High Scores</li>
             <li>Individual Attention and Enthused Learning Environment</li>
-            <li>Mock Tests to gain real Test Experience</li>
+            <li>Regular Mock Tests to gain real Test Experience</li>
             <li>Free Demo Class</li>
             <li>
               Each class is 1.5 hours long – approximately 0.5 month duration
             </li>
+            <li>Flexible evening batch timings</li>
+            <li>
+              Access to recorded sessions for revision and self-paced learning
+            </li>
+            <li>
+              Structured A1 to B2 level courses aligned with CEFR standards
+            </li>
+            <li>Level-wise speaking + grammar correction sessions</li>
+            <li>Guidance for job/study visa documentation</li>
+            <li>Interactive classroom tools and digital learning materials</li>
+            <li>German culture & etiquette immersion through role-plays</li>
           </ul>
 
           <h2>💰 German Course Pricing</h2>
@@ -93,10 +94,10 @@ function German() {
                 <td data-label="Mock Tests">3</td>
                 <td data-label="Benefits">Study Material, Class Recording</td>
                 <td data-label="Fees">15000 INR</td>
-                <td data-label="Discount">15 - 20%</td>
+                <td data-label="Discount">20%</td>
                 <td data-label="Final Fee">
                   {" "}
-                  <div className="final-fee-box">₹12,000 INR</div>
+                  <div className="final-fee-box">12,000 INR</div>
                 </td>{" "}
                 {/* New Value */}
               </tr>
