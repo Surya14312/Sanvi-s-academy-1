@@ -2,6 +2,7 @@ import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import logo from "../assets/Academy.png"; // If it's in public, use: src="/Academy.png"
 
 function Footer() {
   return (
@@ -9,11 +10,7 @@ function Footer() {
       <div className="footer-container">
         {/* Brand Section */}
         <div className="footer-logo">
-          <img
-            src="/images/Academy.png"
-            alt="Sanvi Logo"
-            className="globe-img"
-          />
+          <img src={logo} alt="Logo" className="globe-img" />
           <p className="footer-tagline">Empowering Success Globally.</p>
         </div>
 
