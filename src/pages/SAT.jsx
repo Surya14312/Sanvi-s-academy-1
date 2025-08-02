@@ -113,7 +113,7 @@ function SAT() {
                 <td data-label="Fees">22500 INR</td>
                 <td data-label="Discount">20%</td>
                 <td data-label="Final Fee">
-                  <div className="final-fee-box">12,800 INR</div>
+                  <div className="final-fee-box">18,000 INR</div>
                 </td>{" "}
                 {/* New Value */}
               </tr>

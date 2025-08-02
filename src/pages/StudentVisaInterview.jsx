@@ -98,7 +98,7 @@ function StudentVisaInterview() {
       <h2 style={{ color: "#d32f2f" }}>🚀 Confidence-Building Tips</h2>
       <ul>
         <li>Practice with mock interviews (record yourself)</li>
-        <li>Join Sanvi’s Academy visa preparation sessions</li>
+        <li>Join The Sanvi's Abroad Xperts visa preparation sessions</li>
         <li>Learn from past student experiences and sample videos</li>
         <li>Dress professionally and arrive early on interview day</li>
       </ul>
@@ -108,7 +108,7 @@ function StudentVisaInterview() {
         Treat your visa interview like a conversation, not an exam. Be genuine,
         stay calm, and focus on your purpose — your dream of studying abroad.
         Preparation is key, and with the right approach, your visa approval is
-        within reach! Trust <strong>The Sanvi’s Academy</strong> to guide you
+        within reach! <strong>Trust The Sanvi's Academy </strong> to guide you
         every step of the way.
       </p>
 

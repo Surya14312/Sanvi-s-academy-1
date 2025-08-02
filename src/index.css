@@ -73,120 +73,187 @@ html {
 
 /* === Navbar Container === */
 /* Navbar container */
+
 .navbar {
-  width: 100%;
-  height: 96px;  /* Reduced height */
-  background: linear-gradient(to right, #ffffff, #fff3f3);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  padding: 0 2rem;
-  border-bottom: 4px solid #2c3e50;
+  padding: 22px 48px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  /* position: sticky; */
   top: 0;
-  z-index: 999;
-  overflow: hidden;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* margin-top: 50px; */
+  margin-bottom: 3px; 
 }
 
-/* Logo section */
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-
-.globe-img {
-  height: 70px;
+/* Logo */
+.logo-section img.globe-img {
+  height: 78px;
   width: auto;
   object-fit: contain;
-  transition: transform 0.4s ease, opacity 0.9s ease, box-shadow 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
-.globe-img:hover {
+.logo-section:hover img.globe-img {
   transform: scale(1.08);
-  opacity: 0.95;
 }
 
-/* Navigation links */
+/* Nav Links */
 .nav-links {
   display: flex;
-  list-style: none;
-  gap: 2rem;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  margin-top: 0.3rem; /* Adjusted for vertical alignment */
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  font-size: 1.1rem;
+.nav-links li {
   position: relative;
-  padding: 2px 6px; /* Reduced padding for compact height */
-  transition: color 0.3s ease;
 }
 
-.nav-links li a::after {
-  content: '';
+.nav-links a,
+.dropdown-toggle {
+  text-decoration: none;
+  color: #002366;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  background-color: #e3ebff;
+  color: #ff4c60;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
   position: absolute;
+  top: 56px;
   left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(to right, red, #c00);
-  transition: width 0.3s ease-in-out;
+  width: 320px;
+  max-height: 350px;            /* NEW: Set a scrollable max height */
+  overflow-y: auto;             /* NEW: Enable vertical scroll */
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 999;
+  animation: dropdownFade 0.3s ease forwards;
+  scrollbar-width: thin;        /* Optional: Firefox slim scrollbar */
 }
 
-.nav-links li a:hover {
-  color: #c00;
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
 }
 
-.nav-links li a:hover::after {
-  width: 100%;
+.dropdown.open .dropdown-menu {
+  display: flex;
 }
 
-/* Tablet and below */
+/* Dropdown Section Headings */
+.dropdown-section {
+  margin-bottom: 20px;
+}
+
+.dropdown-heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #002366;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c7d3ff;
+}
+
+.dropdown-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 14px;
+}
+
+.dropdown-items a {
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-items a:hover {
+  color: #002366;
+  transform: translateX(6px);
+}
+
+/* Fade animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .logo-section {
-    justify-content: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .globe-img {
-    height: 60px;
+    align-items: flex-start;
+    padding: 18px 24px;
   }
 
   .nav-links {
     flex-direction: column;
+    gap: 20px;
+    margin-top: 16px;
     width: 100%;
-    align-items: center;
-    font-size: 1.2rem;
   }
 
-  .nav-links li a {
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-  }
-}
-
-/* Mobile small */
-@media (max-width: 480px) {
-  .globe-img {
-    height: 50px;
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
   }
 
-  .nav-links li a {
-    font-size: 0.95rem;
+  .dropdown-heading {
+    font-size: 16px;
+    border: none;
+    padding-left: 8px;
+  }
+
+  .dropdown-items {
+    padding-left: 0;
+  }
+
+  .dropdown-items a {
+    font-size: 15px;
+    padding: 4px 12px;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: flex;
   }
 }
 
@@ -425,6 +492,7 @@ html {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
+  text-decoration: none;
   justify-content: center;
   font-weight: 600;
   font-size: 24px;
@@ -5114,3 +5182,172 @@ body {
   text-decoration: none !important;   /* ✅ Still no underline */
   border: 2px solid #c91432;
 }
+
+
+/* cybersecurity */
+/* Shared Layout for All Tech Pages */
+.tech-page {
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: white;
+  color: #222;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+  margin: 40px auto;
+  padding: 60px 30px;
+}
+
+.tech-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: red;
+  /* animation: glow 2s ease-in-out infinite alternate; */
+}
+
+.tech-page p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  animation: fadeSlideIn 1.2s ease forwards;
+}
+
+.tech-page h3 {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  border-left: 6px solid #003399;
+  padding-left: 10px;
+  color: red;
+}
+
+.tech-page ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.tech-page ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-page ul li::before {
+  content: " * ";
+  position: absolute;
+  left: 0;
+  color: #009688;
+  font-weight: bold;
+}
+
+.tech-page ul li:hover {
+  transform: translateX(8px);
+  color: #0055aa;
+}
+
+.coming-soon-box {
+  background: #fff0f0;
+  border: 2px dashed #ff4d4d;
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 12px;
+  text-align: center;
+  animation: pulse 2.5s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.3);
+}
+
+.coming-soon-box h2 {
+  font-size: 2rem;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+.coming-soon-box p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Unique Heading Colors */
+.cybersecurity h1 {
+  color: #d32f2f; /* Red */
+}
+
+.ai h1 {
+  color: #512da8; /* Purple */
+}
+
+.data-science h1 {
+  color: #2e7d32; /* Green */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.2);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 77, 77, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.2);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #0033cc, 0 0 12px #3366ff;
+  }
+  to {
+    text-shadow: 0 0 16px #0033cc, 0 0 20px #3366ff;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .tech-page h3 {
+    font-size: 1.3rem;
+  }
+
+  .tech-page p,
+  .tech-page ul li {
+    font-size: 1rem;
+  }
+
+  .coming-soon-box h2 {
+    font-size: 1.5rem;
+  }
+}
+
+

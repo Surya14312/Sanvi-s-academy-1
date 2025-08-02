@@ -27,7 +27,7 @@ function PTA() {
         <h2>📘 PTE Overview Highlights</h2>
         <ul>
           <li>
-            <strong>Total Score:</strong>To Measured on 10–90
+            <strong>Total Score:</strong>Measured on 10–90
           </li>
           <li>
             <strong>Test Type:</strong> Computer‑based, AI‑evaluated

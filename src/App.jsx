@@ -29,6 +29,7 @@ import SpeakingMistakes from "./pages/SpeakingMistakes";
 import EuropeUniversities from "./pages/EuropeUniversities";
 import IELTSvsTOEFLvsDuolingoPTE from "./pages/IELTSvsTOEFLvsDuolingoPTE";
 import BestApps2025 from "./pages/BestApps2025";
+import Cybersecurity from "./pages/Cybersecurity";
 
 // ✅ Error fallback component
 function ErrorFallback({ error }) {
@@ -62,7 +63,6 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
-
           {/* Blog Pages */}
           <Route path="/blog/ielts-tips" element={<IELTSTips />} />
           <Route path="/blog/study-abroad-2025" element={<StudyAbroad2025 />} />
@@ -80,11 +80,12 @@ function App() {
             path="/blog/europe-universities"
             element={<EuropeUniversities />}
           />
-
           <Route
             path="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
             element={<IELTSvsTOEFLvsDuolingoPTE />}
           />
+          <Route path="/cybersecurity" element={<Cybersecurity />} />{" "}
+          {/* ✅ route defined */}
         </Routes>
       </ErrorBoundary>
       <Footer />

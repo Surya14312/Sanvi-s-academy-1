@@ -40,7 +40,7 @@ function TOEFL() {
             30)
           </li>
           <li>
-            <strong>Test Type:</strong> iBT (Internet-Based Test)
+            <strong>Test Type:</strong> IBT (Internet-Based Test)
           </li>
           <li>
             <strong>Duration:</strong> Approximately 2 hours
