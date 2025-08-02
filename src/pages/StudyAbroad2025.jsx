@@ -8,14 +8,16 @@ function StudyAbroad2025() {
 
   return (
     <div className="blog-detail">
-      <h1>🌍 Study Abroad in 2025: Trends, Tips & Top Destinations</h1>
+      <h1>Study Abroad in 2025: Trends, Tips & Top Destinations</h1>
+
       <p>
         2025 is shaping up to be one of the most exciting years for global
         education! With increasing student mobility, flexible visa options, and
         emerging technology programs, students have more opportunities than ever
         to pursue their dream studies abroad.
       </p>
-      <h2 style={{ color: "#d32f2f" }}>🎯 Top Study Destinations for 2025</h2>
+
+      <h2>🎯 Top Study Destinations for 2025</h2>
       <ul>
         <li>
           🇨🇦 <strong>Canada:</strong> Post-graduation work permits, diverse
@@ -42,7 +44,8 @@ function StudyAbroad2025() {
           and Erasmus+ benefits.
         </li>
       </ul>
-      <h2 style={{ color: "#d32f2f" }}>💼 Most In-Demand Courses in 2025</h2>
+
+      <h2>💼 Most In-Demand Courses in 2025</h2>
       <ul>
         <li>Technology and Software Development</li>
         <li>Healthcare</li>
@@ -55,7 +58,8 @@ function StudyAbroad2025() {
         <li>Education and Human Resources</li>
         <li>Hospitality Management</li>
       </ul>
-      <h2 style={{ color: "#d32f2f" }}>🎓 Scholarship Opportunities</h2>
+
+      <h2>🎓 Scholarship Opportunities</h2>
       <p>
         Many governments and universities are expanding scholarships for
         international students in 2025:
@@ -74,59 +78,42 @@ function StudyAbroad2025() {
           and research scholars
         </li>
         <li>
-          <strong>Vanier CGS (Canada)</strong> – Doctoral research funding
+          <strong>Regional Scholarship (Italy)</strong> – For Bachelor's,
+          Master's, Ph.D students (up to €7200/year)
         </li>
         <li>
-          <strong>Eiffel Scholarship (France)</strong> – High-level
-          international students in engineering, law, etc.
+          <strong>Eiffel Scholarship (France)</strong> – High-level students in
+          engineering, law, etc.
         </li>
       </ul>
-      <h2 style={{ color: "#d32f2f" }}>📋 2025 Application Timeline</h2>
+
+      <h2>💡 Tips for Success in 2025</h2>
       <ul>
-        <li>
-          <strong>Aug – Dec 2024:</strong> Research programs and shortlist
-          universities
-        </li>
-        <li>
-          <strong>Oct 2024 – Jan 2025:</strong> Take IELTS/TOEFL, GRE/GMAT, or
-          Duolingo
-        </li>
-        <li>
-          <strong>Nov 2024 – Mar 2025:</strong> Submit applications with SOPs
-          and LORs
-        </li>
-        <li>
-          <strong>Apr – Jun 2025:</strong> Receive offer letters and prepare for
-          visa
-        </li>
-        <li>
-          <strong>Jul – Sep 2025:</strong> Attend visa interview and fly abroad!
-        </li>
+        <li>Start early and stay ahead of deadlines</li>
+        <li>Focus on skill-based courses with job relevance</li>
+        <li>Get internship or work experience before applying</li>
+        <li>Attend virtual university fairs and webinars</li>
+        <li>Write a powerful Statement of Purpose (SOP)</li>
+        <li>Keep your documents organized and updated</li>
       </ul>
-      <h2 style={{ color: "#d32f2f" }}>💡 Tips for Success in 2025</h2>
+
+      <h2>📈 What's New in 2025?</h2>
       <ul>
-        <li> Start early and stay ahead of deadlines</li>
-        <li> Focus on skill-based courses with job relevance</li>
-        <li> Get internship or work experience before applying</li>
-        <li> Attend virtual university fairs and webinars</li>
-        <li> Write a powerful Statement of Purpose (SOP)</li>
-        <li> Keep your documents organized and updated</li>
+        <li>Simplified visa policies in Canada, UK, and Australia</li>
+        <li>Rise of hybrid and online master's programs</li>
+        <li>More AI/ML courses and automation-based careers</li>
+        <li>Growth in environmental studies and sustainability careers</li>
       </ul>
-      <h2 style={{ color: "#d32f2f" }}>📈 What's New in 2025?</h2>
-      <ul>
-        <li> Simplified visa policies in Canada, UK, and Australia</li>
-        <li> Rise of hybrid and online master's programs</li>
-        <li> More AI/ML courses and automation-based careers</li>
-        <li> Growth in environmental studies and sustainability careers</li>
-      </ul>
-      <h2 style={{ color: "#d32f2f" }}>🌟 Final Thought</h2>
+
+      <h2>🌟 Final Thought</h2>
       <p>
         2025 is your year to dream big and study globally. With the right
         guidance, financial planning, and preparation, you can secure a top
         education and build a successful international career. 🌟 Start your
-        journey today with <strong>The Sanvi’s Academy</strong> — your expert
-        abroad education partner!
+        journey today with <strong>The Sanvi’s Abroad Xperts</strong> — your
+        expert abroad education partner!
       </p>
+
       <div className="course-pagination">
         {/* Left: Previous */}
         <div>
@@ -144,7 +131,7 @@ function StudyAbroad2025() {
             Next ⟶
           </Link>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }

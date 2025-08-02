@@ -102,7 +102,7 @@ function SpeakingMistakes() {
         <li> Keep a journal of new words and expressions</li>
         <li> Practice speaking in front of a mirror to build fluency</li>
         <li>
-          Join speaking mock tests at <strong>Sanvi’s Academy</strong> for
+          Join speaking mock tests<strong> The Sanvi’s Academy</strong> for
           expert evaluation
         </li>
       </ul>
@@ -111,8 +111,11 @@ function SpeakingMistakes() {
       <p>
         Speaking tests are not about perfection — they’re about expressing
         yourself clearly and confidently. Practice smart, avoid the common
-        pitfalls, and you’re sure to impress the examiner.
+        pitfalls, and you’re sure to impress the examiner. Let{" "}
+        <strong>The Sanvi’s Academy</strong> help you speak with confidence and
+        clarity.
       </p>
+
       <div className="course-pagination">
         {/* Left: Previous */}
         <div>

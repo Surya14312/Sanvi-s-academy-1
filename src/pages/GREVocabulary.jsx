@@ -104,6 +104,7 @@ function GREVocabulary() {
         trickiest GRE/SAT verbal questions. Let{" "}
         <strong>The Sanvi’s Academy</strong> guide you every step of the way!
       </p>
+
       <div className="course-pagination">
         {/* Left: Previous */}
         <div>

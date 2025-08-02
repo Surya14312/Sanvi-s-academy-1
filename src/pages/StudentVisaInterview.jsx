@@ -108,8 +108,10 @@ function StudentVisaInterview() {
         Treat your visa interview like a conversation, not an exam. Be genuine,
         stay calm, and focus on your purpose — your dream of studying abroad.
         Preparation is key, and with the right approach, your visa approval is
-        within reach!
+        within reach! Trust <strong>The Sanvi’s Academy</strong> to guide you
+        every step of the way.
       </p>
+
       <div className="course-pagination">
         {/* Left: Previous */}
         <div>

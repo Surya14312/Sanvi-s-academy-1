@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const blogPosts = [
   {
     link: "/blog/ielts-tips",
-    title: " How to Score 8+ Bands in IELTS",
+    title: " How to Score 7+ Bands in IELTS",
     desc: "Learn smart IELTS preparation tips with strategies for Listening, Reading, Writing, and Speaking. Discover time-tested tips from top scorers and certified trainers.",
   },
   {

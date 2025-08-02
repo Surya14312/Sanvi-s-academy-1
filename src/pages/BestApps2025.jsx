@@ -85,8 +85,11 @@ function BestApps2025() {
       <p>
         Whether you’re preparing for a student visa, studying abroad, or growing
         your career, these apps will empower your language journey in 2025. Keep
-        practicing consistently and track your progress weekly!
+        practicing consistently and track your progress weekly! Trust{" "}
+        <strong>The Sanvi’s Academy</strong> to support your success every step
+        of the way.
       </p>
+
       <div className="course-pagination">
         {/* Left: Previous */}
         <div>
