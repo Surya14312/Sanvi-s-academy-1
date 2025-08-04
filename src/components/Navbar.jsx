@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Academy.png"; // If it's in public, use: src="/Academy.png"
+import logo from "../assets/Academy.png";
 
 function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -41,39 +41,28 @@ function Navbar() {
         </li>
 
         <li
-          className={`dropdown ${activeDropdown === "skills" ? "open" : ""}`}
+          className={`dropdown ${activeDropdown === "Courses" ? "open" : ""}`}
           ref={dropdownRef}
         >
           <span
             className="dropdown-toggle"
-            onClick={() => toggleDropdown("skills")}
+            onClick={() => toggleDropdown("Courses")}
           >
-            Skills ▾
+            Courses Type 
           </span>
 
-          {activeDropdown === "skills" && (
+          {activeDropdown === "Courses" && (
             <div className="dropdown-menu">
-              {/* Language Section */}
-              <div className="dropdown-section">
-                <div className="dropdown-heading">Language Skills</div>
-                <div className="dropdown-items">
-                  <Link to="/ielts">IELTS</Link>
-                  <Link to="/toefl">TOEFL</Link>
-                  <Link to="/pte">PTE</Link>
-                  <Link to="/duolingo">Duolingo</Link>
-                  <Link to="/french">French</Link>
-                  <Link to="/german">German</Link>
-                  <Link to="/sat">SAT</Link>
-                  <Link to="/gre">GRE/GMAT</Link>
-                </div>
-              </div>
-
-              {/* Technical Section */}
-              <div className="dropdown-section">
-                <div className="dropdown-heading">Technical Skills</div>
-                <div className="dropdown-items">
-                  <Link to="/cybersecurity">Cybersecurity</Link>
-                </div>
+              <div className="dropdown-items">
+                <Link to="/courses" onClick={() => setActiveDropdown(null)}>
+                  Language Skills
+                </Link>
+                <Link
+                  to="/technical-skills"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  Technical Skills
+                </Link>
               </div>
             </div>
           )}

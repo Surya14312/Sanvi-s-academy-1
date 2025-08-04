@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
-
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,10 +16,14 @@ import German from "./pages/German";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Courses from "./components/Courses";
+import TechnicalSkills from "./components/TechnicalSkills";
+import Cybersecurity from "./pages/Cybersecurity";
+
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
 import FAQ from "./pages/FAQ";
 
+// Blog Pages
 import IELTSTips from "./pages/IELTSTIPS";
 import StudyAbroad2025 from "./pages/StudyAbroad2025";
 import GREVocabulary from "./pages/GREVocabulary";
@@ -29,7 +32,6 @@ import SpeakingMistakes from "./pages/SpeakingMistakes";
 import EuropeUniversities from "./pages/EuropeUniversities";
 import IELTSvsTOEFLvsDuolingoPTE from "./pages/IELTSvsTOEFLvsDuolingoPTE";
 import BestApps2025 from "./pages/BestApps2025";
-import Cybersecurity from "./pages/Cybersecurity";
 
 // ✅ Error fallback component
 function ErrorFallback({ error }) {
@@ -60,6 +62,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/technical-skills" element={<TechnicalSkills />} />
+          <Route path="/cybersecurity" element={<Cybersecurity />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
@@ -84,8 +88,6 @@ function App() {
             path="/blog/ielts-vs-toefl-vs-duolingo-vs-pte"
             element={<IELTSvsTOEFLvsDuolingoPTE />}
           />
-          <Route path="/cybersecurity" element={<Cybersecurity />} />{" "}
-          {/* ✅ route defined */}
         </Routes>
       </ErrorBoundary>
       <Footer />
